@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Histórico do Top Músicas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #111; margin-bottom: 5px; }
+        p.subtitle { text-align: center; color: #666; margin-bottom: 30px; }
+        .search-box { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+        label { font-weight: bold; color: #444; }
+        input { padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; width: 100%; box-sizing: border-box; transition: border-color 0.3s; }
+        input:focus { border-color: #007bff; outline: none; }
+        .chart-container { position: relative; height: 400px; width: 100%; }
+        .no-data { text-align: center; color: #999; font-style: italic; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📈 Painel Interativo de Evolução Musical</h1>
+    <p class="subtitle">Busque por qualquer faixa para acompanhar o histórico de posições no ranking</p>
+
+    <div class="search-box">
+        <label for="musica-input">Selecione ou digite o nome de uma música:</label>
+        <input type="text" id="musica-input" list="musicas-list" placeholder="Ex: Nome da Música - Artista...">
+        <datalist id="musicas-list"></datalist>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="historicoChart"></canvas>
+        <div id="msg-inicial" class="no-data">Aguardando a seleção de uma faixa para traçar o gráfico histórico.</div>
+    </div>
+</div>
+
+<script>
+    let dadosGlobais = null;
+    let chartInstance = null;
+
+    fetch('dados_dashboard.json')
+        .then(response => response.json())
+        .then(data => {
+            dadosGlobais = data;
+            const datalist = document.getElementById('musicas-list');
+            
+            Object.keys(data.musicas).sort().forEach(musica => {
+                const option = document.createElement('option');
+                option.value = musica;
+                datalist.appendChild(option);
+            });
+        })
+        .catch(err => {
+            console.error("Erro no carregamento:", err);
+            document.getElementById('msg-inicial').innerText = "Dados iniciais não encontrados. Rode a automação no GitHub ao menos uma vez para estruturar o painel.";
+        });
+
+    document.getElementById('musica-input').addEventListener('input', function(e) {
+        const nomeMusica = e.target.value;
+        if (dadosGlobais && dadosGlobais.musicas[nomeMusica]) {
+            document.getElementById('msg-inicial').style.display = 'none';
+            gerarGrafico(nomeMusica);
+        }
+    });
+
+    function gerarGrafico(nomeMusica) {
+        const datas = dadosGlobais.datas;
+        const historicoPosis = dadosGlobais.musicas[nomeMusica];
+        const pontos = datas.map(data => historicoPosis[data] || null);
+
+        if (chartInstance) { chartInstance.destroy(); }
+
+        const ctx = document.getElementById('historicoChart').getContext('2d');
+        chartInstance = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: datas.map(d => d.split('-').reverse().join('/')),
+                datasets: [{
+                    label: `Posição do Ranking (Mais Acessadas)`,
+                    data: pontos,
+                    borderColor: '#28a745',
+                    backgroundColor: 'rgba(40, 167, 69, 0.1)',
+                    borderWidth: 3,
+                    pointRadius: 5,
+                    spanGaps: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        reverse: true, // 1º lugar no topo do gráfico
+                        min: 1,
+                        title: { display: true, text: 'Posição no Ranking' }
+                    },
+                    x: { title: { display: true, text: 'Data' } }
+                }
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
