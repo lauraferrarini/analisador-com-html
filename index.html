@@ -155,7 +155,7 @@
 
     <div class="filter-checkbox-container">
         <span class="filter-title">Filtrar por Estado:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()">Todas</label>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()"> Todas</label>
         <label class="filter-label"><input type="checkbox" id="chk-absurda" onchange="aoClicarIndividual()"> 🚨 Explosões</label>
         <label class="filter-label"><input type="checkbox" id="chk-grandes" onchange="aoClicarIndividual()"> 🔥 Grandes Saltos</label>
         <label class="filter-label"><input type="checkbox" id="chk-moderadas" onchange="aoClicarIndividual()"> 📈 Significativas</label>
@@ -202,7 +202,7 @@
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
     let diasFiltroAtivo = 0; 
-    const categoriasLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
+    const categoriesLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
 
     fetch('dados_dashboard.json')
         .then(response => {
@@ -274,9 +274,18 @@
 
         listaGeral.forEach(item => {
             let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-            let partes = item.nome.split(" - ");
-            let tituloMusica = partes[0] || "Desconhecido";
-            let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
+            
+            // DIVISÃO DINÂMICA LEVANDO EM CONTA SEMPRE O ÚLTIMO HÍFEN
+            let lastHyphenIdx = item.nome.lastIndexOf(" - ");
+            let tituloMusica = "Desconhecido";
+            let artistaMusica = "Desconhecido";
+
+            if (lastHyphenIdx !== -1) {
+                tituloMusica = item.nome.substring(0, lastHyphenIdx).trim();
+                artistaMusica = item.nome.substring(lastHyphenIdx + 3).trim();
+            } else {
+                tituloMusica = item.nome;
+            }
 
             let tr = document.createElement('tr');
             tr.className = "clickable-row";
@@ -294,10 +303,9 @@
         aplicarFiltrosNaTela();
     }
 
-    // GESTÃO DOS CHECKBOXES INTERATIVOS EXCLUSIVOS
     function aoClicarTodas() {
         if (document.getElementById('chk-todas').checked) {
-            categoriasLista.forEach(cat => {
+            categoriesLista.forEach(cat => {
                 document.getElementById(`chk-${cat}`).checked = false;
             });
         }
@@ -343,7 +351,7 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        if (faixaSelecionadaAtualmente) gerarGrafico();
+        if (faixaSelecionadaAtualmente) generarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
