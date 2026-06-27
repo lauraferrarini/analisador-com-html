@@ -117,7 +117,7 @@
         .search-input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 11px; font-family: inherit; width: 250px; }
         .search-input:focus { border-color: #999; outline: none; }
 
-        /* ESTILIZAÇÃO DA TABELA CORRIDA ÚNICA (ESTILO PLANILHA) */
+        /* ESTILIZAÇÃO DA TABELA CORRIDA ÚNICA */
         .table-container { width: 100%; border: 1px solid var(--border-light); border-radius: 4px; overflow: hidden; background: var(--white); }
         table { width: 100%; border-collapse: collapse; }
         th { 
@@ -132,8 +132,7 @@
         .clickable-row.active-track { background-color: #f9fbc5; font-weight: 600; }
 
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
-        .emoji-span { margin-left: 6px; font-size: 11px; vertical-align: middle; }
-
+        
         #error-banner { display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px; }
     </style>
 </head>
@@ -147,6 +146,7 @@
         <p class="subtitle">Acompanhamento contínuo do ranking e comportamento histórico das faixas.</p>
     </header>
 
+    <!-- KPI RESUMO -->
     <div class="kpi-container" id="kpi-wrapper">
         <div class="kpi-card kpi-absurda"><div class="kpi-title">🚨 Explosões (+400)</div><div class="kpi-value" id="count-absurda">0</div></div>
         <div class="kpi-card kpi-grandes"><div class="kpi-title">🔥 Grandes Saltos</div><div class="kpi-value" id="count-grandes">0</div></div>
@@ -154,17 +154,19 @@
         <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
     </div>
 
+    <!-- SEÇÃO DE FILTROS POR CHECKBOX -->
     <div class="filter-checkbox-container">
-        <span class="filter-title">Filtrar Visualização:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="toggleTodasCheckbox()"> [TODAS MÚSICAS]</label>
-        <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="aoMudarFiltroIndividual()"> 🚨 Explosões</label>
-        <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="aoMudarFiltroIndividual()"> 🔥 Grandes Saltos</label>
-        <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="aoMudarFiltroIndividual()"> 📈 Significativas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-pequenas" checked onchange="aoMudarFiltroIndividual()"> 🌱 Pequenas Subidas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-novas" checked onchange="aoMudarFiltroIndividual()"> 🚀 Novas Entradas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-normal" checked onchange="aoMudarFiltroIndividual()"> ➖ Estáveis / Quedas</label>
+        <span class="filter-title">Filtrar por Estado:</span>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aplicarFiltrosNaTela()"> [TODAS AS MÚSICAS]</label>
+        <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="aplicarFiltrosNaTela()"> 🚨 Explosões</label>
+        <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="aplicarFiltrosNaTela()"> 🔥 Grandes Saltos</label>
+        <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="aplicarFiltrosNaTela()"> 📈 Significativas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-pequenas" checked onchange="aplicarFiltrosNaTela()"> 🌱 Pequenas Subidas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-novas" checked onchange="aplicarFiltrosNaTela()"> 🚀 Novas Entradas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-normal" checked onchange="aplicarFiltrosNaTela()"> ➖ Estáveis / Quedas</label>
     </div>
 
+    <!-- BOX DO GRÁFICO (FIXADO 1 A 1000) -->
     <div class="chart-box">
         <div class="period-selector" id="menu-periodo">
             <span class="current" onclick="filtrarPeriodo(0, this)">Tudo</span>
@@ -178,12 +180,14 @@
         </div>
     </div>
 
+    <!-- BUSCA DIRETA -->
     <div class="search-container">
         <span style="font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 9px;">Busca Direta:</span>
         <input type="text" id="musica-input" class="search-input" list="musicas-list" placeholder="Procurar outra faixa do histórico...">
         <datalist id="musicas-list"></datalist>
     </div>
 
+    <!-- LISTA ÚNICA E CORRIDA -->
     <div class="table-container">
         <table>
             <thead>
@@ -194,7 +198,8 @@
                 </tr>
             </thead>
             <tbody id="tbody-corrido">
-                </tbody>
+                <!-- Injetado dinamicamente via JS -->
+            </tbody>
         </table>
     </div>
 </div>
@@ -204,7 +209,6 @@
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
     let diasFiltroAtivo = 0; 
-    const categoriasLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas', 'normal'];
 
     fetch('dados_dashboard.json')
         .then(response => {
@@ -244,26 +248,28 @@
             if (!historico[hoje]) return; 
 
             let posAtual = historico[hoje];
-            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', emoji: '' };
+            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', emojiHTML: '', ganhoVal: 0 };
 
             if (!ontem || !historico[ontem]) {
                 item.estado = 'novas';
-                item.emoji = '<span class="emoji-span">🚀</span>';
+                item.emojiHTML = ' <span style="font-weight: normal; color: #27ae60; margin-left: 6px;">🚀 Novidade</span>';
                 cNovas++;
             } else {
                 let posAnterior = historico[ontem];
                 let ganho = posAnterior - posAtual;
+                item.ganhoVal = ganho;
 
                 if (ganho > 0) {
-                    if (ganho > 400) { item.estado = 'absurda'; item.emoji = '<span class="emoji-span">🚨</span>'; cAbsurda++; }
-                    else if (ganho > 200) { item.estado = 'grandes'; item.emoji = '<span class="emoji-span">🔥</span>'; cGrandes++; }
-                    else if (ganho >= 100) { item.estado = 'moderadas'; item.emoji = '<span class="emoji-span">📈</span>'; cModeradas++; }
-                    else if (ganho > 2) { item.estado = 'pequenas'; item.emoji = '<span class="emoji-span">🌱</span>'; }
-                    else { item.emoji = '<span class="emoji-span">➖</span>'; }
+                    if (ganho > 400) { item.estado = 'absurda'; item.emojiHTML = ` <span style="font-weight: normal; color: #c0392b; margin-left: 6px;">🚨 +${ganho}</span>`; cAbsurda++; }
+                    else if (ganho > 200) { item.estado = 'grandes'; item.emojiHTML = ` <span style="font-weight: normal; color: #7b1fa2; margin-left: 6px;">🔥 +${ganho}</span>`; cGrandes++; }
+                    else if (ganho >= 100) { item.estado = 'moderadas'; item.emojiHTML = ` <span style="font-weight: normal; color: #1976d2; margin-left: 6px;">📈 +${ganho}</span>`; cModeradas++; }
+                    else if (ganho > 2) { item.estado = 'pequenas'; item.emojiHTML = ` <span style="font-weight: normal; color: #27ae60; margin-left: 6px;">🌱 +${ganho}</span>`; }
+                    else { item.emojiHTML = ' <span style="font-weight: normal; color: #999; margin-left: 6px;">➖</span>'; }
                 } else if (ganho < 0) {
-                    item.emoji = '<span class="emoji-span">➖</span>';
+                    item.emojiHTML = ` <span style="font-weight: normal; color: #c0392b; margin-left: 6px;">🔽 ${ganho}</span>`;
+                    item.badgeHTML = 'normal';
                 } else {
-                    item.emoji = '<span class="emoji-span">➖</span>';
+                    item.emojiHTML = ' <span style="font-weight: normal; color: #999; margin-left: 6px;">➖</span>';
                 }
             }
             listaGeral.push(item);
@@ -280,7 +286,7 @@
         tbody.innerHTML = '';
 
         listaGeral.forEach(item => {
-            let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            let nomeEscapado = item.nome.replace(/'/g, "\'").replace(/"/g, '&quot;');
             let partes = item.nome.split(" - ");
             let tituloMusica = partes[0] || "Desconhecido";
             let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
@@ -292,7 +298,7 @@
 
             tr.innerHTML = `
                 <td><span class="badge-pos">${item.atual}º</span></td>
-                <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}${item.emoji}</td>
+                <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}${item.emojiHTML}</td>
                 <td class="text-left" style="color: #555;">${artistaMusica}</td>
             `;
             tbody.appendChild(tr);
@@ -301,25 +307,13 @@
         aplicarFiltrosNaTela();
     }
 
-    // GESTÃO DOS CHECKBOXES INTERATIVOS
-    function toggleTodasCheckbox() {
-        // Se "Todas" está marcado, exibe tudo independentemente dos filtros individuais.
-        aplicarFiltrosNaTela();
-    }
-
-    function aoMudarFiltroIndividual() {
-        // Se o usuário interage com um filtro individual, desmarca "Todas" automaticamente para aplicar o filtro.
-        document.getElementById('chk-todas').checked = false;
-        aplicarFiltrosNaTela();
-    }
-
     function aplicarFiltrosNaTela() {
-        const exibirTodas = document.getElementById('chk-todas').checked;
+        const todasAsMusicas = document.getElementById('chk-todas').checked;
         const rows = document.querySelectorAll('#tbody-corrido .clickable-row');
 
         rows.forEach(row => {
-            if (exibirTodas) {
-                row.style.display = ""; // Mostra tudo sem distinção de estado
+            if (todasAsMusicas) {
+                row.style.display = "";
             } else {
                 const cat = row.getAttribute('data-categoria');
                 const boxMarcado = document.getElementById(`chk-${cat}`).checked;
@@ -351,7 +345,7 @@
         if (dadosGlobais && dadosGlobais.musicas[val]) selecionarFaixa(val, null);
     });
 
-    function generarGrafico() {
+    function gerarGrafico() {
         let datas = dadosGlobais.datas;
         const historicoPosis = dadosGlobais.musicas[faixaSelecionadaAtualmente];
         let pontos = datas.map(data => historicoPosis[data] || null);
@@ -389,7 +383,7 @@
                     y: {
                         reverse: true,
                         min: 1,
-                        max: 1000, // ESCALA TOTAL DE 1 A 1000 FIXA
+                        max: 1000,
                         grid: { color: '#e0e0e0' },
                         ticks: { 
                             stepSize: 100,
