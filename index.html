@@ -3,36 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 Histórico do Top Músicas</title>
+    <title>Painel de Evolução Musical</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; color: #333; }
-        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { text-align: center; color: #111; margin-bottom: 5px; }
-        p.subtitle { text-align: center; color: #666; margin-bottom: 30px; }
-        .search-box { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
-        label { font-weight: bold; color: #444; }
-        input { padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; width: 100%; box-sizing: border-box; transition: border-color 0.3s; }
-        input:focus { border-color: #007bff; outline: none; }
-        .chart-container { position: relative; height: 400px; width: 100%; }
-        .no-data { text-align: center; color: #999; font-style: italic; margin-top: 50px; }
-    </style>
+        /* Variáveis de cor idênticas ao seu arquivo adm lançamentos */
+        :root {
+            --primary-color: #d8df00;
+            --text-main: #1a1a1a;
+            --text-muted: #666;
+            --bg-body: #f4f4f4;
+            --white: #ffffff;
+            --border-light: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            font-size: 11px;
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 30px;
+            color: var(--text-main);
+            overflow-x: auto; 
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        /* HEADER NO PADRÃO DO SEU ARQUIVO */
+        header h1 { 
+            font-size: 22px; 
+            margin: 0 0 5px 0; 
+            font-weight: 700; 
+            text-transform: capitalize; 
+        }
+
+        p.subtitle { 
+            font-size: 11px; 
+            color: var(--text-muted); 
+            margin: 0 0 25px 0; 
+        }
+
+        /* ÁREA DE BUSCA INTERATIVA ESTILIZADA */
+        .search-box { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 6px; 
+            margin-bottom: 25px; 
+            text-align: left;
+        }
+        
+        .search-box label { 
+            font-weight: 600; 
+            color: var(--text-muted); 
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        input.search-input { 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            font-size: 12px; 
+            font-family: inherit;
+            outline: none; 
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        
+        input.search-input:focus { 
+            border-color: #999; 
+            background: #fff; 
+        }
+
+        /* CONTAINER DO GRÁFICO */
+        .chart-container { 
+            position: relative; 
+            height: 380px; 
+            width: 100%; 
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            background-color: #fdfdfd;
+            box-sizing: border-box;
+        }
+        
+        .no-data { 
+            text-align: center; 
+            color: var(--text-muted); 
+            font-style: italic; 
+            margin-top: 150px; 
+            font-size: 11px;
+        }
+    </script>
 </head>
 <body>
 
 <div class="container">
-    <h1>📈 Painel Interativo de Evolução Musical</h1>
-    <p class="subtitle">Busque por qualquer faixa para acompanhar o histórico de posições no ranking</p>
+    <header>
+        <h1>Evolução musical</h1>
+        <p class="subtitle">Rastreamento de performance e histórico de posições no ranking de músicas mais acessadas</p>
+    </header>
 
     <div class="search-box">
         <label for="musica-input">Selecione ou digite o nome de uma música:</label>
-        <input type="text" id="musica-input" list="musicas-list" placeholder="Ex: Nome da Música - Artista...">
+        <input type="text" id="musica-input" class="search-input" list="musicas-list" placeholder="Procurar faixa...">
         <datalist id="musicas-list"></datalist>
     </div>
 
     <div class="chart-container">
         <canvas id="historicoChart"></canvas>
-        <div id="msg-inicial" class="no-data">Aguardando a seleção de uma faixa para traçar o gráfico histórico.</div>
+        <div id="msg-inicial" class="no-data">Nenhuma música selecionada. Utilize o campo de busca acima para gerar a linha do tempo.</div>
     </div>
 </div>
 
@@ -40,12 +132,14 @@
     let dadosGlobais = null;
     let chartInstance = null;
 
+    // Busca o arquivo unificado pelo Python
     fetch('dados_dashboard.json')
         .then(response => response.json())
         .then(data => {
             dadosGlobais = data;
             const datalist = document.getElementById('musicas-list');
             
+            // Popula o datalist mantendo a ordenação alfabética limpa
             Object.keys(data.musicas).sort().forEach(musica => {
                 const option = document.createElement('option');
                 option.value = musica;
@@ -54,9 +148,10 @@
         })
         .catch(err => {
             console.error("Erro no carregamento:", err);
-            document.getElementById('msg-inicial').innerText = "Dados iniciais não encontrados. Rode a automação no GitHub ao menos uma vez para estruturar o painel.";
+            document.getElementById('msg-inicial').innerText = "Histórico de dados não encontrado. Aguarde a primeira varredura da automação.";
         });
 
+    // Monitor do campo de input
     document.getElementById('musica-input').addEventListener('input', function(e) {
         const nomeMusica = e.target.value;
         if (dadosGlobais && dadosGlobais.musicas[nomeMusica]) {
@@ -72,31 +167,69 @@
 
         if (chartInstance) { chartInstance.destroy(); }
 
+        // Coleta as cores computadas do CSS para manter identidade perfeita no ChartJS
+        const estiloCorpo = getComputedStyle(document.documentElement);
+        const corPrimaria = estiloCorpo.getPropertyValue('--primary-color').trim(); // #d8df00
+        const corTextoMuted = estiloCorpo.getPropertyValue('--text-muted').trim();
+
         const ctx = document.getElementById('historicoChart').getContext('2d');
         chartInstance = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: datas.map(d => d.split('-').reverse().join('/')),
                 datasets: [{
-                    label: `Posição do Ranking (Mais Acessadas)`,
+                    label: `Posição no Top Letras`,
                     data: pontos,
-                    borderColor: '#28a745',
-                    backgroundColor: 'rgba(40, 167, 69, 0.1)',
-                    borderWidth: 3,
-                    pointRadius: 5,
+                    borderColor: '#1a1a1a', // Linha escura sólida para contraste premium
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    pointBackgroundColor: corPrimaria, // Pontos destacados com o amarelo marcante
+                    pointBorderColor: '#1a1a1a',
+                    pointBorderWidth: 1.5,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
                     spanGaps: true
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: { family: "'Inter', sans-serif", size: 10, weight: 600 }
+                        }
+                    }
+                },
                 scales: {
                     y: {
-                        reverse: true, // 1º lugar no topo do gráfico
+                        reverse: true, // Garante que a 1ª posição fique no topo do gráfico
                         min: 1,
-                        title: { display: true, text: 'Posição no Ranking' }
+                        grid: { color: '#e0e0e0' },
+                        ticks: {
+                            color: corTextoMuted,
+                            font: { family: "'Inter', sans-serif", size: 10 }
+                        },
+                        title: { 
+                            display: true, 
+                            text: 'POSIÇÃO', 
+                            color: corTextoMuted,
+                            font: { family: "'Inter', sans-serif", size: 9, weight: 700 }
+                        }
                     },
-                    x: { title: { display: true, text: 'Data' } }
+                    x: { 
+                        grid: { display: false },
+                        ticks: {
+                            color: corTextoMuted,
+                            font: { family: "'Inter', sans-serif", size: 10 }
+                        },
+                        title: { 
+                            display: true, 
+                            text: 'DATA DA COLETA', 
+                            color: corTextoMuted,
+                            font: { family: "'Inter', sans-serif", size: 9, weight: 700 }
+                        }
+                    }
                 }
             }
         });
