@@ -26,14 +26,13 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             background: var(--white);
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             box-sizing: border-box;
-            transition: all 0.3s ease;
         }
 
         header h1 { font-size: 22px; margin: 0 0 5px 0; font-weight: 700; }
@@ -135,49 +134,11 @@
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
         
         #error-banner { display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px; }
-
-        /* ==========================================================
-           REGRAS DE LAYOUT DINÂMICO GRID (DESKTOP FORMAT MATCH)
-           ========================================================== */
-        
-        /* 1) MODO PADRÃO DIVIDIDO (4 SEMANAS) */
-        .container.split-mode {
-            display: grid;
-            grid-template-columns: 52% 45%;
-            grid-template-areas:
-                "head head"
-                "filters filters"
-                "table kpi"
-                "table chart"
-                "table search";
-            gap: 20px;
-        }
-        .container.split-mode header { grid-area: head; }
-        .container.split-mode .filter-checkbox-container { grid-area: filters; margin-bottom: 0; }
-        .container.split-mode .table-container { 
-            grid-area: table; 
-            max-height: calc(100vh - 170px); 
-            overflow-y: auto; 
-            overflow-x: auto; 
-        }
-        .container.split-mode .kpi-container { grid-area: kpi; margin-bottom: 0; }
-        .container.split-mode .chart-box { grid-area: chart; margin-bottom: 0; height: 350px; }
-        .container.split-mode .search-container { grid-area: search; margin-bottom: 0; }
-
-        /* 2) MODO RETORNO (STACKED/CASCATA PARA OUTROS PERÍODOS) */
-        .container.stacked-mode {
-            display: flex;
-            flex-direction: column;
-        }
-        .container.stacked-mode .table-container {
-            max-height: none;
-            overflow: visible;
-        }
     </style>
 </head>
 <body>
 
-<div class="container split-mode">
+<div class="container">
     <div id="error-banner"></div>
 
     <header>
@@ -194,7 +155,7 @@
 
     <div class="filter-checkbox-container">
         <span class="filter-title">Filtrar por Estado:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()"> Ready</label>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()"> Todas</label>
         <label class="filter-label"><input type="checkbox" id="chk-absurda" onchange="aoClicarIndividual()"> 🚨 Explosões</label>
         <label class="filter-label"><input type="checkbox" id="chk-grandes" onchange="aoClicarIndividual()"> 🔥 Grandes Saltos</label>
         <label class="filter-label"><input type="checkbox" id="chk-moderadas" onchange="aoClicarIndividual()"> 📈 Significativas</label>
@@ -204,8 +165,8 @@
 
     <div class="chart-box">
         <div class="period-selector" id="menu-periodo">
-            <span onclick="filtrarPeriodo(0, this)">Tudo</span>
-            <span class="current" onclick="filtrarPeriodo(28, this)">4 Semanas</span>
+            <span class="current" onclick="filtrarPeriodo(0, this)">Tudo</span>
+            <span onclick="filtrarPeriodo(28, this)">4 Semanas</span>
             <span onclick="filtrarPeriodo(90, this)">3 Meses</span>
             <span onclick="filtrarPeriodo(180, this)">6 Meses</span>
         </div>
@@ -240,7 +201,7 @@
     let dadosGlobais = null;
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
-    let diasFiltroAtivo = 28; // AJUSTE COMPORTAMENTO: Agora inicia em 4 semanas por default
+    let diasFiltroAtivo = 0; 
     const categoriesLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
 
     fetch('dados_dashboard.json')
@@ -393,18 +354,7 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        
-        // INTERRUPTOR DE LAYOUT VIA JS COM BASE NO PERÍODO SELECIONADO
-        const container = document.querySelector('.container');
-        if (dias === 28) {
-            container.classList.remove('stacked-mode');
-            container.classList.add('split-mode');
-        } else {
-            container.classList.remove('split-mode');
-            container.classList.add('stacked-mode');
-        }
-
-        if (faixaSelecionadaAtualmente) gerarGrafico();
+        if (faixaSelecionadaAtualmente) generarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
