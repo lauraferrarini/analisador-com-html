@@ -117,7 +117,7 @@
         .search-input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 11px; font-family: inherit; width: 250px; }
         .search-input:focus { border-color: #999; outline: none; }
 
-        /* ESTILIZAÇÃO DA TABELA CORRIDA ÚNICA */
+        /* ESTILIZAÇÃO DA TABELA CORRIDA ÚNICA (ESTILO PLANILHA) */
         .table-container { width: 100%; border: 1px solid var(--border-light); border-radius: 4px; overflow: hidden; background: var(--white); }
         table { width: 100%; border-collapse: collapse; }
         th { 
@@ -132,17 +132,8 @@
         .clickable-row.active-track { background-color: #f9fbc5; font-weight: 600; }
 
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
-        
-        /* ESTILOS DOS BADGES DE ESTADO (COLUNA CENTRAL) */
-        .status-badge { display: inline-block; padding: 3px 6px; border-radius: 4px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
-        .status-absurda { background-color: #fadbd8; color: #c0392b; }
-        .status-grandes { background-color: #f3e5f5; color: #7b1fa2; }
-        .status-moderadas { background-color: #e3f2fd; color: #1976d2; }
-        .status-pequenas { background-color: #f0f0f0; color: #555; }
-        .status-novas { background-color: #eafaf1; color: #27ae60; }
-        .status-normal { color: #aaa; font-weight: 500; }
+        .emoji-span { margin-left: 6px; font-size: 11px; vertical-align: middle; }
 
-        .badge-subida { font-weight: 700; color: #27ae60; }
         #error-banner { display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px; }
     </style>
 </head>
@@ -164,8 +155,8 @@
     </div>
 
     <div class="filter-checkbox-container">
-        <span class="filter-title">Exibir Estados:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="toggleTodasCheckbox()"> [TODAS]</label>
+        <span class="filter-title">Filtrar Visualização:</span>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="toggleTodasCheckbox()"> [TODAS MÚSICAS]</label>
         <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="aoMudarFiltroIndividual()"> 🚨 Explosões</label>
         <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="aoMudarFiltroIndividual()"> 🔥 Grandes Saltos</label>
         <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="aoMudarFiltroIndividual()"> 📈 Significativas</label>
@@ -197,12 +188,9 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 60px;">Posição</th>
-                    <th style="width: 140px;">Estado</th>
+                    <th style="width: 70px;">Posição</th>
                     <th>Título da Música</th>
                     <th>Artista</th>
-                    <th style="width: 90px;">Anterior</th>
-                    <th style="width: 90px;">Evolução</th>
                 </tr>
             </thead>
             <tbody id="tbody-corrido">
@@ -253,47 +241,41 @@
         let cAbsurda = 0, cGrandes = 0, cModeradas = 0, cNovas = 0;
 
         Object.entries(dadosGlobais.musicas).forEach(([nomeChave, historico]) => {
-            if (!historico[hoje]) return; // Não está no top hoje, pula
+            if (!historico[hoje]) return; 
 
             let posAtual = historico[hoje];
-            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', badgeHTML: '➖ Estável', anterior: '-', evolucao: '-' };
+            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', emoji: '' };
 
             if (!ontem || !historico[ontem]) {
                 item.estado = 'novas';
-                item.badgeHTML = '<span class="status-badge status-novas">🚀 Nova Entrada</span>';
+                item.emoji = '<span class="emoji-span">🚀</span>';
                 cNovas++;
             } else {
                 let posAnterior = historico[ontem];
                 let ganho = posAnterior - posAtual;
-                item.anterior = `${posAnterior}º`;
 
                 if (ganho > 0) {
-                    item.evolucao = `<span class="badge-subida">🔼 +${ganho}</span>`;
-                    if (ganho > 400) { item.estado = 'absurda'; item.badgeHTML = '<span class="status-badge status-absurda">🚨 Explosão</span>'; cAbsurda++; }
-                    else if (ganho > 200) { item.estado = 'grandes'; item.badgeHTML = '<span class="status-badge status-grandes">🔥 G. Salto</span>'; cGrandes++; }
-                    else if (ganho >= 100) { item.estado = 'moderadas'; item.badgeHTML = '<span class="status-badge status-moderadas">📈 Significativa</span>'; cModeradas++; }
-                    else if (ganho > 2) { item.estado = 'pequenas'; item.badgeHTML = '<span class="status-badge status-pequenas">🌱 P. Subida</span>'; }
-                    else { item.badgeHTML = '<span class="status-badge status-normal">➖ Estável</span>'; }
+                    if (ganho > 400) { item.estado = 'absurda'; item.emoji = '<span class="emoji-span">🚨</span>'; cAbsurda++; }
+                    else if (ganho > 200) { item.estado = 'grandes'; item.emoji = '<span class="emoji-span">🔥</span>'; cGrandes++; }
+                    else if (ganho >= 100) { item.estado = 'moderadas'; item.emoji = '<span class="emoji-span">📈</span>'; cModeradas++; }
+                    else if (ganho > 2) { item.estado = 'pequenas'; item.emoji = '<span class="emoji-span">🌱</span>'; }
+                    else { item.emoji = '<span class="emoji-span">➖</span>'; }
                 } else if (ganho < 0) {
-                    item.evolucao = `<span style="color: #c0392b;">🔽 ${ganho}</span>`;
-                    item.badgeHTML = '<span class="status-badge status-normal">➖ Queda</span>';
+                    item.emoji = '<span class="emoji-span">➖</span>';
                 } else {
-                    item.badgeHTML = '<span class="status-badge status-normal">➖ Estável</span>';
+                    item.emoji = '<span class="emoji-span">➖</span>';
                 }
             }
             listaGeral.push(item);
         });
 
-        // Ordenação rigorosa por posição atual (1º, 2º, 3º...)
         listaGeral.sort((a, b) => a.atual - b.atual);
 
-        // Atualiza os Cards de Métrica do Topo
         document.getElementById('count-absurda').innerText = cAbsurda;
         document.getElementById('count-grandes').innerText = cGrandes;
         document.getElementById('count-moderadas').innerText = cModeradas;
         document.getElementById('count-novas').innerText = cNovas;
 
-        // Monta a Tabela Única e Corrida
         let tbody = document.getElementById('tbody-corrido');
         tbody.innerHTML = '';
 
@@ -310,11 +292,8 @@
 
             tr.innerHTML = `
                 <td><span class="badge-pos">${item.atual}º</span></td>
-                <td>${item.badgeHTML}</td>
-                <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}</td>
+                <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}${item.emoji}</td>
                 <td class="text-left" style="color: #555;">${artistaMusica}</td>
-                <td>${item.anterior}</td>
-                <td>${item.evolucao}</td>
             `;
             tbody.appendChild(tr);
         });
@@ -324,26 +303,23 @@
 
     // GESTÃO DOS CHECKBOXES INTERATIVOS
     function toggleTodasCheckbox() {
-        const mestre = document.getElementById('chk-todas').checked;
-        categoriasLista.forEach(cat => {
-            document.getElementById(`chk-${cat}`).checked = mestre;
-        });
+        // Se "Todas" está marcado, exibe tudo independentemente dos filtros individuais.
         aplicarFiltrosNaTela();
     }
 
     function aoMudarFiltroIndividual() {
-        const todasMarcadas = categoriasLista.every(cat => document.getElementById(`chk-${cat}`).checked);
-        document.getElementById('chk-todas').checked = todasMarcadas;
+        // Se o usuário interage com um filtro individual, desmarca "Todas" automaticamente para aplicar o filtro.
+        document.getElementById('chk-todas').checked = false;
         aplicarFiltrosNaTela();
     }
 
     function aplicarFiltrosNaTela() {
-        const mestre = document.getElementById('chk-todas').checked;
+        const exibirTodas = document.getElementById('chk-todas').checked;
         const rows = document.querySelectorAll('#tbody-corrido .clickable-row');
 
         rows.forEach(row => {
-            if (mestre) {
-                row.style.display = "";
+            if (exibirTodas) {
+                row.style.display = ""; // Mostra tudo sem distinção de estado
             } else {
                 const cat = row.getAttribute('data-categoria');
                 const boxMarcado = document.getElementById(`chk-${cat}`).checked;
@@ -367,7 +343,7 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        if (faixaSelecionadaAtualmente) gerarGrafico();
+        if (faixaSelecionadaAtualmente) generarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
@@ -375,7 +351,7 @@
         if (dadosGlobais && dadosGlobais.musicas[val]) selecionarFaixa(val, null);
     });
 
-    function gerarGrafico() {
+    function generarGrafico() {
         let datas = dadosGlobais.datas;
         const historicoPosis = dadosGlobais.musicas[faixaSelecionadaAtualmente];
         let pontos = datas.map(data => historicoPosis[data] || null);
@@ -413,7 +389,7 @@
                     y: {
                         reverse: true,
                         min: 1,
-                        max: 1000,
+                        max: 1000, // ESCALA TOTAL DE 1 A 1000 FIXA
                         grid: { color: '#e0e0e0' },
                         ticks: { 
                             stepSize: 100,
