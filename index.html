@@ -155,7 +155,7 @@
 
     <div class="filter-checkbox-container">
         <span class="filter-title">Filtrar por Estado:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()"> Todas</label>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()"> Ready</label>
         <label class="filter-label"><input type="checkbox" id="chk-absurda" onchange="aoClicarIndividual()"> 🚨 Explosões</label>
         <label class="filter-label"><input type="checkbox" id="chk-grandes" onchange="aoClicarIndividual()"> 🔥 Grandes Saltos</label>
         <label class="filter-label"><input type="checkbox" id="chk-moderadas" onchange="aoClicarIndividual()"> 📈 Significativas</label>
@@ -275,14 +275,19 @@
         listaGeral.forEach(item => {
             let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
             
-            // DIVISÃO DINÂMICA LEVANDO EM CONTA SEMPRE O ÚLTIMO HÍFEN
-            let lastHyphenIdx = item.nome.lastIndexOf(" - ");
+            // LÓGICA CORRIGIDA: ENCONTRA E CORTA SEMPRE NO ÚLTIMO HÍFEN DA STRING
+            let lastHyphenIdx = item.nome.lastIndexOf("-");
             let tituloMusica = "Desconhecido";
             let artistaMusica = "Desconhecido";
 
             if (lastHyphenIdx !== -1) {
                 tituloMusica = item.nome.substring(0, lastHyphenIdx).trim();
-                artistaMusica = item.nome.substring(lastHyphenIdx + 3).trim();
+                artistaMusica = item.nome.substring(lastHyphenIdx + 1).trim();
+                
+                // Remove hífens residuais soltos se houver espaçamento padrão " - "
+                if (tituloMusica.endsWith(" -")) {
+                    tituloMusica = tituloMusica.substring(0, tituloMusica.length - 2).trim();
+                }
             } else {
                 tituloMusica = item.nome;
             }
