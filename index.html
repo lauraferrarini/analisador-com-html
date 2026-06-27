@@ -26,7 +26,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             background: var(--white);
             padding: 25px;
@@ -38,7 +38,7 @@
         header h1 { font-size: 22px; margin: 0 0 5px 0; font-weight: 700; }
         p.subtitle { font-size: 11px; color: var(--text-muted); margin: 0 0 20px 0; }
 
-        /* CARDS DE RESUMO DO RELATÓRIO */
+        /* CARDS DE RESUMO */
         .kpi-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -59,26 +59,48 @@
         .kpi-moderadas { background-color: #e3f2fd; color: #1976d2; border-color: #bbdefb; }
         .kpi-novas { background-color: #eafaf1; color: #27ae60; border-color: #d4efdf; }
 
-        /* MENUS DE NAVEGAÇÃO / FILTROS ESTILO PLANILHA */
-        nav {
-            background-color: #f9f9f9; padding: 10px 15px; border-radius: 4px;
-            display: inline-block; border: 1px solid var(--border-light); margin-bottom: 25px;
+        /* CONTEXTO DE FILTROS POR CHECKBOX */
+        .filter-checkbox-container {
+            background-color: #f9f9f9; 
+            padding: 12px 15px; 
+            border-radius: 4px;
+            border: 1px solid var(--border-light); 
+            margin-bottom: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
         }
-        .nav-btn { color: var(--text-muted); margin: 0 8px; font-weight: 500; cursor: pointer; transition: color 0.2s; font-size: 11px; }
-        .nav-btn:hover { color: #000; }
-        .nav-btn.active { color: #000; font-weight: 800; text-decoration: underline; }
+        .filter-checkbox-container .filter-title {
+            font-weight: 700; text-transform: uppercase; font-size: 9px; color: var(--text-muted); letter-spacing: 0.5px;
+        }
+        .filter-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+            font-size: 11px;
+        }
+        .filter-label input[type="checkbox"] {
+            cursor: pointer;
+            margin: 0;
+            width: 14px;
+            height: 14px;
+        }
 
-        /* BOX DO GRÁFICO FIXED SCALE */
+        /* BOX DO GRÁFICO */
         .chart-box {
             border: 1px solid var(--border-light);
             border-radius: 6px;
             background-color: #fdfdfd;
             padding: 15px;
             margin-bottom: 30px;
-            height: 280px;
+            height: 320px;
             position: relative;
         }
-        .no-data { text-align: center; color: var(--text-muted); font-style: italic; padding-top: 110px; }
+        .no-data { text-align: center; color: var(--text-muted); font-style: italic; padding-top: 130px; }
 
         .period-selector { 
             font-size: 11px; 
@@ -95,20 +117,28 @@
         .search-input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 11px; font-family: inherit; width: 250px; }
         .search-input:focus { border-color: #999; outline: none; }
 
-        /* TABELAS DO RELATÓRIO */
+        /* TABELAS DO RELATÓRIO ESTILO GRADE COMPLETA */
         .report-section { margin-top: 5px; margin-bottom: 25px; }
-        .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px; margin: 0; border-radius: 4px 4px 0 0; }
+        .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px; margin: 0; border: 1px solid var(--border-light); border-bottom: none; border-radius: 4px 4px 0 0; }
         
-        .title-absurda { background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; }
-        .title-grandes { background-color: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
-        .title-moderadas { background-color: #e3f2fd; color: #1976d2; border: 1px solid #bbdefb; }
-        .title-pequenas { background-color: #f0f0f0; color: #555; border: 1px solid #e0e0e0; }
-        .title-novas { background-color: #eafaf1; color: #27ae60; border: 1px solid #d4efdf; }
+        .title-absurda { background-color: #fadbd8; color: #c0392b; border-color: #f5b7b1; }
+        .title-grandes { background-color: #f3e5f5; color: #7b1fa2; border-color: #e1bee7; }
+        .title-moderadas { background-color: #e3f2fd; color: #1976d2; border-color: #bbdefb; }
+        .title-pequenas { background-color: #f0f0f0; color: #555; border-color: #e0e0e0; }
+        .title-novas { background-color: #eafaf1; color: #27ae60; border-color: #d4efdf; }
 
-        table { width: 100%; border-collapse: collapse; border: 1px solid var(--border-light); border-top: none; }
-        th { color: #888; font-weight: 600; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px; padding: 10px; border-bottom: 1px solid var(--border-light); background: #fafafa; }
-        td { padding: 9px 10px; border-bottom: 1px solid var(--border-light); text-align: left; }
+        table { width: 100%; border-collapse: collapse; border: 1px solid var(--border-light); }
         
+        th { 
+            color: #666; font-weight: 600; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px; 
+            padding: 10px; border: 1px solid var(--border-light); background: #fafafa; text-align: center;
+        }
+        
+        td { padding: 9px 10px; border: 1px solid var(--border-light); text-align: center; }
+        
+        /* Ajuste de alinhamento das colunas de texto */
+        td.text-left { text-align: left !important; }
+
         .clickable-row { cursor: pointer; transition: background 0.15s; }
         .clickable-row:hover { background-color: #fcfde7 !important; }
         .clickable-row.active-track { background-color: #f9fbc5; font-weight: 600; }
@@ -118,8 +148,7 @@
         .badge-subida { font-weight: 700; color: #27ae60; }
 
         #error-banner {
-            display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1;
-            padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px;
+            display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px;
         }
     </style>
 </head>
@@ -140,14 +169,14 @@
         <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
     </div>
 
-    <nav id="nav-sections">
-        <span class="nav-btn active" onclick="filtrarSecao('todos', this)">Todos</span> |
-        <span class="nav-btn" onclick="filtrarSecao('absurda', this)">🚨 Explosões</span> |
-        <span class="nav-btn" onclick="filtrarSecao('grandes', this)">🔥 Grandes Saltos</span> |
-        <span class="nav-btn" onclick="filtrarSecao('moderadas', this)">📈 Significativas</span> |
-        <span class="nav-btn" onclick="filtrarSecao('pequenas', this)">🌱 Pequenas Subidas</span> |
-        <span class="nav-btn" onclick="filtrarSecao('novas', this)">🚀 Novas Entradas</span>
-    </nav>
+    <div class="filter-checkbox-container">
+        <span class="filter-title">Exibir na Lista:</span>
+        <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="atualizarFiltrosCheckbox()"> 🚨 Explosões</label>
+        <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="atualizarFiltrosCheckbox()"> 🔥 Grandes Saltos</label>
+        <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="atualizarFiltrosCheckbox()"> 📈 Significativas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-pequenas" checked onchange="atualizarFiltrosCheckbox()"> 🌱 Pequenas Subidas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-novas" checked onchange="atualizarFiltrosCheckbox()"> 🚀 Novas Entradas</label>
+    </div>
 
     <div class="chart-box">
         <div class="period-selector" id="menu-periodo">
@@ -251,66 +280,68 @@
         wrapper.appendChild(criarTabelaHTML("📈 Subidas Significativas (100 a 200 posições)", moderadas, "moderadas", true));
         wrapper.appendChild(criarTabelaHTML("🌱 Pequenas Subidas (Abaixo de 100 posições)", pequenas, "pequenas", true));
         wrapper.appendChild(criarTabelaHTML("🚀 Novas Entradas no Top", novas, "novas", false));
+
+        // Roda a verificação inicial dos checkboxes
+        atualizarFiltrosCheckbox();
     }
 
     function criarTabelaHTML(titulo, dados, classeEstilo, exibirGanho) {
         let section = document.createElement('div');
         section.className = "report-section";
         section.id = `sec-${classeEstilo}`;
-        section.style.display = dados.length > 0 ? "block" : "none";
+        section.setAttribute('data-has-content', dados.length > 0 ? "true" : "false");
 
         let html = `<h2 class="section-title title-${classeEstilo}">${titulo}</h2>`;
         html += `<table>
             <thead>
                 <tr>
-                    <th style="width: 70px;" class="text-center">Posição</th>
+                    <th style="width: 70px;">Posição</th>
                     <th>Título da Música</th>
                     <th>Artista</th>
-                    ${exibirGanho ? `<th style="width: 100px;" class="text-center">Anterior</th>` : ''}
-                    ${exibirGanho ? `<th style="width: 100px;" class="text-center">Evolução</th>` : ''}
+                    ${exibirGanho ? `<th style="width: 100px;">Anterior</th>` : ''}
+                    ${exibirGanho ? `<th style="width: 100px;">Evolução</th>` : ''}
                 </tr>
             </thead>
             <tbody>`;
 
-        dados.forEach(item => {
-            let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-            
-            // SEPARAÇÃO CIRÚRGICA DE TÍTULO E ARTISTA
-            let partes = item.nome.split(" - ");
-            let tituloMusica = partes[0] || "Desconhecido";
-            let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
+        if(dados.length === 0) {
+            html += `<tr><td colspan="${exibirGanho ? 5 : 3}" style="color: #999; font-style: italic;">Nenhuma faixa correspondente para hoje.</td></tr>`;
+        } else {
+            dados.forEach(item => {
+                let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                
+                let partes = item.nome.split(" - ");
+                let tituloMusica = partes[0] || "Desconhecido";
+                let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
 
-            html += `
-            <tr class="clickable-row" onclick="selecionarFaixa('${nomeEscapado}', this)">
-                <td class="text-center"><span class="badge-pos">${item.atual}º</span></td>
-                <td style="font-weight: 600; color: #000;">${tituloMusica}</td>
-                <td style="color: #555;">${artistaMusica}</td>
-                ${exibirGanho ? `<td class="text-center" style="color: #666;">${item.anterior}º</td>` : ''}
-                ${exibirGanho ? `<td class="text-center badge-subida">🔼 +${item.ganho}</td>` : ''}
-            </tr>`;
-        });
+                html += `
+                <tr class="clickable-row" onclick="selecionarFaixa('${nomeEscapado}', this)">
+                    <td><span class="badge-pos">${item.atual}º</span></td>
+                    <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}</td>
+                    <td class="text-left" style="color: #555;">${artistaMusica}</td>
+                    ${exibirGanho ? `<td>${item.anterior}º</td>` : ''}
+                    ${exibirGanho ? `<td class="badge-subida">🔼 +${item.ganho}</td>` : ''}
+                </tr>`;
+            });
+        }
 
         html += `</tbody></table>`;
         section.innerHTML = html;
         return section;
     }
 
-    // CONTROLADOR DOS FILTROS DO TOPO (EXCLUSIVIDADE DE VISUALIZAÇÃO)
-    function filtrarSecao(secao, elementoClicado) {
-        document.querySelectorAll('#nav-sections .nav-btn').forEach(el => el.classList.remove('active'));
-        elementoClicado.classList.add('active');
-
-        const todasSecoes = document.querySelectorAll('.report-section');
+    // INTERRUPTOR DE FILTROS POR CHECKBOX (MOSTRA MULTIPLOS AO MESMO TEMPO)
+    function atualizarFiltrosCheckbox() {
+        const categorias = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
         
-        todasSecoes.forEach(sec => {
-            // Se for 'todos', mostra as que têm conteúdo. Se for secao específica, isola.
-            if(secao === 'todos') {
-                let tabela = sec.querySelector('tbody');
-                sec.style.display = (tabela && tabela.children.length > 0) ? "block" : "none";
-            } else {
-                if(sec.id === `sec-${secao}`) {
-                    let tabela = sec.querySelector('tbody');
-                    sec.style.display = (tabela && tabela.children.length > 0) ? "block" : "none";
+        categorias.forEach(cat => {
+            const chk = document.getElementById(`chk-${cat}`);
+            const sec = document.getElementById(`sec-${cat}`);
+            
+            if (sec) {
+                // Só exibe a tabela se o checkbox estiver MARCADO e ela tiver conteúdo real
+                if (chk.checked && sec.getAttribute('data-has-content') === "true") {
+                    sec.style.display = "block";
                 } else {
                     sec.style.display = "none";
                 }
@@ -335,7 +366,7 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        if (faixaSelecionadaAtualmente) gerarGrafico();
+        if (faixaSelecionadaAtualmente) generarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
@@ -381,9 +412,12 @@
                     y: {
                         reverse: true,
                         min: 1,
-                        max: 1000, // ESCALA FIXA OBRIGATÓRIA DE 1 A 1000
+                        max: 1000, // ESCALA TRAVADA EM 1000 FIXO
                         grid: { color: '#e0e0e0' },
-                        ticks: { stepSize: 100 }, // Quebras limpas de 100 em 100 posições
+                        ticks: { 
+                            stepSize: 100, // Força as linhas horizontais de 100 em 100
+                            callback: function(value) { return value + 'º'; }
+                        },
                         title: { display: true, text: 'POSIÇÃO (TOP 1000)', font: { size: 9, weight: 700 } }
                     },
                     x: { grid: { display: false } }
