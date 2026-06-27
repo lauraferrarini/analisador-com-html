@@ -146,7 +146,6 @@
         <p class="subtitle">Acompanhamento contínuo do ranking e comportamento histórico das faixas.</p>
     </header>
 
-    <!-- KPI RESUMO -->
     <div class="kpi-container" id="kpi-wrapper">
         <div class="kpi-card kpi-absurda"><div class="kpi-title">🚨 Explosões (+400)</div><div class="kpi-value" id="count-absurda">0</div></div>
         <div class="kpi-card kpi-grandes"><div class="kpi-title">🔥 Grandes Saltos</div><div class="kpi-value" id="count-grandes">0</div></div>
@@ -154,19 +153,16 @@
         <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
     </div>
 
-    <!-- SEÇÃO DE FILTROS POR CHECKBOX -->
     <div class="filter-checkbox-container">
         <span class="filter-title">Filtrar por Estado:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aplicarFiltrosNaTela()"> [TODAS AS MÚSICAS]</label>
-        <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="aplicarFiltrosNaTela()"> 🚨 Explosões</label>
-        <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="aplicarFiltrosNaTela()"> 🔥 Grandes Saltos</label>
-        <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="aplicarFiltrosNaTela()"> 📈 Significativas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-pequenas" checked onchange="aplicarFiltrosNaTela()"> 🌱 Pequenas Subidas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-novas" checked onchange="aplicarFiltrosNaTela()"> 🚀 Novas Entradas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-normal" checked onchange="aplicarFiltrosNaTela()"> ➖ Estáveis / Quedas</label>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoMudarFiltroTodas()"> [TODAS]</label>
+        <label class="filter-label"><input type="checkbox" id="chk-absurda" onchange="aoMudarFiltroIndividual()"> 🚨 Explosões</label>
+        <label class="filter-label"><input type="checkbox" id="chk-grandes" onchange="aoMudarFiltroIndividual()"> 🔥 Grandes Saltos</label>
+        <label class="filter-label"><input type="checkbox" id="chk-moderadas" onchange="aoMudarFiltroIndividual()"> 📈 Significativas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-pequenas" onchange="aoMudarFiltroIndividual()"> 🌱 Pequenas Subidas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-novas" onchange="aoMudarFiltroIndividual()"> 🚀 Novas Entradas</label>
     </div>
 
-    <!-- BOX DO GRÁFICO (FIXADO 1 A 1000) -->
     <div class="chart-box">
         <div class="period-selector" id="menu-periodo">
             <span class="current" onclick="filtrarPeriodo(0, this)">Tudo</span>
@@ -180,14 +176,12 @@
         </div>
     </div>
 
-    <!-- BUSCA DIRETA -->
     <div class="search-container">
         <span style="font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 9px;">Busca Direta:</span>
         <input type="text" id="musica-input" class="search-input" list="musicas-list" placeholder="Procurar outra faixa do histórico...">
         <datalist id="musicas-list"></datalist>
     </div>
 
-    <!-- LISTA ÚNICA E CORRIDA -->
     <div class="table-container">
         <table>
             <thead>
@@ -198,8 +192,7 @@
                 </tr>
             </thead>
             <tbody id="tbody-corrido">
-                <!-- Injetado dinamicamente via JS -->
-            </tbody>
+                </tbody>
         </table>
     </div>
 </div>
@@ -248,7 +241,7 @@
             if (!historico[hoje]) return; 
 
             let posAtual = historico[hoje];
-            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', emojiHTML: '', ganhoVal: 0 };
+            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', emojiHTML: '' };
 
             if (!ontem || !historico[ontem]) {
                 item.estado = 'novas';
@@ -257,19 +250,12 @@
             } else {
                 let posAnterior = historico[ontem];
                 let ganho = posAnterior - posAtual;
-                item.ganhoVal = ganho;
 
                 if (ganho > 0) {
                     if (ganho > 400) { item.estado = 'absurda'; item.emojiHTML = ` <span style="font-weight: normal; color: #c0392b; margin-left: 6px;">🚨 +${ganho}</span>`; cAbsurda++; }
                     else if (ganho > 200) { item.estado = 'grandes'; item.emojiHTML = ` <span style="font-weight: normal; color: #7b1fa2; margin-left: 6px;">🔥 +${ganho}</span>`; cGrandes++; }
                     else if (ganho >= 100) { item.estado = 'moderadas'; item.emojiHTML = ` <span style="font-weight: normal; color: #1976d2; margin-left: 6px;">📈 +${ganho}</span>`; cModeradas++; }
                     else if (ganho > 2) { item.estado = 'pequenas'; item.emojiHTML = ` <span style="font-weight: normal; color: #27ae60; margin-left: 6px;">🌱 +${ganho}</span>`; }
-                    else { item.emojiHTML = ' <span style="font-weight: normal; color: #999; margin-left: 6px;">➖</span>'; }
-                } else if (ganho < 0) {
-                    item.emojiHTML = ` <span style="font-weight: normal; color: #c0392b; margin-left: 6px;">🔽 ${ganho}</span>`;
-                    item.badgeHTML = 'normal';
-                } else {
-                    item.emojiHTML = ' <span style="font-weight: normal; color: #999; margin-left: 6px;">➖</span>';
                 }
             }
             listaGeral.push(item);
@@ -286,7 +272,7 @@
         tbody.innerHTML = '';
 
         listaGeral.forEach(item => {
-            let nomeEscapado = item.nome.replace(/'/g, "\'").replace(/"/g, '&quot;');
+            let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
             let partes = item.nome.split(" - ");
             let tituloMusica = partes[0] || "Desconhecido";
             let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
@@ -307,16 +293,36 @@
         aplicarFiltrosNaTela();
     }
 
+    // CONTROLE DOS INPUTS DE FILTRO
+    function aoMudarFiltroTodas() {
+        const todasAtivas = document.getElementById('chk-todas').checked;
+        if(todasAtivas) {
+            // Se marcou Todas, limpa a seleção das caixas individuais para não gerar conflito visual
+            ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'].forEach(cat => {
+                document.getElementById(`chk-${cat}`).checked = false;
+            });
+        }
+        aplicarFiltrosNaTela();
+    }
+
+    function aoMudarFiltroIndividual() {
+        // Se o usuário clicar em qualquer estado específico, desliga o botão master "Todas" imediatamente
+        document.getElementById('chk-todas').checked = false;
+        aplicarFiltrosNaTela();
+    }
+
     function aplicarFiltrosNaTela() {
-        const todasAsMusicas = document.getElementById('chk-todas').checked;
+        const exibirTodas = document.getElementById('chk-todas').checked;
         const rows = document.querySelectorAll('#tbody-corrido .clickable-row');
 
         rows.forEach(row => {
-            if (todasAsMusicas) {
+            if (exibirTodas) {
                 row.style.display = "";
             } else {
                 const cat = row.getAttribute('data-categoria');
-                const boxMarcado = document.getElementById(`chk-${cat}`).checked;
+                const box = document.getElementById(`chk-${cat}`);
+                // Se for categoria 'normal' (estável/queda) e "Todas" tá desligado, ela some por padrão
+                const boxMarcado = box ? box.checked : false;
                 row.style.display = boxMarcado ? "" : "none";
             }
         });
@@ -345,7 +351,7 @@
         if (dadosGlobais && dadosGlobais.musicas[val]) selecionarFaixa(val, null);
     });
 
-    function gerarGrafico() {
+    function generarGrafico() {
         let datas = dadosGlobais.datas;
         const historicoPosis = dadosGlobais.musicas[faixaSelecionadaAtualmente];
         let pontos = datas.map(data => historicoPosis[data] || null);
