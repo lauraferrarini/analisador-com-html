@@ -33,6 +33,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             box-sizing: border-box;
+            transition: all 0.3s ease;
         }
 
         header h1 { font-size: 22px; margin: 0 0 5px 0; font-weight: 700; }
@@ -90,37 +91,13 @@
             height: 14px;
         }
 
-        /* ESTRUTURA DO WORKSPACE DINÂMICO */
-        #workspace.split-view {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 25px;
-            align-items: start;
-        }
-        #workspace.split-view .table-container {
-            max-height: 560px;
-            overflow-y: auto;
-            overflow-x: auto;
-        }
-
-        #workspace.full-view {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-        #workspace.full-view .table-container {
-            max-height: none;
-            overflow-y: visible;
-            overflow-x: auto;
-        }
-
         /* BOX DO GRÁFICO */
         .chart-box {
             border: 1px solid var(--border-light);
             border-radius: 6px;
             background-color: #fdfdfd;
             padding: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             height: 320px;
             position: relative;
         }
@@ -158,17 +135,62 @@
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
         
         #error-banner { display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px; }
+
+        /* ==========================================================
+           REGRAS DE LAYOUT DINÂMICO GRID (DESKTOP FORMAT MATCH)
+           ========================================================== */
+        
+        /* 1) MODO PADRÃO DIVIDIDO (4 SEMANAS) */
+        .container.split-mode {
+            display: grid;
+            grid-template-columns: 52% 45%;
+            grid-template-areas:
+                "head head"
+                "filters filters"
+                "table kpi"
+                "table chart"
+                "table search";
+            gap: 20px;
+        }
+        .container.split-mode header { grid-area: head; }
+        .container.split-mode .filter-checkbox-container { grid-area: filters; margin-bottom: 0; }
+        .container.split-mode .table-container { 
+            grid-area: table; 
+            max-height: calc(100vh - 170px); 
+            overflow-y: auto; 
+            overflow-x: auto; 
+        }
+        .container.split-mode .kpi-container { grid-area: kpi; margin-bottom: 0; }
+        .container.split-mode .chart-box { grid-area: chart; margin-bottom: 0; height: 350px; }
+        .container.split-mode .search-container { grid-area: search; margin-bottom: 0; }
+
+        /* 2) MODO RETORNO (STACKED/CASCATA PARA OUTROS PERÍODOS) */
+        .container.stacked-mode {
+            display: flex;
+            flex-direction: column;
+        }
+        .container.stacked-mode .table-container {
+            max-height: none;
+            overflow: visible;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="container split-mode">
     <div id="error-banner"></div>
 
     <header>
         <h1 id="report-date">Relatório Diário de Evolução</h1>
         <p class="subtitle">Acompanhamento contínuo do ranking e comportamento histórico das faixas.</p>
     </header>
+
+    <div class="kpi-container" id="kpi-wrapper">
+        <div class="kpi-card kpi-absurda"><div class="kpi-title">🚨 Explosões (+400)</div><div class="kpi-value" id="count-absurda">0</div></div>
+        <div class="kpi-card kpi-grandes"><div class="kpi-title">🔥 Grandes Saltos</div><div class="kpi-value" id="count-grandes">0</div></div>
+        <div class="kpi-card kpi-moderadas"><div class="kpi-title">📈 Significativas</div><div class="kpi-value" id="count-moderadas">0</div></div>
+        <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
+    </div>
 
     <div class="filter-checkbox-container">
         <span class="filter-title">Filtrar por Estado:</span>
@@ -180,52 +202,37 @@
         <label class="filter-label"><input type="checkbox" id="chk-novas" onchange="aoClicarIndividual()"> 🚀 Novas Entradas</label>
     </div>
 
+    <div class="chart-box">
+        <div class="period-selector" id="menu-periodo">
+            <span onclick="filtrarPeriodo(0, this)">Tudo</span>
+            <span class="current" onclick="filtrarPeriodo(28, this)">4 Semanas</span>
+            <span onclick="filtrarPeriodo(90, this)">3 Meses</span>
+            <span onclick="filtrarPeriodo(180, this)">6 Meses</span>
+        </div>
+        <div style="position: relative; height: calc(100% - 25px); width: 100%;">
+            <canvas id="historicoChart" style="display:none;"></canvas>
+            <div id="msg-inicial" class="no-data">📊 Selecione uma música na listagem corrida abaixo para analisar o histórico de posições.</div>
+        </div>
+    </div>
+
     <div class="search-container">
         <span style="font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 9px;">Busca Direta:</span>
         <input type="text" id="musica-input" class="search-input" list="musicas-list" placeholder="Procurar outra faixa do histórico...">
         <datalist id="musicas-list"></datalist>
     </div>
 
-    <div id="workspace" class="split-view">
-        
-        <div class="left-panel">
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th style="width: 70px;">Posição</th>
-                            <th>Título da Música</th>
-                            <th>Artista</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody-corrido">
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="right-panel">
-            <div class="kpi-container" id="kpi-wrapper">
-                <div class="kpi-card kpi-absurda"><div class="kpi-title">🚨 Explosões (+400)</div><div class="kpi-value" id="count-absurda">0</div></div>
-                <div class="kpi-card kpi-grandes"><div class="kpi-title">🔥 Grandes Saltos</div><div class="kpi-value" id="count-grandes">0</div></div>
-                <div class="kpi-card kpi-moderadas"><div class="kpi-title">📈 Significativas</div><div class="kpi-value" id="count-moderadas">0</div></div>
-                <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
-            </div>
-
-            <div class="chart-box">
-                <div class="period-selector" id="menu-periodo">
-                    <span onclick="filtrarPeriodo(0, this)">Tudo</span>
-                    <span class="current" onclick="filtrarPeriodo(28, this)">4 Semanas</span>
-                    <span onclick="filtrarPeriodo(90, this)">3 Meses</span>
-                    <span onclick="filtrarPeriodo(180, this)">6 Meses</span>
-                </div>
-                <div style="position: relative; height: calc(100% - 25px); width: 100%;">
-                    <canvas id="historicoChart" style="display:none;"></canvas>
-                    <div id="msg-inicial" class="no-data">📊 Selecione uma música na listagem corrida abaixo para analisar o histórico de posições.</div>
-                </div>
-            </div>
-        </div>
-
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 70px;">Posição</th>
+                    <th>Título da Música</th>
+                    <th>Artista</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-corrido">
+                </tbody>
+        </table>
     </div>
 </div>
 
@@ -233,7 +240,7 @@
     let dadosGlobais = null;
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
-    let diasFiltroAtivo = 28; // 4 Semanas definido como padrão inicial ativo
+    let diasFiltroAtivo = 28; // AJUSTE COMPORTAMENTO: Agora inicia em 4 semanas por default
     const categoriesLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
 
     fetch('dados_dashboard.json')
@@ -387,12 +394,14 @@
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
         
-        // INTERRUPTOR DINÂMICO DE ESTRUTURA VISUAL DE ACORDO COM O PERÍODO
-        const workspace = document.getElementById('workspace');
+        // INTERRUPTOR DE LAYOUT VIA JS COM BASE NO PERÍODO SELECIONADO
+        const container = document.querySelector('.container');
         if (dias === 28) {
-            workspace.className = "split-view";
+            container.classList.remove('stacked-mode');
+            container.classList.add('split-mode');
         } else {
-            workspace.className = "full-view";
+            container.classList.remove('split-mode');
+            container.classList.add('stacked-mode');
         }
 
         if (faixaSelecionadaAtualmente) gerarGrafico();
