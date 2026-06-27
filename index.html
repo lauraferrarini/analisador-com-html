@@ -38,61 +38,120 @@
         header h1 { font-size: 22px; margin: 0 0 5px 0; font-weight: 700; }
         p.subtitle { font-size: 11px; color: var(--text-muted); margin: 0 0 20px 0; }
 
-        /* BOX DO GRÁFICO FIXO NO TOPO DO PAINEL */
+        /* CARDS DE RESUMO DO RELATÓRIO (ESTILO PLANILHA) */
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .kpi-card {
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border-light);
+            text-align: left;
+        }
+        .kpi-title { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 5px; }
+        .kpi-value { font-size: 20px; font-weight: 800; margin: 0; }
+        
+        .kpi-absurda { background-color: #fadbd8; color: #c0392b; border-color: #f5b7b1; }
+        .kpi-grandes { background-color: #f3e5f5; color: #7b1fa2; border-color: #e1bee7; }
+        .kpi-moderadas { background-color: #e3f2fd; color: #1976d2; border-color: #bbdefb; }
+        .kpi-novas { background-color: #eafaf1; color: #27ae60; border-color: #d4efdf; }
+
+        /* BOX DO GRÁFICO E SEU FILTRO DE PERÍODO */
         .chart-box {
             border: 1px solid var(--border-light);
             border-radius: 6px;
             background-color: #fdfdfd;
             padding: 15px;
             margin-bottom: 30px;
-            height: 260px;
+            height: 280px;
             position: relative;
         }
-        .no-data { text-align: center; color: var(--text-muted); font-style: italic; pt: 100px; padding-top: 100px; }
+        .no-data { text-align: center; color: var(--text-muted); font-style: italic; padding-top: 110px; }
 
-        /* SELEÇÃO E BUSCA SECUNDÁRIA */
+        .period-selector { 
+            font-size: 11px; 
+            margin-bottom: 12px; 
+            text-align: right;
+            display: none; /* Ativado via JS apenas quando há gráfico ativo */
+        }
+        .period-selector span { margin-left: 15px; color: var(--text-muted); cursor: pointer; font-weight: 500; transition: color 0.2s; }
+        .period-selector span:hover { color: #000; }
+        .period-selector .current { color: #000; font-weight: 800; text-decoration: underline; }
+
+        /* BUSCA RÁPIDA */
         .search-container { margin-bottom: 25px; display: flex; gap: 10px; align-items: center; }
         .search-input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 11px; font-family: inherit; width: 250px; }
         .search-input:focus { border-color: #999; outline: none; }
 
-        /* SEÇÕES DO RELATÓRIO */
+        /* TABELAS DO RELATÓRIO */
         .report-section { margin-top: 25px; display: none; }
         .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px; margin: 0; border-radius: 4px 4px 0 0; }
         
-        /* CORES DAS SEÇÕES BASEADAS NO SEU EM ALTA */
         .title-absurda { background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; }
         .title-grandes { background-color: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
         .title-moderadas { background-color: #e3f2fd; color: #1976d2; border: 1px solid #bbdefb; }
         .title-pequenas { background-color: #f0f0f0; color: #555; border: 1px solid #e0e0e0; }
         .title-novas { background-color: #eafaf1; color: #27ae60; border: 1px solid #d4efdf; }
 
-        /* ESTILIZAÇÃO DAS TABELAS PLANILHA */
         table { width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid var(--border-light); border-top: none; }
         th { color: #888; font-weight: 600; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px; padding: 10px; border-bottom: 1px solid var(--border-light); background: #fafafa; }
         td { padding: 9px 10px; border-bottom: 1px solid var(--border-light); text-align: left; }
         
-        /* ITENS INTERATIVOS CLICÁVEIS */
         .clickable-row { cursor: pointer; transition: background 0.15s; }
-        .clickable-row:hover { background-color: #fcfde7 !important; } /* Realce sutil usando o seu amarelo */
+        .clickable-row:hover { background-color: #fcfde7 !important; }
         .clickable-row.active-track { background-color: #f9fbc5; font-weight: 600; }
 
-        .text-right { text-align: right; }
         .text-center { text-align: center; }
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
         .badge-subida { font-weight: 700; color: #27ae60; }
+
+        #error-banner {
+            display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1;
+            padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px;
+        }
     </style>
+    <script>
+        window.onerror = function(msg, url, line) {
+            const banner = document.getElementById('error-banner');
+            if (banner) {
+                banner.style.display = 'block';
+                banner.innerHTML = `💥 Erro interno detectado: ${msg} <br><small>Linha: ${line} | Arquivo: ${url}</small>`;
+            }
+            return false;
+        };
+    </script>
 </head>
 <body>
 
 <div class="container">
+    <div id="error-banner"></div>
+
     <header>
         <h1 id="report-date">Relatório Diário de Evolução</h1>
-        <p class="subtitle">Clique sobre qualquer faixa das tabelas abaixo para carregar o gráfico histórico de performance.</p>
+        <p class="subtitle">Análise visual de movimentações e comportamento histórico do ranking.</p>
     </header>
 
+    <div class="kpi-container" id="kpi-wrapper">
+        <div class="kpi-card kpi-absurda"><div class="kpi-title">🚨 Explosões (+400)</div><div class="kpi-value" id="count-absurda">0</div></div>
+        <div class="kpi-card kpi-grandes"><div class="kpi-title">🔥 Grandes Saltos</div><div class="kpi-value" id="count-grandes">0</div></div>
+        <div class="kpi-card kpi-moderadas"><div class="kpi-title">📈 Significativas</div><div class="kpi-value" id="count-moderadas">0</div></div>
+        <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
+    </div>
+
     <div class="chart-box">
-        <canvas id="historicoChart" style="display:none;"></canvas>
-        <div id="msg-inicial" class="no-data">📊 Selecione uma música nas listagens abaixo para analisar o histórico de posições.</div>
+        <div class="period-selector" id="menu-periodo">
+            <span class="current" onclick="filtrarPeriodo(0, this)">Tudo</span>
+            <span onclick="filtrarPeriodo(28, this)">4 Semanas</span>
+            <span onclick="filtrarPeriodo(90, this)">3 Meses</span>
+            <span onclick="filtrarPeriodo(180, this)">6 Meses</span>
+        </div>
+        <div style="position: relative; height: calc(100% - 25px); width: 100%;">
+            <canvas id="historicoChart" style="display:none;"></canvas>
+            <div id="msg-inicial" class="no-data">📊 Selecione uma música nas listagens abaixo para analisar o histórico de posições.</div>
+        </div>
     </div>
 
     <div class="search-container">
@@ -107,14 +166,21 @@
 <script>
     let dadosGlobais = null;
     let chartInstance = null;
+    let faixaSelecionadaAtualmente = null;
+    let diasFiltroAtivo = 0; // 0 significa histórico completo ("Tudo")
 
-    // Carrega o banco consolidado do repositório
     fetch('dados_dashboard.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error(`Arquivo 'dados_dashboard.json' ausente. Aguarde a primeira varredura da automação.`);
+            return response.json();
+        })
         .then(data => {
             dadosGlobais = data;
-            
-            // Popula busca manual
+            if (!data.datas || data.datas.length === 0) {
+                document.getElementById('msg-inicial').innerText = "ℹ️ O banco de dados está vazio. Aguarde mais coletas para habilitar o sistema.";
+                return;
+            }
+
             const datalist = document.getElementById('musicas-list');
             Object.keys(data.musicas).sort().forEach(m => {
                 let opt = document.createElement('option');
@@ -122,29 +188,25 @@
                 datalist.appendChild(opt);
             });
 
-            // Constrói o relatório interativo na tela
             processarEMontarRelatorio();
         })
         .catch(err => {
-            console.error(err);
-            document.getElementById('msg-inicial').innerText = "Erro ao carregar dados. Certifique-se de que a automação rodou com sucesso.";
+            const banner = document.getElementById('error-banner');
+            banner.style.display = 'block';
+            banner.innerHTML = `⚠️ Falha de inicialização: ${err.message}`;
         });
 
     function processarEMontarRelatorio() {
         const datas = dadosGlobais.datas;
-        if(datas.length === 0) return;
-
         const hoje = datas[datas.length - 1];
         const ontem = datas.length > 1 ? datas[datas.length - 2] : null;
 
-        // Atualiza cabeçalho com data corrente
         document.getElementById('report-date').innerText = `Relatório Diário — ${hoje.split('-').reverse().join('/')}`;
 
         let absurdas = [], grandes = [], moderadas = [], pequenas = [], novas = [];
 
-        // Varre e classifica dinamicamente as movimentações do dia
         Object.entries(dadosGlobais.musicas).forEach(([nomeChave, historico]) => {
-            if (!historico[hoje]) return; // Não está no top hoje
+            if (!historico[hoje]) return;
 
             let posAtual = historico[hoje];
             let detalhe = { nome: nomeChave, atual: posAtual };
@@ -153,7 +215,7 @@
                 novas.push(detalhe);
             } else {
                 let posAnterior = historico[ontem];
-                let ganho = posAnterior - posAtual; // Positivo significa que subiu de posição
+                let ganho = posAnterior - posAtual;
                 detalhe.ganho = ganho;
                 detalhe.anterior = posAnterior;
 
@@ -164,12 +226,16 @@
             }
         });
 
-        // Ordenações internas por maior impacto
         const ordenar = (arr) => arr.sort((a,b) => (b.ganho || 0) - (a.ganho || 0));
         ordenar(absurdas); ordenar(grandes); ordenar(moderadas); ordenar(pequenas);
         novas.sort((a,b) => a.atual - b.atual);
 
-        // Montagem das estruturas de tabela HTML
+        // Alimenta os contadores dos Cards informativos (Visual do Relatório)
+        document.getElementById('count-absurda').innerText = absurdas.length;
+        document.getElementById('count-grandes').innerText = grandes.length;
+        document.getElementById('count-moderadas').innerText = moderadas.length;
+        document.getElementById('count-novas').innerText = novas.length;
+
         let wrapper = document.getElementById('report-tables-wrapper');
         wrapper.innerHTML = '';
 
@@ -191,15 +257,16 @@
                 <tr>
                     <th style="width: 80px;" class="text-center">Posição</th>
                     <th>Nome da Faixa / Artista</th>
-                    ${exibirGanho ? `<th style="width: 120px;" class="text-center">Posição Anterior</th>` : ''}
+                    ${exibirGanho ? `<th style="width: 120px;" class="text-center">Anterior</th>` : ''}
                     ${exibirGanho ? `<th style="width: 120px;" class="text-center">Evolução</th>` : ''}
                 </tr>
             </thead>
             <tbody>`;
 
         dados.forEach(item => {
+            let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
             html += `
-            <tr class="clickable-row" onclick="selecionarFaixa('${item.nome.replace(/'/g, "\\'")}', this)">
+            <tr class="clickable-row" onclick="selecionarFaixa('${nomeEscapado}', this)">
                 <td class="text-center"><span class="badge-pos">${item.atual}º</span></td>
                 <td style="font-weight: 500;">${item.nome}</td>
                 ${exibirGanho ? `<td class="text-center" style="color: #666;">${item.anterior}º</td>` : ''}
@@ -212,18 +279,31 @@
         return section;
     }
 
-    // Gerenciador de cliques nas linhas das tabelas ou caixa de busca
     function selecionarFaixa(nomeMusica, elementoLinha) {
-        // Remove destaque de qualquer outra linha anterior
+        faixaSelecionadaAtualmente = nomeMusica;
+        
         document.querySelectorAll('.clickable-row').forEach(el => el.classList.remove('active-track'));
         if(elementoLinha) elementoLinha.classList.add('active-track');
 
         document.getElementById('msg-inicial').style.display = 'none';
+        document.getElementById('menu-periodo').style.display = 'block';
         document.getElementById('historicoChart').style.display = 'block';
-        gerarGrafico(nomeMusica);
+        
+        gerarGrafico();
     }
 
-    // Acoplamento com a caixa de busca manual
+    // Gerenciador do Filtro de Tempo (4 semanas, 3 meses, etc)
+    function filtrarPeriodo(dias, elementoClicado) {
+        diasFiltroAtivo = dias;
+        
+        document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
+        elementoClicado.classList.add('current');
+        
+        if (faixaSelecionadaAtualmente) {
+            gerarGrafico();
+        }
+    }
+
     document.getElementById('musica-input').addEventListener('input', function(e) {
         let val = e.target.value;
         if (dadosGlobais && dadosGlobais.musicas[val]) {
@@ -231,10 +311,16 @@
         }
     });
 
-    function gerarGrafico(nomeMusica) {
-        const datas = dadosGlobais.datas;
-        const historicoPosis = dadosGlobais.musicas[nomeMusica];
-        const pontos = datas.map(data => historicoPosis[data] || null);
+    function gerarGrafico() {
+        let datas = dadosGlobais.datas;
+        const historicoPosis = dadosGlobais.musicas[faixaSelecionadaAtualmente];
+        let pontos = datas.map(data => historicoPosis[data] || null);
+
+        // Aplica o filtro de recorte de tempo dinamicamente caso ativo
+        if (diasFiltroAtivo > 0) {
+            datas = datas.slice(-diasFiltroAtivo);
+            pontos = pontos.slice(-diasFiltroAtivo);
+        }
 
         if (chartInstance) { chartInstance.destroy(); }
 
@@ -244,7 +330,7 @@
             data: {
                 labels: datas.map(d => d.split('-').reverse().join('/')),
                 datasets: [{
-                    label: `Histórico de Ranking: ${nomeMusica}`,
+                    label: `Histórico de Posição`,
                     data: pontos,
                     borderColor: '#1a1a1a',
                     backgroundColor: 'transparent',
@@ -253,7 +339,7 @@
                     pointBorderColor: '#1a1a1a',
                     pointBorderWidth: 1.5,
                     pointRadius: 4,
-                    spanGaps: true
+                    spanGaps: true // Permite que a linha continue se a música sumir do top 1000 por uns dias
                 }]
             },
             options: {
