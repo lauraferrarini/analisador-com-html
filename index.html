@@ -38,7 +38,7 @@
         header h1 { font-size: 22px; margin: 0 0 5px 0; font-weight: 700; }
         p.subtitle { font-size: 11px; color: var(--text-muted); margin: 0 0 20px 0; }
 
-        /* CARDS DE RESUMO DO RELATÓRIO (ESTILO PLANILHA) */
+        /* CARDS DE RESUMO DO RELATÓRIO */
         .kpi-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -59,7 +59,16 @@
         .kpi-moderadas { background-color: #e3f2fd; color: #1976d2; border-color: #bbdefb; }
         .kpi-novas { background-color: #eafaf1; color: #27ae60; border-color: #d4efdf; }
 
-        /* BOX DO GRÁFICO E SEU FILTRO DE PERÍODO */
+        /* MENUS DE NAVEGAÇÃO / FILTROS ESTILO PLANILHA */
+        nav {
+            background-color: #f9f9f9; padding: 10px 15px; border-radius: 4px;
+            display: inline-block; border: 1px solid var(--border-light); margin-bottom: 25px;
+        }
+        .nav-btn { color: var(--text-muted); margin: 0 8px; font-weight: 500; cursor: pointer; transition: color 0.2s; font-size: 11px; }
+        .nav-btn:hover { color: #000; }
+        .nav-btn.active { color: #000; font-weight: 800; text-decoration: underline; }
+
+        /* BOX DO GRÁFICO FIXED SCALE */
         .chart-box {
             border: 1px solid var(--border-light);
             border-radius: 6px;
@@ -75,7 +84,7 @@
             font-size: 11px; 
             margin-bottom: 12px; 
             text-align: right;
-            display: none; /* Ativado via JS apenas quando há gráfico ativo */
+            display: none; 
         }
         .period-selector span { margin-left: 15px; color: var(--text-muted); cursor: pointer; font-weight: 500; transition: color 0.2s; }
         .period-selector span:hover { color: #000; }
@@ -87,7 +96,7 @@
         .search-input:focus { border-color: #999; outline: none; }
 
         /* TABELAS DO RELATÓRIO */
-        .report-section { margin-top: 25px; display: none; }
+        .report-section { margin-top: 5px; margin-bottom: 25px; }
         .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px; margin: 0; border-radius: 4px 4px 0 0; }
         
         .title-absurda { background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; }
@@ -96,7 +105,7 @@
         .title-pequenas { background-color: #f0f0f0; color: #555; border: 1px solid #e0e0e0; }
         .title-novas { background-color: #eafaf1; color: #27ae60; border: 1px solid #d4efdf; }
 
-        table { width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid var(--border-light); border-top: none; }
+        table { width: 100%; border-collapse: collapse; border: 1px solid var(--border-light); border-top: none; }
         th { color: #888; font-weight: 600; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px; padding: 10px; border-bottom: 1px solid var(--border-light); background: #fafafa; }
         td { padding: 9px 10px; border-bottom: 1px solid var(--border-light); text-align: left; }
         
@@ -113,16 +122,6 @@
             padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px;
         }
     </style>
-    <script>
-        window.onerror = function(msg, url, line) {
-            const banner = document.getElementById('error-banner');
-            if (banner) {
-                banner.style.display = 'block';
-                banner.innerHTML = `💥 Erro interno detectado: ${msg} <br><small>Linha: ${line} | Arquivo: ${url}</small>`;
-            }
-            return false;
-        };
-    </script>
 </head>
 <body>
 
@@ -140,6 +139,15 @@
         <div class="kpi-card kpi-moderadas"><div class="kpi-title">📈 Significativas</div><div class="kpi-value" id="count-moderadas">0</div></div>
         <div class="kpi-card kpi-novas"><div class="kpi-title">🚀 Novas Entradas</div><div class="kpi-value" id="count-novas">0</div></div>
     </div>
+
+    <nav id="nav-sections">
+        <span class="nav-btn active" onclick="filtrarSecao('todos', this)">Todos</span> |
+        <span class="nav-btn" onclick="filtrarSecao('absurda', this)">🚨 Explosões</span> |
+        <span class="nav-btn" onclick="filtrarSecao('grandes', this)">🔥 Grandes Saltos</span> |
+        <span class="nav-btn" onclick="filtrarSecao('moderadas', this)">📈 Significativas</span> |
+        <span class="nav-btn" onclick="filtrarSecao('pequenas', this)">🌱 Pequenas Subidas</span> |
+        <span class="nav-btn" onclick="filtrarSecao('novas', this)">🚀 Novas Entradas</span>
+    </nav>
 
     <div class="chart-box">
         <div class="period-selector" id="menu-periodo">
@@ -167,17 +175,17 @@
     let dadosGlobais = null;
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
-    let diasFiltroAtivo = 0; // 0 significa histórico completo ("Tudo")
+    let diasFiltroAtivo = 0; 
 
     fetch('dados_dashboard.json')
         .then(response => {
-            if (!response.ok) throw new Error(`Arquivo 'dados_dashboard.json' ausente. Aguarde a primeira varredura da automação.`);
+            if (!response.ok) throw new Error(`Arquivo 'dados_dashboard.json' ausente. Aguarde a primeira varredura.`);
             return response.json();
         })
         .then(data => {
             dadosGlobais = data;
             if (!data.datas || data.datas.length === 0) {
-                document.getElementById('msg-inicial').innerText = "ℹ️ O banco de dados está vazio. Aguarde mais coletas para habilitar o sistema.";
+                document.getElementById('msg-inicial').innerText = "ℹ️ O banco de dados está vazio.";
                 return;
             }
 
@@ -230,7 +238,6 @@
         ordenar(absurdas); ordenar(grandes); ordenar(moderadas); ordenar(pequenas);
         novas.sort((a,b) => a.atual - b.atual);
 
-        // Alimenta os contadores dos Cards informativos (Visual do Relatório)
         document.getElementById('count-absurda').innerText = absurdas.length;
         document.getElementById('count-grandes').innerText = grandes.length;
         document.getElementById('count-moderadas').innerText = moderadas.length;
@@ -249,26 +256,35 @@
     function criarTabelaHTML(titulo, dados, classeEstilo, exibirGanho) {
         let section = document.createElement('div');
         section.className = "report-section";
+        section.id = `sec-${classeEstilo}`;
         section.style.display = dados.length > 0 ? "block" : "none";
 
         let html = `<h2 class="section-title title-${classeEstilo}">${titulo}</h2>`;
         html += `<table>
             <thead>
                 <tr>
-                    <th style="width: 80px;" class="text-center">Posição</th>
-                    <th>Nome da Faixa / Artista</th>
-                    ${exibirGanho ? `<th style="width: 120px;" class="text-center">Anterior</th>` : ''}
-                    ${exibirGanho ? `<th style="width: 120px;" class="text-center">Evolução</th>` : ''}
+                    <th style="width: 70px;" class="text-center">Posição</th>
+                    <th>Título da Música</th>
+                    <th>Artista</th>
+                    ${exibirGanho ? `<th style="width: 100px;" class="text-center">Anterior</th>` : ''}
+                    ${exibirGanho ? `<th style="width: 100px;" class="text-center">Evolução</th>` : ''}
                 </tr>
             </thead>
             <tbody>`;
 
         dados.forEach(item => {
             let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            
+            // SEPARAÇÃO CIRÚRGICA DE TÍTULO E ARTISTA
+            let partes = item.nome.split(" - ");
+            let tituloMusica = partes[0] || "Desconhecido";
+            let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
+
             html += `
             <tr class="clickable-row" onclick="selecionarFaixa('${nomeEscapado}', this)">
                 <td class="text-center"><span class="badge-pos">${item.atual}º</span></td>
-                <td style="font-weight: 500;">${item.nome}</td>
+                <td style="font-weight: 600; color: #000;">${tituloMusica}</td>
+                <td style="color: #555;">${artistaMusica}</td>
                 ${exibirGanho ? `<td class="text-center" style="color: #666;">${item.anterior}º</td>` : ''}
                 ${exibirGanho ? `<td class="text-center badge-subida">🔼 +${item.ganho}</td>` : ''}
             </tr>`;
@@ -277,6 +293,29 @@
         html += `</tbody></table>`;
         section.innerHTML = html;
         return section;
+    }
+
+    // CONTROLADOR DOS FILTROS DO TOPO (EXCLUSIVIDADE DE VISUALIZAÇÃO)
+    function filtrarSecao(secao, elementoClicado) {
+        document.querySelectorAll('#nav-sections .nav-btn').forEach(el => el.classList.remove('active'));
+        elementoClicado.classList.add('active');
+
+        const todasSecoes = document.querySelectorAll('.report-section');
+        
+        todasSecoes.forEach(sec => {
+            // Se for 'todos', mostra as que têm conteúdo. Se for secao específica, isola.
+            if(secao === 'todos') {
+                let tabela = sec.querySelector('tbody');
+                sec.style.display = (tabela && tabela.children.length > 0) ? "block" : "none";
+            } else {
+                if(sec.id === `sec-${secao}`) {
+                    let tabela = sec.querySelector('tbody');
+                    sec.style.display = (tabela && tabela.children.length > 0) ? "block" : "none";
+                } else {
+                    sec.style.display = "none";
+                }
+            }
+        });
     }
 
     function selecionarFaixa(nomeMusica, elementoLinha) {
@@ -292,23 +331,16 @@
         gerarGrafico();
     }
 
-    // Gerenciador do Filtro de Tempo (4 semanas, 3 meses, etc)
     function filtrarPeriodo(dias, elementoClicado) {
         diasFiltroAtivo = dias;
-        
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        
-        if (faixaSelecionadaAtualmente) {
-            gerarGrafico();
-        }
+        if (faixaSelecionadaAtualmente) gerarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
         let val = e.target.value;
-        if (dadosGlobais && dadosGlobais.musicas[val]) {
-            selecionarFaixa(val, null);
-        }
+        if (dadosGlobais && dadosGlobais.musicas[val]) selecionarFaixa(val, null);
     });
 
     function gerarGrafico() {
@@ -316,7 +348,6 @@
         const historicoPosis = dadosGlobais.musicas[faixaSelecionadaAtualmente];
         let pontos = datas.map(data => historicoPosis[data] || null);
 
-        // Aplica o filtro de recorte de tempo dinamicamente caso ativo
         if (diasFiltroAtivo > 0) {
             datas = datas.slice(-diasFiltroAtivo);
             pontos = pontos.slice(-diasFiltroAtivo);
@@ -339,7 +370,7 @@
                     pointBorderColor: '#1a1a1a',
                     pointBorderWidth: 1.5,
                     pointRadius: 4,
-                    spanGaps: true // Permite que a linha continue se a música sumir do top 1000 por uns dias
+                    spanGaps: true
                 }]
             },
             options: {
@@ -350,8 +381,10 @@
                     y: {
                         reverse: true,
                         min: 1,
+                        max: 1000, // ESCALA FIXA OBRIGATÓRIA DE 1 A 1000
                         grid: { color: '#e0e0e0' },
-                        title: { display: true, text: 'POSIÇÃO', font: { size: 9, weight: 700 } }
+                        ticks: { stepSize: 100 }, // Quebras limpas de 100 em 100 posições
+                        title: { display: true, text: 'POSIÇÃO (TOP 1000)', font: { size: 9, weight: 700 } }
                     },
                     x: { grid: { display: false } }
                 }
