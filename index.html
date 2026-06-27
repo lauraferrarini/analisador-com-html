@@ -155,12 +155,12 @@
 
     <div class="filter-checkbox-container">
         <span class="filter-title">Filtrar por Estado:</span>
-        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoMudarFiltroTodas()"> [TODAS]</label>
-        <label class="filter-label"><input type="checkbox" id="chk-absurda" onchange="aoMudarFiltroIndividual()"> 🚨 Explosões</label>
-        <label class="filter-label"><input type="checkbox" id="chk-grandes" onchange="aoMudarFiltroIndividual()"> 🔥 Grandes Saltos</label>
-        <label class="filter-label"><input type="checkbox" id="chk-moderadas" onchange="aoMudarFiltroIndividual()"> 📈 Significativas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-pequenas" onchange="aoMudarFiltroIndividual()"> 🌱 Pequenas Subidas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-novas" onchange="aoMudarFiltroIndividual()"> 🚀 Novas Entradas</label>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="aoClicarTodas()"> [TODAS AS MÚSICAS]</label>
+        <label class="filter-label"><input type="checkbox" id="chk-absurda" onchange="aoClicarIndividual()"> 🚨 Explosões</label>
+        <label class="filter-label"><input type="checkbox" id="chk-grandes" onchange="aoClicarIndividual()"> 🔥 Grandes Saltos</label>
+        <label class="filter-label"><input type="checkbox" id="chk-moderadas" onchange="aoClicarIndividual()"> 📈 Significativas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-pequenas" onchange="aoClicarIndividual()"> 🌱 Pequenas Subidas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-novas" onchange="aoClicarIndividual()"> 🚀 Novas Entradas</label>
     </div>
 
     <div class="chart-box">
@@ -202,6 +202,7 @@
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
     let diasFiltroAtivo = 0; 
+    const categoriasLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
 
     fetch('dados_dashboard.json')
         .then(response => {
@@ -293,37 +294,36 @@
         aplicarFiltrosNaTela();
     }
 
-    // CONTROLE DOS INPUTS DE FILTRO
-    function aoMudarFiltroTodas() {
-        const todasAtivas = document.getElementById('chk-todas').checked;
-        if(todasAtivas) {
-            // Se marcou Todas, limpa a seleção das caixas individuais para não gerar conflito visual
-            ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'].forEach(cat => {
+    // GESTÃO DOS CHECKBOXES INTERATIVOS EXCLUSIVOS
+    function aoClicarTodas() {
+        if (document.getElementById('chk-todas').checked) {
+            categoriasLista.forEach(cat => {
                 document.getElementById(`chk-${cat}`).checked = false;
             });
         }
         aplicarFiltrosNaTela();
     }
 
-    function aoMudarFiltroIndividual() {
-        // Se o usuário clicar em qualquer estado específico, desliga o botão master "Todas" imediatamente
+    function aoClicarIndividual() {
         document.getElementById('chk-todas').checked = false;
         aplicarFiltrosNaTela();
     }
 
     function aplicarFiltrosNaTela() {
-        const exibirTodas = document.getElementById('chk-todas').checked;
+        const todasAsMusicas = document.getElementById('chk-todas').checked;
         const rows = document.querySelectorAll('#tbody-corrido .clickable-row');
 
         rows.forEach(row => {
-            if (exibirTodas) {
+            if (todasAsMusicas) {
                 row.style.display = "";
             } else {
                 const cat = row.getAttribute('data-categoria');
-                const box = document.getElementById(`chk-${cat}`);
-                // Se for categoria 'normal' (estável/queda) e "Todas" tá desligado, ela some por padrão
-                const boxMarcado = box ? box.checked : false;
-                row.style.display = boxMarcado ? "" : "none";
+                if (cat === 'normal') {
+                    row.style.display = "none";
+                } else {
+                    const boxMarcado = document.getElementById(`chk-${cat}`).checked;
+                    row.style.display = boxMarcado ? "" : "none";
+                }
             }
         });
     }
@@ -343,7 +343,7 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        if (faixaSelecionadaAtualmente) generarGrafico();
+        if (faixaSelecionadaAtualmente) gerarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
@@ -351,7 +351,7 @@
         if (dadosGlobais && dadosGlobais.musicas[val]) selecionarFaixa(val, null);
     });
 
-    function generarGrafico() {
+    function gerarGrafico() {
         let datas = dadosGlobais.datas;
         const historicoPosis = dadosGlobais.musicas[faixaSelecionadaAtualmente];
         let pontos = datas.map(data => historicoPosis[data] || null);
