@@ -59,7 +59,7 @@
         .kpi-moderadas { background-color: #e3f2fd; color: #1976d2; border-color: #bbdefb; }
         .kpi-novas { background-color: #eafaf1; color: #27ae60; border-color: #d4efdf; }
 
-        /* CONTEXTO DE FILTROS POR CHECKBOX */
+        /* FILTROS POR CHECKBOX */
         .filter-checkbox-container {
             background-color: #f9f9f9; 
             padding: 12px 15px; 
@@ -117,39 +117,33 @@
         .search-input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 11px; font-family: inherit; width: 250px; }
         .search-input:focus { border-color: #999; outline: none; }
 
-        /* TABELAS DO RELATÓRIO ESTILO GRADE COMPLETA */
-        .report-section { margin-top: 5px; margin-bottom: 25px; }
-        .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px; margin: 0; border: 1px solid var(--border-light); border-bottom: none; border-radius: 4px 4px 0 0; }
-        
-        .title-absurda { background-color: #fadbd8; color: #c0392b; border-color: #f5b7b1; }
-        .title-grandes { background-color: #f3e5f5; color: #7b1fa2; border-color: #e1bee7; }
-        .title-moderadas { background-color: #e3f2fd; color: #1976d2; border-color: #bbdefb; }
-        .title-pequenas { background-color: #f0f0f0; color: #555; border-color: #e0e0e0; }
-        .title-novas { background-color: #eafaf1; color: #27ae60; border-color: #d4efdf; }
-
-        table { width: 100%; border-collapse: collapse; border: 1px solid var(--border-light); }
-        
+        /* ESTILIZAÇÃO DA TABELA CORRIDA ÚNICA */
+        .table-container { width: 100%; border: 1px solid var(--border-light); border-radius: 4px; overflow: hidden; background: var(--white); }
+        table { width: 100%; border-collapse: collapse; }
         th { 
             color: #666; font-weight: 600; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px; 
             padding: 10px; border: 1px solid var(--border-light); background: #fafafa; text-align: center;
         }
-        
-        td { padding: 9px 10px; border: 1px solid var(--border-light); text-align: center; }
-        
-        /* Ajuste de alinhamento das colunas de texto */
+        td { padding: 9px 10px; border: 1px solid var(--border-light); text-align: center; vertical-align: middle; }
         td.text-left { text-align: left !important; }
 
         .clickable-row { cursor: pointer; transition: background 0.15s; }
         .clickable-row:hover { background-color: #fcfde7 !important; }
         .clickable-row.active-track { background-color: #f9fbc5; font-weight: 600; }
 
-        .text-center { text-align: center; }
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
-        .badge-subida { font-weight: 700; color: #27ae60; }
+        
+        /* ESTILOS DOS BADGES DE ESTADO (COLUNA CENTRAL) */
+        .status-badge { display: inline-block; padding: 3px 6px; border-radius: 4px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+        .status-absurda { background-color: #fadbd8; color: #c0392b; }
+        .status-grandes { background-color: #f3e5f5; color: #7b1fa2; }
+        .status-moderadas { background-color: #e3f2fd; color: #1976d2; }
+        .status-pequenas { background-color: #f0f0f0; color: #555; }
+        .status-novas { background-color: #eafaf1; color: #27ae60; }
+        .status-normal { color: #aaa; font-weight: 500; }
 
-        #error-banner {
-            display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px;
-        }
+        .badge-subida { font-weight: 700; color: #27ae60; }
+        #error-banner { display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -159,7 +153,7 @@
 
     <header>
         <h1 id="report-date">Relatório Diário de Evolução</h1>
-        <p class="subtitle">Análise visual de movimentações e comportamento histórico do ranking.</p>
+        <p class="subtitle">Acompanhamento contínuo do ranking e comportamento histórico das faixas.</p>
     </header>
 
     <div class="kpi-container" id="kpi-wrapper">
@@ -170,12 +164,14 @@
     </div>
 
     <div class="filter-checkbox-container">
-        <span class="filter-title">Exibir na Lista:</span>
-        <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="atualizarFiltrosCheckbox()"> 🚨 Explosões</label>
-        <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="atualizarFiltrosCheckbox()"> 🔥 Grandes Saltos</label>
-        <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="atualizarFiltrosCheckbox()"> 📈 Significativas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-pequenas" checked onchange="atualizarFiltrosCheckbox()"> 🌱 Pequenas Subidas</label>
-        <label class="filter-label"><input type="checkbox" id="chk-novas" checked onchange="atualizarFiltrosCheckbox()"> 🚀 Novas Entradas</label>
+        <span class="filter-title">Exibir Estados:</span>
+        <label class="filter-label" style="color: #000; font-weight: 800;"><input type="checkbox" id="chk-todas" checked onchange="toggleTodasCheckbox()"> [TODAS]</label>
+        <label class="filter-label"><input type="checkbox" id="chk-absurda" checked onchange="aoMudarFiltroIndividual()"> 🚨 Explosões</label>
+        <label class="filter-label"><input type="checkbox" id="chk-grandes" checked onchange="aoMudarFiltroIndividual()"> 🔥 Grandes Saltos</label>
+        <label class="filter-label"><input type="checkbox" id="chk-moderadas" checked onchange="aoMudarFiltroIndividual()"> 📈 Significativas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-pequenas" checked onchange="aoMudarFiltroIndividual()"> 🌱 Pequenas Subidas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-novas" checked onchange="aoMudarFiltroIndividual()"> 🚀 Novas Entradas</label>
+        <label class="filter-label"><input type="checkbox" id="chk-normal" checked onchange="aoMudarFiltroIndividual()"> ➖ Estáveis / Quedas</label>
     </div>
 
     <div class="chart-box">
@@ -187,7 +183,7 @@
         </div>
         <div style="position: relative; height: calc(100% - 25px); width: 100%;">
             <canvas id="historicoChart" style="display:none;"></canvas>
-            <div id="msg-inicial" class="no-data">📊 Selecione uma música nas listagens abaixo para analisar o histórico de posições.</div>
+            <div id="msg-inicial" class="no-data">📊 Selecione uma música na listagem corrida abaixo para analisar o histórico de posições.</div>
         </div>
     </div>
 
@@ -197,7 +193,22 @@
         <datalist id="musicas-list"></datalist>
     </div>
 
-    <div id="report-tables-wrapper"></div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 60px;">Posição</th>
+                    <th style="width: 140px;">Estado</th>
+                    <th>Título da Música</th>
+                    <th>Artista</th>
+                    <th style="width: 90px;">Anterior</th>
+                    <th style="width: 90px;">Evolução</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-corrido">
+                </tbody>
+        </table>
+    </div>
 </div>
 
 <script>
@@ -205,18 +216,16 @@
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
     let diasFiltroAtivo = 0; 
+    const categoriasLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas', 'normal'];
 
     fetch('dados_dashboard.json')
         .then(response => {
-            if (!response.ok) throw new Error(`Arquivo 'dados_dashboard.json' ausente. Aguarde a primeira varredura.`);
+            if (!response.ok) throw new Error(`Arquivo 'dados_dashboard.json' ausente.`);
             return response.json();
         })
         .then(data => {
             dadosGlobais = data;
-            if (!data.datas || data.datas.length === 0) {
-                document.getElementById('msg-inicial').innerText = "ℹ️ O banco de dados está vazio.";
-                return;
-            }
+            if (!data.datas || data.datas.length === 0) return;
 
             const datalist = document.getElementById('musicas-list');
             Object.keys(data.musicas).sort().forEach(m => {
@@ -225,7 +234,7 @@
                 datalist.appendChild(opt);
             });
 
-            processarEMontarRelatorio();
+            processarEMontarTabelaCorrida();
         })
         .catch(err => {
             const banner = document.getElementById('error-banner');
@@ -233,132 +242,124 @@
             banner.innerHTML = `⚠️ Falha de inicialização: ${err.message}`;
         });
 
-    function processarEMontarRelatorio() {
+    function processarEMontarTabelaCorrida() {
         const datas = dadosGlobais.datas;
         const hoje = datas[datas.length - 1];
         const ontem = datas.length > 1 ? datas[datas.length - 2] : null;
 
         document.getElementById('report-date').innerText = `Relatório Diário — ${hoje.split('-').reverse().join('/')}`;
 
-        let absurdas = [], grandes = [], moderadas = [], pequenas = [], novas = [];
+        let listaGeral = [];
+        let cAbsurda = 0, cGrandes = 0, cModeradas = 0, cNovas = 0;
 
         Object.entries(dadosGlobais.musicas).forEach(([nomeChave, historico]) => {
-            if (!historico[hoje]) return;
+            if (!historico[hoje]) return; // Não está no top hoje, pula
 
             let posAtual = historico[hoje];
-            let detalhe = { nome: nomeChave, atual: posAtual };
+            let item = { nome: nomeChave, atual: posAtual, estado: 'normal', badgeHTML: '➖ Estável', anterior: '-', evolucao: '-' };
 
             if (!ontem || !historico[ontem]) {
-                novas.push(detalhe);
+                item.estado = 'novas';
+                item.badgeHTML = '<span class="status-badge status-novas">🚀 Nova Entrada</span>';
+                cNovas++;
             } else {
                 let posAnterior = historico[ontem];
                 let ganho = posAnterior - posAtual;
-                detalhe.ganho = ganho;
-                detalhe.anterior = posAnterior;
+                item.anterior = `${posAnterior}º`;
 
-                if (ganho > 400) absurdas.push(detalhe);
-                else if (ganho > 200) grandes.push(detalhe);
-                else if (ganho >= 100) moderadas.push(detalhe);
-                else if (ganho > 2) pequenas.push(detalhe);
+                if (ganho > 0) {
+                    item.evolucao = `<span class="badge-subida">🔼 +${ganho}</span>`;
+                    if (ganho > 400) { item.estado = 'absurda'; item.badgeHTML = '<span class="status-badge status-absurda">🚨 Explosão</span>'; cAbsurda++; }
+                    else if (ganho > 200) { item.estado = 'grandes'; item.badgeHTML = '<span class="status-badge status-grandes">🔥 G. Salto</span>'; cGrandes++; }
+                    else if (ganho >= 100) { item.estado = 'moderadas'; item.badgeHTML = '<span class="status-badge status-moderadas">📈 Significativa</span>'; cModeradas++; }
+                    else if (ganho > 2) { item.estado = 'pequenas'; item.badgeHTML = '<span class="status-badge status-pequenas">🌱 P. Subida</span>'; }
+                    else { item.badgeHTML = '<span class="status-badge status-normal">➖ Estável</span>'; }
+                } else if (ganho < 0) {
+                    item.evolucao = `<span style="color: #c0392b;">🔽 ${ganho}</span>`;
+                    item.badgeHTML = '<span class="status-badge status-normal">➖ Queda</span>';
+                } else {
+                    item.badgeHTML = '<span class="status-badge status-normal">➖ Estável</span>';
+                }
             }
+            listaGeral.push(item);
         });
 
-        const ordenar = (arr) => arr.sort((a,b) => (b.ganho || 0) - (a.ganho || 0));
-        ordenar(absurdas); ordenar(grandes); ordenar(moderadas); ordenar(pequenas);
-        novas.sort((a,b) => a.atual - b.atual);
+        // Ordenação rigorosa por posição atual (1º, 2º, 3º...)
+        listaGeral.sort((a, b) => a.atual - b.atual);
 
-        document.getElementById('count-absurda').innerText = absurdas.length;
-        document.getElementById('count-grandes').innerText = grandes.length;
-        document.getElementById('count-moderadas').innerText = moderadas.length;
-        document.getElementById('count-novas').innerText = novas.length;
+        // Atualiza os Cards de Métrica do Topo
+        document.getElementById('count-absurda').innerText = cAbsurda;
+        document.getElementById('count-grandes').innerText = cGrandes;
+        document.getElementById('count-moderadas').innerText = cModeradas;
+        document.getElementById('count-novas').innerText = cNovas;
 
-        let wrapper = document.getElementById('report-tables-wrapper');
-        wrapper.innerHTML = '';
+        // Monta a Tabela Única e Corrida
+        let tbody = document.getElementById('tbody-corrido');
+        tbody.innerHTML = '';
 
-        wrapper.appendChild(criarTabelaHTML("🚨 Explosão no Top (+400 posições)", absurdas, "absurda", true));
-        wrapper.appendChild(criarTabelaHTML("🔥 Grandes Saltos (+200 a 400 posições)", grandes, "grandes", true));
-        wrapper.appendChild(criarTabelaHTML("📈 Subidas Significativas (100 a 200 posições)", moderadas, "moderadas", true));
-        wrapper.appendChild(criarTabelaHTML("🌱 Pequenas Subidas (Abaixo de 100 posições)", pequenas, "pequenas", true));
-        wrapper.appendChild(criarTabelaHTML("🚀 Novas Entradas no Top", novas, "novas", false));
+        listaGeral.forEach(item => {
+            let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            let partes = item.nome.split(" - ");
+            let tituloMusica = partes[0] || "Desconhecido";
+            let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
 
-        // Roda a verificação inicial dos checkboxes
-        atualizarFiltrosCheckbox();
+            let tr = document.createElement('tr');
+            tr.className = "clickable-row";
+            tr.setAttribute('data-categoria', item.estado);
+            tr.onclick = function() { selecionarFaixa(nomeEscapado, this); };
+
+            tr.innerHTML = `
+                <td><span class="badge-pos">${item.atual}º</span></td>
+                <td>${item.badgeHTML}</td>
+                <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}</td>
+                <td class="text-left" style="color: #555;">${artistaMusica}</td>
+                <td>${item.anterior}</td>
+                <td>${item.evolucao}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        aplicarFiltrosNaTela();
     }
 
-    function criarTabelaHTML(titulo, dados, classeEstilo, exibirGanho) {
-        let section = document.createElement('div');
-        section.className = "report-section";
-        section.id = `sec-${classeEstilo}`;
-        section.setAttribute('data-has-content', dados.length > 0 ? "true" : "false");
-
-        let html = `<h2 class="section-title title-${classeEstilo}">${titulo}</h2>`;
-        html += `<table>
-            <thead>
-                <tr>
-                    <th style="width: 70px;">Posição</th>
-                    <th>Título da Música</th>
-                    <th>Artista</th>
-                    ${exibirGanho ? `<th style="width: 100px;">Anterior</th>` : ''}
-                    ${exibirGanho ? `<th style="width: 100px;">Evolução</th>` : ''}
-                </tr>
-            </thead>
-            <tbody>`;
-
-        if(dados.length === 0) {
-            html += `<tr><td colspan="${exibirGanho ? 5 : 3}" style="color: #999; font-style: italic;">Nenhuma faixa correspondente para hoje.</td></tr>`;
-        } else {
-            dados.forEach(item => {
-                let nomeEscapado = item.nome.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-                
-                let partes = item.nome.split(" - ");
-                let tituloMusica = partes[0] || "Desconhecido";
-                let artistaMusica = partes.slice(1).join(" - ") || "Desconhecido";
-
-                html += `
-                <tr class="clickable-row" onclick="selecionarFaixa('${nomeEscapado}', this)">
-                    <td><span class="badge-pos">${item.atual}º</span></td>
-                    <td class="text-left" style="font-weight: 600; color: #000;">${tituloMusica}</td>
-                    <td class="text-left" style="color: #555;">${artistaMusica}</td>
-                    ${exibirGanho ? `<td>${item.anterior}º</td>` : ''}
-                    ${exibirGanho ? `<td class="badge-subida">🔼 +${item.ganho}</td>` : ''}
-                </tr>`;
-            });
-        }
-
-        html += `</tbody></table>`;
-        section.innerHTML = html;
-        return section;
+    // GESTÃO DOS CHECKBOXES INTERATIVOS
+    function toggleTodasCheckbox() {
+        const mestre = document.getElementById('chk-todas').checked;
+        categoriasLista.forEach(cat => {
+            document.getElementById(`chk-${cat}`).checked = mestre;
+        });
+        aplicarFiltrosNaTela();
     }
 
-    // INTERRUPTOR DE FILTROS POR CHECKBOX (MOSTRA MULTIPLOS AO MESMO TEMPO)
-    function atualizarFiltrosCheckbox() {
-        const categorias = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
-        
-        categorias.forEach(cat => {
-            const chk = document.getElementById(`chk-${cat}`);
-            const sec = document.getElementById(`sec-${cat}`);
-            
-            if (sec) {
-                // Só exibe a tabela se o checkbox estiver MARCADO e ela tiver conteúdo real
-                if (chk.checked && sec.getAttribute('data-has-content') === "true") {
-                    sec.style.display = "block";
-                } else {
-                    sec.style.display = "none";
-                }
+    function aoMudarFiltroIndividual() {
+        const todasMarcadas = categoriasLista.every(cat => document.getElementById(`chk-${cat}`).checked);
+        document.getElementById('chk-todas').checked = todasMarcadas;
+        aplicarFiltrosNaTela();
+    }
+
+    function aplicarFiltrosNaTela() {
+        const mestre = document.getElementById('chk-todas').checked;
+        const rows = document.querySelectorAll('#tbody-corrido .clickable-row');
+
+        rows.forEach(row => {
+            if (mestre) {
+                row.style.display = "";
+            } else {
+                const cat = row.getAttribute('data-categoria');
+                const boxMarcado = document.getElementById(`chk-${cat}`).checked;
+                row.style.display = boxMarcado ? "" : "none";
             }
         });
     }
 
     function selecionarFaixa(nomeMusica, elementoLinha) {
         faixaSelecionadaAtualmente = nomeMusica;
-        
         document.querySelectorAll('.clickable-row').forEach(el => el.classList.remove('active-track'));
         if(elementoLinha) elementoLinha.classList.add('active-track');
 
         document.getElementById('msg-inicial').style.display = 'none';
         document.getElementById('menu-periodo').style.display = 'block';
         document.getElementById('historicoChart').style.display = 'block';
-        
         gerarGrafico();
     }
 
@@ -366,7 +367,7 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        if (faixaSelecionadaAtualmente) generarGrafico();
+        if (faixaSelecionadaAtualmente) gerarGrafico();
     }
 
     document.getElementById('musica-input').addEventListener('input', function(e) {
@@ -412,10 +413,10 @@
                     y: {
                         reverse: true,
                         min: 1,
-                        max: 1000, // ESCALA TRAVADA EM 1000 FIXO
+                        max: 1000,
                         grid: { color: '#e0e0e0' },
                         ticks: { 
-                            stepSize: 100, // Força as linhas horizontais de 100 em 100
+                            stepSize: 100,
                             callback: function(value) { return value + 'º'; }
                         },
                         title: { display: true, text: 'POSIÇÃO (TOP 1000)', font: { size: 9, weight: 700 } }
