@@ -112,10 +112,36 @@
         .period-selector span:hover { color: #000; }
         .period-selector .current { color: #000; font-weight: 800; text-decoration: underline; }
 
-        /* BUSCA RÁPIDA */
+        /* BUSCA RÁPIDA E DROPDOWN DE SELEÇÃO */
         .search-container { margin-bottom: 25px; display: flex; gap: 10px; align-items: center; }
         .search-input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 11px; font-family: inherit; width: 250px; }
         .search-input:focus { border-color: #999; outline: none; }
+        
+        .search-matches-dropdown {
+            display: none;
+            position: absolute;
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            max-height: 180px;
+            overflow-y: auto;
+            width: 250px;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .search-match-item {
+            padding: 8px 12px;
+            cursor: pointer;
+            border-bottom: 1px solid #f5f5f5;
+            text-align: left;
+            color: var(--text-main);
+        }
+        .search-match-item:hover {
+            background-color: #fcfde7;
+        }
+        .search-match-item:last-child {
+            border-bottom: none;
+        }
 
         /* ESTILIZAÇÃO DA TABELA CORRIDA ÚNICA */
         .table-container { width: 100%; border: 1px solid var(--border-light); border-radius: 4px; overflow: hidden; background: var(--white); }
@@ -178,8 +204,10 @@
 
     <div class="search-container">
         <span style="font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 9px;">Busca Direta:</span>
-        <input type="text" id="musica-input" class="search-input" list="musicas-list" placeholder="Procurar outra faixa do histórico...">
-        <datalist id="musicas-list"></datalist>
+        <div style="position: relative; display: inline-block;">
+            <input type="text" id="musica-input" class="search-input" placeholder="Procurar outra faixa do histórico...">
+            <div id="search-matches" class="search-matches-dropdown"></div>
+        </div>
     </div>
 
     <div class="table-container">
@@ -213,14 +241,8 @@
             dadosGlobais = data;
             if (!data.datas || data.datas.length === 0) return;
 
-            const datalist = document.getElementById('musicas-list');
-            Object.keys(data.musicas).sort().forEach(m => {
-                let opt = document.createElement('option');
-                opt.value = m;
-                datalist.appendChild(opt);
-            });
-
             processarEMontarTabelaCorrida();
+            inicializarMecanismoBusca();
         })
         .catch(err => {
             const banner = document.getElementById('error-banner');
@@ -293,6 +315,7 @@
             let tr = document.createElement('tr');
             tr.className = "clickable-row";
             tr.setAttribute('data-categoria', item.estado);
+            tr.setAttribute('data-fullname', item.nome);
             tr.onclick = function() { selecionarFaixa(nomeEscapado, this); };
 
             tr.innerHTML = `
@@ -304,6 +327,55 @@
         });
 
         aplicarFiltrosNaTela();
+    }
+
+    // INTERFACE DE CORRESPONDÊNCIAS AUTOMÁTICA CASE-INSENSITIVE
+    function inicializarMecanismoBusca() {
+        const inputBusca = document.getElementById('musica-input');
+        const containerMatches = document.getElementById('search-matches');
+
+        inputBusca.addEventListener('input', function(e) {
+            let valorInput = e.target.value.toLowerCase().trim();
+            containerMatches.innerHTML = '';
+
+            if (!valorInput) {
+                containerMatches.style.display = 'none';
+                return;
+            }
+
+            // Filtra de forma totalmente Case-Insensitive no histórico global
+            let chavesGlobais = Object.keys(dadosGlobais.musicas);
+            let filtradas = chavesGlobais.filter(m => m.toLowerCase().includes(valorInput));
+
+            if (filtradas.length > 0) {
+                containerMatches.style.display = 'block';
+                // Renderiza até as primeiras 30 correspondências para agilidade
+                filtradas.slice(0, 30).forEach(faixaNome => {
+                    let itemDiv = document.createElement('div');
+                    itemDiv.className = 'search-match-item';
+                    itemDiv.innerText = faixaNome;
+                    
+                    itemDiv.onclick = function() {
+                        inputBusca.value = faixaNome;
+                        containerMatches.style.display = 'none';
+                        
+                        // Busca se a linha correspondente existe na listagem visual atual
+                        let seletorLinha = document.querySelector(`#tbody-corrido .clickable-row[data-fullname="${faixaNome.replace(/"/g, '\\"')}"]`);
+                        selecionarFaixa(faixaNome, seletorLinha);
+                    };
+                    containerMatches.appendChild(itemDiv);
+                });
+            } else {
+                containerMatches.style.display = 'none';
+            }
+        });
+
+        // Fecha a caixinha suspensa se clicar fora da barra de pesquisa
+        document.addEventListener('click', function(e) {
+            if (!inputBusca.contains(e.target)) {
+                containerMatches.style.display = 'none';
+            }
+        });
     }
 
     function aoClicarTodas() {
@@ -342,7 +414,10 @@
     function selecionarFaixa(nomeMusica, elementoLinha) {
         faixaSelecionadaAtualmente = nomeMusica;
         document.querySelectorAll('.clickable-row').forEach(el => el.classList.remove('active-track'));
-        if(elementoLinha) elementoLinha.classList.add('active-track');
+        
+        if(elementoLinha) {
+            elementoLinha.classList.add('active-track');
+        }
 
         document.getElementById('msg-inicial').style.display = 'none';
         document.getElementById('menu-periodo').style.display = 'block';
@@ -354,13 +429,8 @@
         diasFiltroAtivo = dias;
         document.querySelectorAll('.period-selector span').forEach(el => el.classList.remove('current'));
         elementoClicado.classList.add('current');
-        if (faixaSelecionadaAtualmente) generarGrafico();
+        if (faixaSelecionadaAtualmente) gerarGrafico();
     }
-
-    document.getElementById('musica-input').addEventListener('input', function(e) {
-        let val = e.target.value;
-        if (dadosGlobais && dadosGlobais.musicas[val]) selecionarFaixa(val, null);
-    });
 
     function gerarGrafico() {
         let datas = dadosGlobais.datas;
