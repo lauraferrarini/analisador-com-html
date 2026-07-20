@@ -160,29 +160,6 @@
         .badge-pos { background: #1a1a1a; color: #fff; padding: 2px 5px; border-radius: 3px; font-weight: 600; font-size: 10px; }
         
         #error-banner { display: none; background-color: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 15px; margin-bottom: 20px; font-weight: bold; border-radius: 4px; }
-        
-        /* Estilos sutilmente adicionados para o input de calendário escondido atrás do emoji */
-        .calendar-wrapper {
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            vertical-align: middle;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-        .calendar-icon-btn {
-            font-size: 18px;
-            user-select: none;
-        }
-        .calendar-hidden-input {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -191,13 +168,7 @@
     <div id="error-banner"></div>
 
     <header>
-        <div style="display: flex; align-items: center; flex-wrap: wrap;">
-            <h1 id="report-date">Relatório Diário Top 1000 BR — --/--/----</h1>
-            <div class="calendar-wrapper" title="Navegar por relatórios de outros dias">
-                <span class="calendar-icon-btn">📅</span>
-                <input type="date" id="calendar-picker" class="calendar-hidden-input" onchange="aoMudarDataCalendario(this)">
-            </div>
-        </div>
+        <h1 id="report-date">Relatório Diário de Evolução</h1>
         <p class="subtitle">Acompanhamento contínuo do ranking e comportamento histórico das faixas.</p>
     </header>
 
@@ -259,7 +230,6 @@
     let chartInstance = null;
     let faixaSelecionadaAtualmente = null;
     let diasFiltroAtivo = 0; 
-    let dataAlvoAtual = null;
     const categoriesLista = ['absurda', 'grandes', 'moderadas', 'pequenas', 'novas'];
 
     fetch('dados_dashboard.json')
@@ -271,16 +241,7 @@
             dadosGlobais = data;
             if (!data.datas || data.datas.length === 0) return;
 
-            // Configura os limites do input dinâmico de calendário baseando-se no banco real
-            const picker = document.getElementById('calendar-picker');
-            picker.min = data.datas[0];
-            picker.max = data.datas[data.datas.length - 1];
-
-            // Inicia exibindo o último dia disponível por padrão
-            dataAlvoAtual = data.datas[data.datas.length - 1];
-            picker.value = dataAlvoAtual;
-
-            processarEMontarTabelaCorrida(dataAlvoAtual);
+            processarEMontarTabelaCorrida();
             inicializarMecanismoBusca();
         })
         .catch(err => {
@@ -289,33 +250,12 @@
             banner.innerHTML = `⚠️ Falha de inicialização: ${err.message}`;
         });
 
-    function aoMudarDataCalendario(input) {
-        const dataSelecionada = input.value;
-        if (dadosGlobais && dadosGlobais.datas.includes(dataSelecionada)) {
-            dataAlvoAtual = dataSelecionada;
-            processarEMontarTabelaCorrida(dataAlvoAtual);
-            
-            // Se houver uma música selecionada no gráfico, atualiza ela com base no novo período
-            if (faixaSelecionadaAtualmente) {
-                gerarGrafico();
-            }
-        } else {
-            alert("Nenhum registro encontrado para este dia específico.");
-            input.value = dataAlvoAtual;
-        }
-    }
-
-    function processarEMontarTabelaCorrida(dataAlvo) {
+    function processarEMontarTabelaCorrida() {
         const datas = dadosGlobais.datas;
-        const idxHoje = datas.indexOf(dataAlvo);
-        
-        if (idxHoje === -1) return;
+        const hoje = datas[datas.length - 1];
+        const ontem = datas.length > 1 ? datas[datas.length - 2] : null;
 
-        const hoje = datas[idxHoje];
-        const ontem = idxHoje > 0 ? datas[idxHoje - 1] : null;
-
-        const regiaoExibida = dadosGlobais.regiao || 'BR';
-        document.getElementById('report-date').innerText = `Relatório Diário Top 1000 ${regiaoExibida} — ${hoje.split('-').reverse().join('/')}`;
+        document.getElementById('report-date').innerText = `Relatório Diário — ${hoje.split('-').reverse().join('/')}`;
 
         let listaGeral = [];
         let cAbsurda = 0, cGrandes = 0, cModeradas = 0, cNovas = 0;
@@ -374,9 +314,6 @@
 
             let tr = document.createElement('tr');
             tr.className = "clickable-row";
-            if (faixaSelecionadaAtualmente === item.nome) {
-                tr.className += " active-track";
-            }
             tr.setAttribute('data-categoria', item.estado);
             tr.setAttribute('data-fullname', item.nome);
             tr.onclick = function() { selecionarFaixa(nomeEscapado, this); };
@@ -392,6 +329,7 @@
         aplicarFiltrosNaTela();
     }
 
+    // INTERFACE DE CORRESPONDÊNCIAS AUTOMÁTICA CASE-INSENSITIVE
     function inicializarMecanismoBusca() {
         const inputBusca = document.getElementById('musica-input');
         const containerMatches = document.getElementById('search-matches');
@@ -405,11 +343,13 @@
                 return;
             }
 
+            // Filtra de forma totalmente Case-Insensitive no histórico global
             let chavesGlobais = Object.keys(dadosGlobais.musicas);
             let filtradas = chavesGlobais.filter(m => m.toLowerCase().includes(valorInput));
 
             if (filtradas.length > 0) {
                 containerMatches.style.display = 'block';
+                // Renderiza até as primeiras 30 correspondências para agilidade
                 filtradas.slice(0, 30).forEach(faixaNome => {
                     let itemDiv = document.createElement('div');
                     itemDiv.className = 'search-match-item';
@@ -419,6 +359,7 @@
                         inputBusca.value = faixaNome;
                         containerMatches.style.display = 'none';
                         
+                        // Busca se a linha correspondente existe na listagem visual atual
                         let seletorLinha = document.querySelector(`#tbody-corrido .clickable-row[data-fullname="${faixaNome.replace(/"/g, '\\"')}"]`);
                         selecionarFaixa(faixaNome, seletorLinha);
                     };
@@ -429,6 +370,7 @@
             }
         });
 
+        // Fecha a caixinha suspensa se clicar fora da barra de pesquisa
         document.addEventListener('click', function(e) {
             if (!inputBusca.contains(e.target)) {
                 containerMatches.style.display = 'none';
@@ -471,7 +413,7 @@
 
     function selecionarFaixa(nomeMusica, elementoLinha) {
         faixaSelecionadaAtualmente = nomeMusica;
-        document.querySelectorAll('#tbody-corrido .clickable-row').forEach(el => el.classList.remove('active-track'));
+        document.querySelectorAll('.clickable-row').forEach(el => el.classList.remove('active-track'));
         
         if(elementoLinha) {
             elementoLinha.classList.add('active-track');
