@@ -1,0 +1,5002 @@
+{
+    "EVERYTHING HALLELUJAH - Justin Bieber": {
+        "posicao": 1,
+        "nome": "EVERYTHING HALLELUJAH",
+        "artista": "Justin Bieber"
+    },
+    "Dai Dai (feat. Burna Boy) - Shakira": {
+        "posicao": 2,
+        "nome": "Dai Dai (feat. Burna Boy)",
+        "artista": "Shakira"
+    },
+    "AH, JESUS / CORAÇÃO IGUAL AO TEU - Julliany Souza": {
+        "posicao": 3,
+        "nome": "AH, JESUS / CORAÇÃO IGUAL AO TEU",
+        "artista": "Julliany Souza"
+    },
+    "Wonderwall - Oasis": {
+        "posicao": 4,
+        "nome": "Wonderwall",
+        "artista": "Oasis"
+    },
+    "Tudo É Perda - Felipe Rodrigues": {
+        "posicao": 5,
+        "nome": "Tudo É Perda",
+        "artista": "Felipe Rodrigues"
+    },
+    "Porque Ele Vive - 545 - Harpa Cristã": {
+        "posicao": 6,
+        "nome": "Porque Ele Vive - 545",
+        "artista": "Harpa Cristã"
+    },
+    "Sign of the Times - Harry Styles": {
+        "posicao": 7,
+        "nome": "Sign of the Times",
+        "artista": "Harry Styles"
+    },
+    "Y Que Fue? - Don Miguelo": {
+        "posicao": 8,
+        "nome": "Y Que Fue?",
+        "artista": "Don Miguelo"
+    },
+    "Peão Todo Tatuado (part. Jeninho) - Mariana Fagundes": {
+        "posicao": 9,
+        "nome": "Peão Todo Tatuado (part. Jeninho)",
+        "artista": "Mariana Fagundes"
+    },
+    "O Escudo - Voz da Verdade": {
+        "posicao": 10,
+        "nome": "O Escudo",
+        "artista": "Voz da Verdade"
+    },
+    "Em Fervente Oração - 577 - Harpa Cristã": {
+        "posicao": 11,
+        "nome": "Em Fervente Oração - 577",
+        "artista": "Harpa Cristã"
+    },
+    "A Alma Abatida - 193 - Harpa Cristã": {
+        "posicao": 12,
+        "nome": "A Alma Abatida - 193",
+        "artista": "Harpa Cristã"
+    },
+    "Conversão - 15 - Harpa Cristã": {
+        "posicao": 13,
+        "nome": "Conversão - 15",
+        "artista": "Harpa Cristã"
+    },
+    "Grato a Ti - 370 - Harpa Cristã": {
+        "posicao": 14,
+        "nome": "Grato a Ti - 370",
+        "artista": "Harpa Cristã"
+    },
+    "Grandioso És Tu - 526 - Harpa Cristã": {
+        "posicao": 15,
+        "nome": "Grandioso És Tu - 526",
+        "artista": "Harpa Cristã"
+    },
+    "Pelo Sangue - 192 - Harpa Cristã": {
+        "posicao": 16,
+        "nome": "Pelo Sangue - 192",
+        "artista": "Harpa Cristã"
+    },
+    "Jesus o Bom Amigo - 198 - Harpa Cristã": {
+        "posicao": 17,
+        "nome": "Jesus o Bom Amigo - 198",
+        "artista": "Harpa Cristã"
+    },
+    "Não Me Deixe Esquecer - Valesca Mayssa": {
+        "posicao": 18,
+        "nome": "Não Me Deixe Esquecer",
+        "artista": "Valesca Mayssa"
+    },
+    "Com Muito Louvor - Cassiane": {
+        "posicao": 19,
+        "nome": "Com Muito Louvor",
+        "artista": "Cassiane"
+    },
+    "Favorite Girl - Justin Bieber": {
+        "posicao": 20,
+        "nome": "Favorite Girl",
+        "artista": "Justin Bieber"
+    },
+    "Creep - Radiohead": {
+        "posicao": 21,
+        "nome": "Creep",
+        "artista": "Radiohead"
+    },
+    "Se Eu Não Te Ouvir - Sarah Farias": {
+        "posicao": 22,
+        "nome": "Se Eu Não Te Ouvir",
+        "artista": "Sarah Farias"
+    },
+    "Gratidão - Florianópolis House Of Prayer (fhop music)": {
+        "posicao": 23,
+        "nome": "Gratidão",
+        "artista": "Florianópolis House Of Prayer (fhop music)"
+    },
+    "Alvo Mais Que a Neve - 39 - Harpa Cristã": {
+        "posicao": 24,
+        "nome": "Alvo Mais Que a Neve - 39",
+        "artista": "Harpa Cristã"
+    },
+    "Golden Days - Nerin": {
+        "posicao": 25,
+        "nome": "Golden Days",
+        "artista": "Nerin"
+    },
+    "Yellow - Coldplay": {
+        "posicao": 26,
+        "nome": "Yellow",
+        "artista": "Coldplay"
+    },
+    "Evidências - Chitãozinho & Xororó": {
+        "posicao": 27,
+        "nome": "Evidências",
+        "artista": "Chitãozinho & Xororó"
+    },
+    "Palavras - Lauriete": {
+        "posicao": 28,
+        "nome": "Palavras",
+        "artista": "Lauriete"
+    },
+    "Total Eclipse of the Heart - Bonnie Tyler": {
+        "posicao": 29,
+        "nome": "Total Eclipse of the Heart",
+        "artista": "Bonnie Tyler"
+    },
+    "A Mensagem da Cruz - 291 - Harpa Cristã": {
+        "posicao": 30,
+        "nome": "A Mensagem da Cruz - 291",
+        "artista": "Harpa Cristã"
+    },
+    "Hino da Espanha (Marcha Real Espanhola) (versão 1928) - Hinos de Países": {
+        "posicao": 31,
+        "nome": "Hino da Espanha (Marcha Real Espanhola) (versão 1928)",
+        "artista": "Hinos de Países"
+    },
+    "Linger - The Cranberries": {
+        "posicao": 32,
+        "nome": "Linger",
+        "artista": "The Cranberries"
+    },
+    "Santo Pra Sempre - Gabriel Guedes": {
+        "posicao": 33,
+        "nome": "Santo Pra Sempre",
+        "artista": "Gabriel Guedes"
+    },
+    "Plena Paz - 3 - Harpa Cristã": {
+        "posicao": 34,
+        "nome": "Plena Paz - 3",
+        "artista": "Harpa Cristã"
+    },
+    "Quem É Esse? - Julliany Souza": {
+        "posicao": 35,
+        "nome": "Quem É Esse?",
+        "artista": "Julliany Souza"
+    },
+    "Fidelidade - Danielle Cristina": {
+        "posicao": 36,
+        "nome": "Fidelidade",
+        "artista": "Danielle Cristina"
+    },
+    "Self Aware - Temper City": {
+        "posicao": 37,
+        "nome": "Self Aware",
+        "artista": "Temper City"
+    },
+    "Bondade de Deus - Isaías Saad": {
+        "posicao": 38,
+        "nome": "Bondade de Deus",
+        "artista": "Isaías Saad"
+    },
+    "Eu Só Quero Adorar - Gerson Rufino": {
+        "posicao": 39,
+        "nome": "Eu Só Quero Adorar",
+        "artista": "Gerson Rufino"
+    },
+    "Escape - Renascer Praise": {
+        "posicao": 40,
+        "nome": "Escape",
+        "artista": "Renascer Praise"
+    },
+    "Consagração - Aline Barros": {
+        "posicao": 41,
+        "nome": "Consagração",
+        "artista": "Aline Barros"
+    },
+    "Sublime - Florianópolis House Of Prayer (fhop music)": {
+        "posicao": 42,
+        "nome": "Sublime",
+        "artista": "Florianópolis House Of Prayer (fhop music)"
+    },
+    "Ordinary - Alex Warren": {
+        "posicao": 43,
+        "nome": "Ordinary",
+        "artista": "Alex Warren"
+    },
+    "Os Guerreiros Se Preparam - 212 - Harpa Cristã": {
+        "posicao": 44,
+        "nome": "Os Guerreiros Se Preparam - 212",
+        "artista": "Harpa Cristã"
+    },
+    "Iris - Goo Goo Dolls": {
+        "posicao": 45,
+        "nome": "Iris",
+        "artista": "Goo Goo Dolls"
+    },
+    "honeybee - Olivia Rodrigo": {
+        "posicao": 46,
+        "nome": "honeybee",
+        "artista": "Olivia Rodrigo"
+    },
+    "Vienna - Billy Joel": {
+        "posicao": 47,
+        "nome": "Vienna",
+        "artista": "Billy Joel"
+    },
+    "Campeões da luz - 305 - Harpa Cristã": {
+        "posicao": 48,
+        "nome": "Campeões da luz - 305",
+        "artista": "Harpa Cristã"
+    },
+    "Deus de Obras Completas - Kemilly Santos": {
+        "posicao": 49,
+        "nome": "Deus de Obras Completas",
+        "artista": "Kemilly Santos"
+    },
+    "Consagrado ao Senhor - 432 - Harpa Cristã": {
+        "posicao": 50,
+        "nome": "Consagrado ao Senhor - 432",
+        "artista": "Harpa Cristã"
+    },
+    "Tu és + Águas Purificadoras (part. Débora Rabelo e Hamilton Rabelo) - Florianópolis House Of Prayer (fhop music)": {
+        "posicao": 51,
+        "nome": "Tu és + Águas Purificadoras (part. Débora Rabelo e Hamilton Rabelo)",
+        "artista": "Florianópolis House Of Prayer (fhop music)"
+    },
+    "Odres Novos - Gerados pela Imaculada": {
+        "posicao": 52,
+        "nome": "Odres Novos",
+        "artista": "Gerados pela Imaculada"
+    },
+    "Deserto - Maria Marçal": {
+        "posicao": 53,
+        "nome": "Deserto",
+        "artista": "Maria Marçal"
+    },
+    "NORMAL [explicit version] - BTS": {
+        "posicao": 54,
+        "nome": "NORMAL [explicit version]",
+        "artista": "BTS"
+    },
+    "Sobre as Ondas do Mar - 467 - Harpa Cristã": {
+        "posicao": 55,
+        "nome": "Sobre as Ondas do Mar - 467",
+        "artista": "Harpa Cristã"
+    },
+    "Chuvas de Graça - 1 - Harpa Cristã": {
+        "posicao": 56,
+        "nome": "Chuvas de Graça - 1",
+        "artista": "Harpa Cristã"
+    },
+    "Beretta (De Los Cerros La Escuela) - El de Las R's": {
+        "posicao": 57,
+        "nome": "Beretta (De Los Cerros La Escuela)",
+        "artista": "El de Las R's"
+    },
+    "Young And Beautiful - Lana Del Rey": {
+        "posicao": 58,
+        "nome": "Young And Beautiful",
+        "artista": "Lana Del Rey"
+    },
+    "A Face Adorada de Jesus - 304 - Harpa Cristã": {
+        "posicao": 59,
+        "nome": "A Face Adorada de Jesus - 304",
+        "artista": "Harpa Cristã"
+    },
+    "Firme nas Promessas - 107 - Harpa Cristã": {
+        "posicao": 60,
+        "nome": "Firme nas Promessas - 107",
+        "artista": "Harpa Cristã"
+    },
+    "Os Planos de Deus - Samuel Messias": {
+        "posicao": 61,
+        "nome": "Os Planos de Deus",
+        "artista": "Samuel Messias"
+    },
+    "Um Novo Dia - Get Worship": {
+        "posicao": 62,
+        "nome": "Um Novo Dia",
+        "artista": "Get Worship"
+    },
+    "Ó Desce Fogo Santo - 5 - Harpa Cristã": {
+        "posicao": 63,
+        "nome": "Ó Desce Fogo Santo - 5",
+        "artista": "Harpa Cristã"
+    },
+    "No Céu não Entra Pecado - 422 - Harpa Cristã": {
+        "posicao": 64,
+        "nome": "No Céu não Entra Pecado - 422",
+        "artista": "Harpa Cristã"
+    },
+    "hate that i made you love me - Ariana Grande": {
+        "posicao": 65,
+        "nome": "hate that i made you love me",
+        "artista": "Ariana Grande"
+    },
+    "Heaven - Bryan Adams": {
+        "posicao": 66,
+        "nome": "Heaven",
+        "artista": "Bryan Adams"
+    },
+    "Espírito Santo - Fernanda Brum": {
+        "posicao": 67,
+        "nome": "Espírito Santo",
+        "artista": "Fernanda Brum"
+    },
+    "Guarda o Contacto - 77 - Harpa Cristã": {
+        "posicao": 68,
+        "nome": "Guarda o Contacto - 77",
+        "artista": "Harpa Cristã"
+    },
+    "Photograph - Ed Sheeran": {
+        "posicao": 69,
+        "nome": "Photograph",
+        "artista": "Ed Sheeran"
+    },
+    "Te Esperando - Luan Santana": {
+        "posicao": 70,
+        "nome": "Te Esperando",
+        "artista": "Luan Santana"
+    },
+    "Sweet Child O' Mine - Guns N' Roses": {
+        "posicao": 71,
+        "nome": "Sweet Child O' Mine",
+        "artista": "Guns N' Roses"
+    },
+    "Sexo, Violencia y Llantas - ROSALÍA": {
+        "posicao": 72,
+        "nome": "Sexo, Violencia y Llantas",
+        "artista": "ROSALÍA"
+    },
+    "Trabalhai e Orai - 115 - Harpa Cristã": {
+        "posicao": 73,
+        "nome": "Trabalhai e Orai - 115",
+        "artista": "Harpa Cristã"
+    },
+    "Guia-me Sempre, Meu Senhor - 141 - Harpa Cristã": {
+        "posicao": 74,
+        "nome": "Guia-me Sempre, Meu Senhor - 141",
+        "artista": "Harpa Cristã"
+    },
+    "Stand By Me - Ben E. King": {
+        "posicao": 75,
+        "nome": "Stand By Me",
+        "artista": "Ben E. King"
+    },
+    "O Exilado - 36 - Harpa Cristã": {
+        "posicao": 76,
+        "nome": "O Exilado - 36",
+        "artista": "Harpa Cristã"
+    },
+    "Billie Jean - Michael Jackson": {
+        "posicao": 77,
+        "nome": "Billie Jean",
+        "artista": "Michael Jackson"
+    },
+    "Vencendo Vem Jesus - 525 - Harpa Cristã": {
+        "posicao": 78,
+        "nome": "Vencendo Vem Jesus - 525",
+        "artista": "Harpa Cristã"
+    },
+    "Do I Wanna Know? - Arctic Monkeys": {
+        "posicao": 79,
+        "nome": "Do I Wanna Know?",
+        "artista": "Arctic Monkeys"
+    },
+    "Oficio da Imaculada Conceição - Canção Nova": {
+        "posicao": 80,
+        "nome": "Oficio da Imaculada Conceição",
+        "artista": "Canção Nova"
+    },
+    "De Valor Em Valor - 186 - Harpa Cristã": {
+        "posicao": 81,
+        "nome": "De Valor Em Valor - 186",
+        "artista": "Harpa Cristã"
+    },
+    "Baby (feat. Ludacris) - Justin Bieber": {
+        "posicao": 82,
+        "nome": "Baby (feat. Ludacris)",
+        "artista": "Justin Bieber"
+    },
+    "Hino da Vitória - Cassiane": {
+        "posicao": 83,
+        "nome": "Hino da Vitória",
+        "artista": "Cassiane"
+    },
+    "Sonda-me, Usa-me - Aline Barros": {
+        "posicao": 84,
+        "nome": "Sonda-me, Usa-me",
+        "artista": "Aline Barros"
+    },
+    "Primeira Essência (Jardim Particular) - Aline Barros": {
+        "posicao": 85,
+        "nome": "Primeira Essência (Jardim Particular)",
+        "artista": "Aline Barros"
+    },
+    "Lindo Momento - Julliany Souza": {
+        "posicao": 86,
+        "nome": "Lindo Momento",
+        "artista": "Julliany Souza"
+    },
+    "Gut Genug (mit Blumengarten & Shirin David) - KitschKrieg": {
+        "posicao": 87,
+        "nome": "Gut Genug (mit Blumengarten & Shirin David)",
+        "artista": "KitschKrieg"
+    },
+    "Grande É o Senhor (part. Adhemar de Campos) - Nívea Soares": {
+        "posicao": 88,
+        "nome": "Grande É o Senhor (part. Adhemar de Campos)",
+        "artista": "Nívea Soares"
+    },
+    "Questiona Ou Adora - Flordelis": {
+        "posicao": 89,
+        "nome": "Questiona Ou Adora",
+        "artista": "Flordelis"
+    },
+    "Eu Navegarei - Gabriela Rocha": {
+        "posicao": 90,
+        "nome": "Eu Navegarei",
+        "artista": "Gabriela Rocha"
+    },
+    "Jesus Tu és Bom - 25 - Harpa Cristã": {
+        "posicao": 91,
+        "nome": "Jesus Tu és Bom - 25",
+        "artista": "Harpa Cristã"
+    },
+    "Waka Waka (This Time For Africa) (feat. Freshlyground) - Shakira": {
+        "posicao": 92,
+        "nome": "Waka Waka (This Time For Africa) (feat. Freshlyground)",
+        "artista": "Shakira"
+    },
+    "Te Louvarei (Perto Quero Estar) - Ministério Apascentar de Louvor (Toque No Altar)": {
+        "posicao": 93,
+        "nome": "Te Louvarei (Perto Quero Estar)",
+        "artista": "Ministério Apascentar de Louvor (Toque No Altar)"
+    },
+    "Nada Pode Calar Um Adorador - Eyshila": {
+        "posicao": 94,
+        "nome": "Nada Pode Calar Um Adorador",
+        "artista": "Eyshila"
+    },
+    "Babydoll - Dominic Fike": {
+        "posicao": 95,
+        "nome": "Babydoll",
+        "artista": "Dominic Fike"
+    },
+    "Earrings - Malcolm Todd": {
+        "posicao": 96,
+        "nome": "Earrings",
+        "artista": "Malcolm Todd"
+    },
+    "Vai Passar - Gerson Rufino": {
+        "posicao": 97,
+        "nome": "Vai Passar",
+        "artista": "Gerson Rufino"
+    },
+    "Em Jesus - 400 - Harpa Cristã": {
+        "posicao": 98,
+        "nome": "Em Jesus - 400",
+        "artista": "Harpa Cristã"
+    },
+    "Clamo Jesus (part. Marsena) - Paulo César Baruk": {
+        "posicao": 99,
+        "nome": "Clamo Jesus (part. Marsena)",
+        "artista": "Paulo César Baruk"
+    },
+    "Mais Perto Meu Deus de Ti! - 187 - Harpa Cristã": {
+        "posicao": 100,
+        "nome": "Mais Perto Meu Deus de Ti! - 187",
+        "artista": "Harpa Cristã"
+    },
+    "Poderoso Deus - David Quinlan": {
+        "posicao": 101,
+        "nome": "Poderoso Deus",
+        "artista": "David Quinlan"
+    },
+    "she goes by. - where.t.at": {
+        "posicao": 102,
+        "nome": "she goes by.",
+        "artista": "where.t.at"
+    },
+    "Velha Infância - Tribalistas": {
+        "posicao": 103,
+        "nome": "Velha Infância",
+        "artista": "Tribalistas"
+    },
+    "Sê Valente - 225 - Harpa Cristã": {
+        "posicao": 104,
+        "nome": "Sê Valente - 225",
+        "artista": "Harpa Cristã"
+    },
+    "Constellations - Jade LeMac": {
+        "posicao": 105,
+        "nome": "Constellations",
+        "artista": "Jade LeMac"
+    },
+    "White Keys - Dominic Fike": {
+        "posicao": 106,
+        "nome": "White Keys",
+        "artista": "Dominic Fike"
+    },
+    "EVERYTHING HALLELUJAH (Acoustic) - Justin Bieber": {
+        "posicao": 107,
+        "nome": "EVERYTHING HALLELUJAH (Acoustic)",
+        "artista": "Justin Bieber"
+    },
+    "É Tudo Sobre Você - MORADA": {
+        "posicao": 108,
+        "nome": "É Tudo Sobre Você",
+        "artista": "MORADA"
+    },
+    "Jeová Jireh - Aline Barros": {
+        "posicao": 109,
+        "nome": "Jeová Jireh",
+        "artista": "Aline Barros"
+    },
+    "Te Adorarei - Eliã Oliveira": {
+        "posicao": 110,
+        "nome": "Te Adorarei",
+        "artista": "Eliã Oliveira"
+    },
+    "Wish You Were Here - Pink Floyd": {
+        "posicao": 111,
+        "nome": "Wish You Were Here",
+        "artista": "Pink Floyd"
+    },
+    "Irmão da Lua, Amigo das Estrelas - Zezé Di Camargo & Luciano": {
+        "posicao": 112,
+        "nome": "Irmão da Lua, Amigo das Estrelas",
+        "artista": "Zezé Di Camargo & Luciano"
+    },
+    "Fine Line - Harry Styles": {
+        "posicao": 113,
+        "nome": "Fine Line",
+        "artista": "Harry Styles"
+    },
+    "Eis-me Aqui - Valesca Mayssa": {
+        "posicao": 114,
+        "nome": "Eis-me Aqui",
+        "artista": "Valesca Mayssa"
+    },
+    "the cure - Olivia Rodrigo": {
+        "posicao": 115,
+        "nome": "the cure",
+        "artista": "Olivia Rodrigo"
+    },
+    "Preciso de Ti - Diante do Trono": {
+        "posicao": 116,
+        "nome": "Preciso de Ti",
+        "artista": "Diante do Trono"
+    },
+    "Dynamite - BTS": {
+        "posicao": 117,
+        "nome": "Dynamite",
+        "artista": "BTS"
+    },
+    "Deus Tremendo - Shirley Carvalhaes": {
+        "posicao": 118,
+        "nome": "Deus Tremendo",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Fala Jesus Querido - 151 - Harpa Cristã": {
+        "posicao": 119,
+        "nome": "Fala Jesus Querido - 151",
+        "artista": "Harpa Cristã"
+    },
+    "It's a Heartache - Bonnie Tyler": {
+        "posicao": 120,
+        "nome": "It's a Heartache",
+        "artista": "Bonnie Tyler"
+    },
+    "A Mão ao Arado! - 394 - Harpa Cristã": {
+        "posicao": 121,
+        "nome": "A Mão ao Arado! - 394",
+        "artista": "Harpa Cristã"
+    },
+    "Hino dos Estados Unidos da América (The Star-Spangled Banner) - Hinos de Países": {
+        "posicao": 122,
+        "nome": "Hino dos Estados Unidos da América (The Star-Spangled Banner)",
+        "artista": "Hinos de Países"
+    },
+    "Empire State Of Mind (feat. Alicia Keys) - JAY-Z": {
+        "posicao": 123,
+        "nome": "Empire State Of Mind (feat. Alicia Keys)",
+        "artista": "JAY-Z"
+    },
+    "O Que Sua Glória Fez Comigo - Fernanda Brum": {
+        "posicao": 124,
+        "nome": "O Que Sua Glória Fez Comigo",
+        "artista": "Fernanda Brum"
+    },
+    "Carla's Song - Harry Styles": {
+        "posicao": 125,
+        "nome": "Carla's Song",
+        "artista": "Harry Styles"
+    },
+    "Orbiter - Noah Kahan": {
+        "posicao": 126,
+        "nome": "Orbiter",
+        "artista": "Noah Kahan"
+    },
+    "Com Tua Mão Segura - 33 - Harpa Cristã": {
+        "posicao": 127,
+        "nome": "Com Tua Mão Segura - 33",
+        "artista": "Harpa Cristã"
+    },
+    "Me Ama - Diante do Trono": {
+        "posicao": 128,
+        "nome": "Me Ama",
+        "artista": "Diante do Trono"
+    },
+    "Viva La Vida - Coldplay": {
+        "posicao": 129,
+        "nome": "Viva La Vida",
+        "artista": "Coldplay"
+    },
+    "As It Was - Harry Styles": {
+        "posicao": 130,
+        "nome": "As It Was",
+        "artista": "Harry Styles"
+    },
+    "Consolador - Damares": {
+        "posicao": 131,
+        "nome": "Consolador",
+        "artista": "Damares"
+    },
+    "Coração Igual ao Teu - Diante do Trono": {
+        "posicao": 132,
+        "nome": "Coração Igual ao Teu",
+        "artista": "Diante do Trono"
+    },
+    "ICONIC BY MISTAKE (feat. ILLIT & KATSEYE) - LE SSERAFIM": {
+        "posicao": 133,
+        "nome": "ICONIC BY MISTAKE (feat. ILLIT & KATSEYE)",
+        "artista": "LE SSERAFIM"
+    },
+    "Mockingbird - Eminem": {
+        "posicao": 134,
+        "nome": "Mockingbird",
+        "artista": "Eminem"
+    },
+    "SHAKIRA (BZRP Music Sessions #53/66) - Bizarrap": {
+        "posicao": 135,
+        "nome": "SHAKIRA (BZRP Music Sessions #53/66)",
+        "artista": "Bizarrap"
+    },
+    "Hey Jude - The Beatles": {
+        "posicao": 136,
+        "nome": "Hey Jude",
+        "artista": "The Beatles"
+    },
+    "Igual Não Há - Lauriete": {
+        "posicao": 137,
+        "nome": "Igual Não Há",
+        "artista": "Lauriete"
+    },
+    "Eis-me Aqui, Senhor - Músicas Católicas": {
+        "posicao": 138,
+        "nome": "Eis-me Aqui, Senhor",
+        "artista": "Músicas Católicas"
+    },
+    "Cuida do Pet (part. MC Iguinho CT, MC Willian, Aaron Modesto, MC Negão Original, DU'L e DJ Aladin GDB) - Oldilla": {
+        "posicao": 139,
+        "nome": "Cuida do Pet (part. MC Iguinho CT, MC Willian, Aaron Modesto, MC Negão Original, DU'L e DJ Aladin GDB)",
+        "artista": "Oldilla"
+    },
+    "O Bondoso Amigo - 200 - Harpa Cristã": {
+        "posicao": 140,
+        "nome": "O Bondoso Amigo - 200",
+        "artista": "Harpa Cristã"
+    },
+    "O Grande “Eu sou” - 84 - Harpa Cristã": {
+        "posicao": 141,
+        "nome": "O Grande “Eu sou” - 84",
+        "artista": "Harpa Cristã"
+    },
+    "Count On Me - Bruno Mars": {
+        "posicao": 142,
+        "nome": "Count On Me",
+        "artista": "Bruno Mars"
+    },
+    "Em Espírito, Em Verdade (Meu Prazer) - Ministério Koinonya de Louvor": {
+        "posicao": 143,
+        "nome": "Em Espírito, Em Verdade (Meu Prazer)",
+        "artista": "Ministério Koinonya de Louvor"
+    },
+    "I Wanna Be Yours - Arctic Monkeys": {
+        "posicao": 144,
+        "nome": "I Wanna Be Yours",
+        "artista": "Arctic Monkeys"
+    },
+    "Vencerá - 372 - Harpa Cristã": {
+        "posicao": 145,
+        "nome": "Vencerá - 372",
+        "artista": "Harpa Cristã"
+    },
+    "Beauty And a Beat (feat. Nicki Minaj) - Justin Bieber": {
+        "posicao": 146,
+        "nome": "Beauty And a Beat (feat. Nicki Minaj)",
+        "artista": "Justin Bieber"
+    },
+    "Wicked Game - Chris Isaak": {
+        "posicao": 147,
+        "nome": "Wicked Game",
+        "artista": "Chris Isaak"
+    },
+    "O Leão e o Cordeiro - Cassiane": {
+        "posicao": 148,
+        "nome": "O Leão e o Cordeiro",
+        "artista": "Cassiane"
+    },
+    "Bring Me To Life - Evanescence": {
+        "posicao": 149,
+        "nome": "Bring Me To Life",
+        "artista": "Evanescence"
+    },
+    "Coisa do Meu Deus (part. Eliã Oliveira) - Dalete Hungria": {
+        "posicao": 150,
+        "nome": "Coisa do Meu Deus (part. Eliã Oliveira)",
+        "artista": "Dalete Hungria"
+    },
+    "My Girl - The Temptations": {
+        "posicao": 151,
+        "nome": "My Girl",
+        "artista": "The Temptations"
+    },
+    "Raindance (feat. Tems) - Dave": {
+        "posicao": 152,
+        "nome": "Raindance (feat. Tems)",
+        "artista": "Dave"
+    },
+    "Sobre As Águas - Davi Sacer": {
+        "posicao": 153,
+        "nome": "Sobre As Águas",
+        "artista": "Davi Sacer"
+    },
+    "Matilda - Harry Styles": {
+        "posicao": 154,
+        "nome": "Matilda",
+        "artista": "Harry Styles"
+    },
+    "Boa Obra - Valesca Mayssa": {
+        "posicao": 155,
+        "nome": "Boa Obra",
+        "artista": "Valesca Mayssa"
+    },
+    "Hino da Argentina - Hinos de Países": {
+        "posicao": 156,
+        "nome": "Hino da Argentina",
+        "artista": "Hinos de Países"
+    },
+    "Fiel a Mim - Eyshila": {
+        "posicao": 157,
+        "nome": "Fiel a Mim",
+        "artista": "Eyshila"
+    },
+    "Trabalhadores do Evangelho - 409 - Harpa Cristã": {
+        "posicao": 158,
+        "nome": "Trabalhadores do Evangelho - 409",
+        "artista": "Harpa Cristã"
+    },
+    "Cristo, O Fiel Amigo - 8 - Harpa Cristã": {
+        "posicao": 159,
+        "nome": "Cristo, O Fiel Amigo - 8",
+        "artista": "Harpa Cristã"
+    },
+    "O Fogo Arderá - Alexsander Lúcio": {
+        "posicao": 160,
+        "nome": "O Fogo Arderá",
+        "artista": "Alexsander Lúcio"
+    },
+    "Oh! Jesus Me Ama - 169 - Harpa Cristã": {
+        "posicao": 161,
+        "nome": "Oh! Jesus Me Ama - 169",
+        "artista": "Harpa Cristã"
+    },
+    "Die With A Smile (feat. Bruno Mars) - Lady Gaga": {
+        "posicao": 162,
+        "nome": "Die With A Smile (feat. Bruno Mars)",
+        "artista": "Lady Gaga"
+    },
+    "A Boa Parte (part. Nívea Soares) - Florianópolis House Of Prayer (fhop music)": {
+        "posicao": 163,
+        "nome": "A Boa Parte (part. Nívea Soares)",
+        "artista": "Florianópolis House Of Prayer (fhop music)"
+    },
+    "Treat You Better - Shawn Mendes": {
+        "posicao": 164,
+        "nome": "Treat You Better",
+        "artista": "Shawn Mendes"
+    },
+    "Se Cristo Comigo Vai - 515 - Harpa Cristã": {
+        "posicao": 165,
+        "nome": "Se Cristo Comigo Vai - 515",
+        "artista": "Harpa Cristã"
+    },
+    "Vim para Adorar-Te - Adoração & Adoradores": {
+        "posicao": 166,
+        "nome": "Vim para Adorar-Te",
+        "artista": "Adoração & Adoradores"
+    },
+    "Vem Me Buscar - Jefferson & Suellen": {
+        "posicao": 167,
+        "nome": "Vem Me Buscar",
+        "artista": "Jefferson & Suellen"
+    },
+    "My Way - Frank Sinatra": {
+        "posicao": 168,
+        "nome": "My Way",
+        "artista": "Frank Sinatra"
+    },
+    "IMPERFEITO (part. Coral Canto Jovem e Rayssa Andreoli) - Seven Plus": {
+        "posicao": 169,
+        "nome": "IMPERFEITO (part. Coral Canto Jovem e Rayssa Andreoli)",
+        "artista": "Seven Plus"
+    },
+    "Deus de Promessas - Davi Sacer": {
+        "posicao": 170,
+        "nome": "Deus de Promessas",
+        "artista": "Davi Sacer"
+    },
+    "Slipping Through My Fingers - ABBA": {
+        "posicao": 171,
+        "nome": "Slipping Through My Fingers",
+        "artista": "ABBA"
+    },
+    "O Senhor da Ceifa Chama - 127 - Harpa Cristã": {
+        "posicao": 172,
+        "nome": "O Senhor da Ceifa Chama - 127",
+        "artista": "Harpa Cristã"
+    },
+    "Faz Um Milagre Em Mim - Régis Danese": {
+        "posicao": 173,
+        "nome": "Faz Um Milagre Em Mim",
+        "artista": "Régis Danese"
+    },
+    "A Ele a Glória - Gabriela Rocha": {
+        "posicao": 174,
+        "nome": "A Ele a Glória",
+        "artista": "Gabriela Rocha"
+    },
+    "Ao Abrir o Culto - 243 - Harpa Cristã": {
+        "posicao": 175,
+        "nome": "Ao Abrir o Culto - 243",
+        "artista": "Harpa Cristã"
+    },
+    "Mágica - Calcinha Preta": {
+        "posicao": 176,
+        "nome": "Mágica",
+        "artista": "Calcinha Preta"
+    },
+    "Santo Espírito - Laura Souguellis": {
+        "posicao": 177,
+        "nome": "Santo Espírito",
+        "artista": "Laura Souguellis"
+    },
+    "Lonely - Akon": {
+        "posicao": 178,
+        "nome": "Lonely",
+        "artista": "Akon"
+    },
+    "Hollaback Girl - Gwen Stefani": {
+        "posicao": 179,
+        "nome": "Hollaback Girl",
+        "artista": "Gwen Stefani"
+    },
+    "Chicago - Michael Jackson": {
+        "posicao": 180,
+        "nome": "Chicago",
+        "artista": "Michael Jackson"
+    },
+    "Black - Pearl Jam": {
+        "posicao": 181,
+        "nome": "Black",
+        "artista": "Pearl Jam"
+    },
+    "Mirrors - Justin Timberlake": {
+        "posicao": 182,
+        "nome": "Mirrors",
+        "artista": "Justin Timberlake"
+    },
+    "Perfect - Ed Sheeran": {
+        "posicao": 183,
+        "nome": "Perfect",
+        "artista": "Ed Sheeran"
+    },
+    "The Winner Takes It All - ABBA": {
+        "posicao": 184,
+        "nome": "The Winner Takes It All",
+        "artista": "ABBA"
+    },
+    "O Nosso General É Cristo - Corinhos Evangélicos": {
+        "posicao": 185,
+        "nome": "O Nosso General É Cristo",
+        "artista": "Corinhos Evangélicos"
+    },
+    "Vem Cear - 301 - Harpa Cristã": {
+        "posicao": 186,
+        "nome": "Vem Cear - 301",
+        "artista": "Harpa Cristã"
+    },
+    "Daniel - Mara Lima": {
+        "posicao": 187,
+        "nome": "Daniel",
+        "artista": "Mara Lima"
+    },
+    "Foi por Conveniência - Marília Mendonça": {
+        "posicao": 188,
+        "nome": "Foi por Conveniência",
+        "artista": "Marília Mendonça"
+    },
+    "Salmos 91 - Eliã Oliveira": {
+        "posicao": 189,
+        "nome": "Salmos 91",
+        "artista": "Eliã Oliveira"
+    },
+    "Toda Terra - Gabriela Rocha": {
+        "posicao": 190,
+        "nome": "Toda Terra",
+        "artista": "Gabriela Rocha"
+    },
+    "Heaven Can Wait - Michael Jackson": {
+        "posicao": 191,
+        "nome": "Heaven Can Wait",
+        "artista": "Michael Jackson"
+    },
+    "Have You Ever Seen The Rain - Creedence Clearwater Revival": {
+        "posicao": 192,
+        "nome": "Have You Ever Seen The Rain",
+        "artista": "Creedence Clearwater Revival"
+    },
+    "Love Yourself - Justin Bieber": {
+        "posicao": 193,
+        "nome": "Love Yourself",
+        "artista": "Justin Bieber"
+    },
+    "The Night We Met - Lord Huron": {
+        "posicao": 194,
+        "nome": "The Night We Met",
+        "artista": "Lord Huron"
+    },
+    "Saudosa Lembrança - 2 - Harpa Cristã": {
+        "posicao": 195,
+        "nome": "Saudosa Lembrança - 2",
+        "artista": "Harpa Cristã"
+    },
+    "O Rei Está Voltando - 547 - Harpa Cristã": {
+        "posicao": 196,
+        "nome": "O Rei Está Voltando - 547",
+        "artista": "Harpa Cristã"
+    },
+    "Cristo Cura Sim! - 7 - Harpa Cristã": {
+        "posicao": 197,
+        "nome": "Cristo Cura Sim! - 7",
+        "artista": "Harpa Cristã"
+    },
+    "Decida - Milionário & José Rico": {
+        "posicao": 198,
+        "nome": "Decida",
+        "artista": "Milionário & José Rico"
+    },
+    "Em Teus Braços - Laura Souguellis": {
+        "posicao": 199,
+        "nome": "Em Teus Braços",
+        "artista": "Laura Souguellis"
+    },
+    "Cinnamon Girl - Lana Del Rey": {
+        "posicao": 200,
+        "nome": "Cinnamon Girl",
+        "artista": "Lana Del Rey"
+    },
+    "Acende Outra Vez - Jefferson & Suellen": {
+        "posicao": 201,
+        "nome": "Acende Outra Vez",
+        "artista": "Jefferson & Suellen"
+    },
+    "Uma Flor Gloriosa - 196 - Harpa Cristã": {
+        "posicao": 202,
+        "nome": "Uma Flor Gloriosa - 196",
+        "artista": "Harpa Cristã"
+    },
+    "Sure Thing - Miguel": {
+        "posicao": 203,
+        "nome": "Sure Thing",
+        "artista": "Miguel"
+    },
+    "Mistério na Olaria - Raquel Pereira": {
+        "posicao": 204,
+        "nome": "Mistério na Olaria",
+        "artista": "Raquel Pereira"
+    },
+    "Coming Up Roses - Harry Styles": {
+        "posicao": 205,
+        "nome": "Coming Up Roses",
+        "artista": "Harry Styles"
+    },
+    "Can't Help Falling In Love - Elvis Presley": {
+        "posicao": 206,
+        "nome": "Can't Help Falling In Love",
+        "artista": "Elvis Presley"
+    },
+    "Always - Bon Jovi": {
+        "posicao": 207,
+        "nome": "Always",
+        "artista": "Bon Jovi"
+    },
+    "Reacende a Chama - Sued Silva": {
+        "posicao": 208,
+        "nome": "Reacende a Chama",
+        "artista": "Sued Silva"
+    },
+    "Aquieta Minh'alma - Ministério Zoe": {
+        "posicao": 209,
+        "nome": "Aquieta Minh'alma",
+        "artista": "Ministério Zoe"
+    },
+    "What's Up? - 4 Non Blondes": {
+        "posicao": 210,
+        "nome": "What's Up?",
+        "artista": "4 Non Blondes"
+    },
+    "Há Poder no Sangue de Jesus - 491 - Harpa Cristã": {
+        "posicao": 211,
+        "nome": "Há Poder no Sangue de Jesus - 491",
+        "artista": "Harpa Cristã"
+    },
+    "Eu e Minha Casa (part. Léo Brandão) - Julliany Souza": {
+        "posicao": 212,
+        "nome": "Eu e Minha Casa (part. Léo Brandão)",
+        "artista": "Julliany Souza"
+    },
+    "Friends - Chase Atlantic": {
+        "posicao": 213,
+        "nome": "Friends",
+        "artista": "Chase Atlantic"
+    },
+    "Best Part (feat. H.E.R.) - Daniel Caesar": {
+        "posicao": 214,
+        "nome": "Best Part (feat. H.E.R.)",
+        "artista": "Daniel Caesar"
+    },
+    "Minha Bênção - Cassiane": {
+        "posicao": 215,
+        "nome": "Minha Bênção",
+        "artista": "Cassiane"
+    },
+    "Sunflower (feat. Swae Lee) - Post Malone": {
+        "posicao": 216,
+        "nome": "Sunflower (feat. Swae Lee)",
+        "artista": "Post Malone"
+    },
+    "Portões Celestiais - Rose Nascimento": {
+        "posicao": 217,
+        "nome": "Portões Celestiais",
+        "artista": "Rose Nascimento"
+    },
+    "Please Me (feat. Bruno Mars) - Cardi B": {
+        "posicao": 218,
+        "nome": "Please Me (feat. Bruno Mars)",
+        "artista": "Cardi B"
+    },
+    "A Bênção (part. Nívea Soares) - Gabriel Guedes": {
+        "posicao": 219,
+        "nome": "A Bênção (part. Nívea Soares)",
+        "artista": "Gabriel Guedes"
+    },
+    "Caso Indefinido - Cristiano Araújo": {
+        "posicao": 220,
+        "nome": "Caso Indefinido",
+        "artista": "Cristiano Araújo"
+    },
+    "Oh, Quão Lindo Esse Nome É - Ana Nóbrega": {
+        "posicao": 221,
+        "nome": "Oh, Quão Lindo Esse Nome É",
+        "artista": "Ana Nóbrega"
+    },
+    "A Formosa Jerusalém - 26 - Harpa Cristã": {
+        "posicao": 222,
+        "nome": "A Formosa Jerusalém - 26",
+        "artista": "Harpa Cristã"
+    },
+    "Eu Sou Teu Pai - Valesca Mayssa": {
+        "posicao": 223,
+        "nome": "Eu Sou Teu Pai",
+        "artista": "Valesca Mayssa"
+    },
+    "BIRDS OF A FEATHER - Billie Eilish": {
+        "posicao": 224,
+        "nome": "BIRDS OF A FEATHER",
+        "artista": "Billie Eilish"
+    },
+    "Sou Um Milagre - Voz da Verdade": {
+        "posicao": 225,
+        "nome": "Sou Um Milagre",
+        "artista": "Voz da Verdade"
+    },
+    "Yeshua - Fernandinho": {
+        "posicao": 226,
+        "nome": "Yeshua",
+        "artista": "Fernandinho"
+    },
+    "Rompendo Em Fé - Comunidade Evangélica Internacional da Zona Sul (CEIZS)": {
+        "posicao": 227,
+        "nome": "Rompendo Em Fé",
+        "artista": "Comunidade Evangélica Internacional da Zona Sul (CEIZS)"
+    },
+    "back to friends - sombr": {
+        "posicao": 228,
+        "nome": "back to friends",
+        "artista": "sombr"
+    },
+    "Posso Clamar - Eyshila": {
+        "posicao": 229,
+        "nome": "Posso Clamar",
+        "artista": "Eyshila"
+    },
+    "Sobrevivi - Shirley Carvalhaes": {
+        "posicao": 230,
+        "nome": "Sobrevivi",
+        "artista": "Shirley Carvalhaes"
+    },
+    "The One That Got Away - Katy Perry": {
+        "posicao": 231,
+        "nome": "The One That Got Away",
+        "artista": "Katy Perry"
+    },
+    "1000 Graus - Renascer Praise": {
+        "posicao": 232,
+        "nome": "1000 Graus",
+        "artista": "Renascer Praise"
+    },
+    "Sweater Weather - The Neighbourhood": {
+        "posicao": 233,
+        "nome": "Sweater Weather",
+        "artista": "The Neighbourhood"
+    },
+    "fantasmas - HUMBE": {
+        "posicao": 234,
+        "nome": "fantasmas",
+        "artista": "HUMBE"
+    },
+    "Beautiful Things - Benson Boone": {
+        "posicao": 235,
+        "nome": "Beautiful Things",
+        "artista": "Benson Boone"
+    },
+    "Despacito (part. Daddy Yankee) - Luis Fonsi": {
+        "posicao": 236,
+        "nome": "Despacito (part. Daddy Yankee)",
+        "artista": "Luis Fonsi"
+    },
+    "Tua Graça Me Basta - Davi Sacer": {
+        "posicao": 237,
+        "nome": "Tua Graça Me Basta",
+        "artista": "Davi Sacer"
+    },
+    "DAISIES - Justin Bieber": {
+        "posicao": 238,
+        "nome": "DAISIES",
+        "artista": "Justin Bieber"
+    },
+    "99 Ovelhas - Fraternidade São João Paulo II": {
+        "posicao": 239,
+        "nome": "99 Ovelhas",
+        "artista": "Fraternidade São João Paulo II"
+    },
+    "Gratidão - Felipe Rodrigues": {
+        "posicao": 240,
+        "nome": "Gratidão",
+        "artista": "Felipe Rodrigues"
+    },
+    "Pensando Em Jesus - 17 - Harpa Cristã": {
+        "posicao": 241,
+        "nome": "Pensando Em Jesus - 17",
+        "artista": "Harpa Cristã"
+    },
+    "Everybody Wants To Rule The World - Tears For Fears": {
+        "posicao": 242,
+        "nome": "Everybody Wants To Rule The World",
+        "artista": "Tears For Fears"
+    },
+    "Além do Rio Azul - Voz da Verdade": {
+        "posicao": 243,
+        "nome": "Além do Rio Azul",
+        "artista": "Voz da Verdade"
+    },
+    "Eu Te Seguro - Panda (Sertanejo)": {
+        "posicao": 244,
+        "nome": "Eu Te Seguro",
+        "artista": "Panda (Sertanejo)"
+    },
+    "Livin' On a Prayer - Bon Jovi": {
+        "posicao": 245,
+        "nome": "Livin' On a Prayer",
+        "artista": "Bon Jovi"
+    },
+    "Acima Das Estrelas - Shirley Carvalhaes": {
+        "posicao": 246,
+        "nome": "Acima Das Estrelas",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Sou Grato Por Seu Amor (part. Vinicius Cruz) - Get Worship": {
+        "posicao": 247,
+        "nome": "Sou Grato Por Seu Amor (part. Vinicius Cruz)",
+        "artista": "Get Worship"
+    },
+    "Bella Ciao - Banda Bassotti": {
+        "posicao": 248,
+        "nome": "Bella Ciao",
+        "artista": "Banda Bassotti"
+    },
+    "Tá Chorando Por Quê? - Amanda Wanessa": {
+        "posicao": 249,
+        "nome": "Tá Chorando Por Quê?",
+        "artista": "Amanda Wanessa"
+    },
+    "I Don't Want To Miss a Thing - Aerosmith": {
+        "posicao": 250,
+        "nome": "I Don't Want To Miss a Thing",
+        "artista": "Aerosmith"
+    },
+    "Oferta Agradável a Ti - Cassiane": {
+        "posicao": 251,
+        "nome": "Oferta Agradável a Ti",
+        "artista": "Cassiane"
+    },
+    "Meu Mestre - Irmão Lázaro": {
+        "posicao": 252,
+        "nome": "Meu Mestre",
+        "artista": "Irmão Lázaro"
+    },
+    "DtMF - Bad Bunny": {
+        "posicao": 253,
+        "nome": "DtMF",
+        "artista": "Bad Bunny"
+    },
+    "Deus Dos Deuses - Lauriete": {
+        "posicao": 254,
+        "nome": "Deus Dos Deuses",
+        "artista": "Lauriete"
+    },
+    "Purple Rain - Prince": {
+        "posicao": 255,
+        "nome": "Purple Rain",
+        "artista": "Prince"
+    },
+    "Santidade - Aline Barros": {
+        "posicao": 256,
+        "nome": "Santidade",
+        "artista": "Aline Barros"
+    },
+    "Back To Black - Amy Winehouse": {
+        "posicao": 257,
+        "nome": "Back To Black",
+        "artista": "Amy Winehouse"
+    },
+    "Fade Into You - Mazzy Star": {
+        "posicao": 258,
+        "nome": "Fade Into You",
+        "artista": "Mazzy Star"
+    },
+    "Te Agradeço - Diante do Trono": {
+        "posicao": 259,
+        "nome": "Te Agradeço",
+        "artista": "Diante do Trono"
+    },
+    "Rendido Estou (Arms Open Wide) (part. Fernandinho e Bruna Karla) - Aline Barros": {
+        "posicao": 260,
+        "nome": "Rendido Estou (Arms Open Wide) (part. Fernandinho e Bruna Karla)",
+        "artista": "Aline Barros"
+    },
+    "Faz Morada - Sulamita Alves": {
+        "posicao": 261,
+        "nome": "Faz Morada",
+        "artista": "Sulamita Alves"
+    },
+    "Eu Te Louvo - 10 - Harpa Cristã": {
+        "posicao": 262,
+        "nome": "Eu Te Louvo - 10",
+        "artista": "Harpa Cristã"
+    },
+    "Dia Após Dia - Valesca Mayssa": {
+        "posicao": 263,
+        "nome": "Dia Após Dia",
+        "artista": "Valesca Mayssa"
+    },
+    "Quão Grande É o Meu Deus - Soraya Moraes": {
+        "posicao": 264,
+        "nome": "Quão Grande É o Meu Deus",
+        "artista": "Soraya Moraes"
+    },
+    "Brasil Olê, Olê, Olê - Copa 2018 (O Único Penta É o Brasilzão) - Hinos de Futebol": {
+        "posicao": 265,
+        "nome": "Brasil Olê, Olê, Olê - Copa 2018 (O Único Penta É o Brasilzão)",
+        "artista": "Hinos de Futebol"
+    },
+    "Stop Crying Your Heart Out - Oasis": {
+        "posicao": 266,
+        "nome": "Stop Crying Your Heart Out",
+        "artista": "Oasis"
+    },
+    "Don't Look Back In Anger - Oasis": {
+        "posicao": 267,
+        "nome": "Don't Look Back In Anger",
+        "artista": "Oasis"
+    },
+    "Reflections - The Neighbourhood": {
+        "posicao": 268,
+        "nome": "Reflections",
+        "artista": "The Neighbourhood"
+    },
+    "Chora que a Vitória Vem - Léa Mendonça": {
+        "posicao": 269,
+        "nome": "Chora que a Vitória Vem",
+        "artista": "Léa Mendonça"
+    },
+    "La Cheyenne - El de Las R's": {
+        "posicao": 270,
+        "nome": "La Cheyenne",
+        "artista": "El de Las R's"
+    },
+    "Adorarei - Fabiana Anastácio": {
+        "posicao": 271,
+        "nome": "Adorarei",
+        "artista": "Fabiana Anastácio"
+    },
+    "Hino da França (La Marseillaise) - Hinos de Países": {
+        "posicao": 272,
+        "nome": "Hino da França (La Marseillaise)",
+        "artista": "Hinos de Países"
+    },
+    "A Thousand Years - Christina Perri": {
+        "posicao": 273,
+        "nome": "A Thousand Years",
+        "artista": "Christina Perri"
+    },
+    "MORNING DEW (DONK) - Beyoncé": {
+        "posicao": 274,
+        "nome": "MORNING DEW (DONK)",
+        "artista": "Beyoncé"
+    },
+    "Adoração - 124 - Harpa Cristã": {
+        "posicao": 275,
+        "nome": "Adoração - 124",
+        "artista": "Harpa Cristã"
+    },
+    "Gabriela - KATSEYE": {
+        "posicao": 276,
+        "nome": "Gabriela",
+        "artista": "KATSEYE"
+    },
+    "Nossa Esperança - 300 - Harpa Cristã": {
+        "posicao": 277,
+        "nome": "Nossa Esperança - 300",
+        "artista": "Harpa Cristã"
+    },
+    "Every Breath You Take - The Police": {
+        "posicao": 278,
+        "nome": "Every Breath You Take",
+        "artista": "The Police"
+    },
+    "Deus Velará Por Ti - 4 - Harpa Cristã": {
+        "posicao": 279,
+        "nome": "Deus Velará Por Ti - 4",
+        "artista": "Harpa Cristã"
+    },
+    "The House Of The Rising Sun - The Animals": {
+        "posicao": 280,
+        "nome": "The House Of The Rising Sun",
+        "artista": "The Animals"
+    },
+    "Risk It All - Bruno Mars": {
+        "posicao": 281,
+        "nome": "Risk It All",
+        "artista": "Bruno Mars"
+    },
+    "Digno é o Senhor - Aline Barros": {
+        "posicao": 282,
+        "nome": "Digno é o Senhor",
+        "artista": "Aline Barros"
+    },
+    "Here Comes The Sun - The Beatles": {
+        "posicao": 283,
+        "nome": "Here Comes The Sun",
+        "artista": "The Beatles"
+    },
+    "Ivy - Frank Ocean": {
+        "posicao": 284,
+        "nome": "Ivy",
+        "artista": "Frank Ocean"
+    },
+    "Losing My Religion - R.E.M.": {
+        "posicao": 285,
+        "nome": "Losing My Religion",
+        "artista": "R.E.M."
+    },
+    "Life Goes On - Oliver Tree": {
+        "posicao": 286,
+        "nome": "Life Goes On",
+        "artista": "Oliver Tree"
+    },
+    "Maranata - Ministério Avivah": {
+        "posicao": 287,
+        "nome": "Maranata",
+        "artista": "Ministério Avivah"
+    },
+    "Zombie - The Cranberries": {
+        "posicao": 288,
+        "nome": "Zombie",
+        "artista": "The Cranberries"
+    },
+    "Lose Yourself - Eminem": {
+        "posicao": 289,
+        "nome": "Lose Yourself",
+        "artista": "Eminem"
+    },
+    "Ao Estrugir a Trombeta - 469 - Harpa Cristã": {
+        "posicao": 290,
+        "nome": "Ao Estrugir a Trombeta - 469",
+        "artista": "Harpa Cristã"
+    },
+    "Ousado Amor - Isaías Saad": {
+        "posicao": 291,
+        "nome": "Ousado Amor",
+        "artista": "Isaías Saad"
+    },
+    "A Casa É Sua - Casa Worship": {
+        "posicao": 292,
+        "nome": "A Casa É Sua",
+        "artista": "Casa Worship"
+    },
+    "thank u, next - Ariana Grande": {
+        "posicao": 293,
+        "nome": "thank u, next",
+        "artista": "Ariana Grande"
+    },
+    "ME JALO (part. Fuerza Regida) - Grupo Frontera": {
+        "posicao": 294,
+        "nome": "ME JALO (part. Fuerza Regida)",
+        "artista": "Grupo Frontera"
+    },
+    "Não Pare - Midian Lima": {
+        "posicao": 295,
+        "nome": "Não Pare",
+        "artista": "Midian Lima"
+    },
+    "Salva-me, ó Deus - Get Worship": {
+        "posicao": 296,
+        "nome": "Salva-me, ó Deus",
+        "artista": "Get Worship"
+    },
+    "When I Was Your Man - Bruno Mars": {
+        "posicao": 297,
+        "nome": "When I Was Your Man",
+        "artista": "Bruno Mars"
+    },
+    "So Easy (To Fall In Love) - Olivia Dean": {
+        "posicao": 298,
+        "nome": "So Easy (To Fall In Love)",
+        "artista": "Olivia Dean"
+    },
+    "O Cego de Jericó - 476 - Harpa Cristã": {
+        "posicao": 299,
+        "nome": "O Cego de Jericó - 476",
+        "artista": "Harpa Cristã"
+    },
+    "Só Tu És Santo - MORADA": {
+        "posicao": 300,
+        "nome": "Só Tu És Santo",
+        "artista": "MORADA"
+    },
+    "Someone Like You - Adele": {
+        "posicao": 301,
+        "nome": "Someone Like You",
+        "artista": "Adele"
+    },
+    "É o Tempo de Segar - 224 - Harpa Cristã": {
+        "posicao": 302,
+        "nome": "É o Tempo de Segar - 224",
+        "artista": "Harpa Cristã"
+    },
+    "Uma Carta Viva (part. Vinicius Cruz e Paulo Neto) - Get Worship": {
+        "posicao": 303,
+        "nome": "Uma Carta Viva (part. Vinicius Cruz e Paulo Neto)",
+        "artista": "Get Worship"
+    },
+    "Até Que o Senhor Venha - Ministério Zoe": {
+        "posicao": 304,
+        "nome": "Até Que o Senhor Venha",
+        "artista": "Ministério Zoe"
+    },
+    "Memories - Justin Lee": {
+        "posicao": 305,
+        "nome": "Memories",
+        "artista": "Justin Lee"
+    },
+    "Dancing Queen - ABBA": {
+        "posicao": 306,
+        "nome": "Dancing Queen",
+        "artista": "ABBA"
+    },
+    "stupid song - Olivia Rodrigo": {
+        "posicao": 307,
+        "nome": "stupid song",
+        "artista": "Olivia Rodrigo"
+    },
+    "Deus Forte / Divisa de Fogo / Jacó Segurou o Anjo / Joquebede (Corinhos de Fogo) (medley) - Banda Som e Louvor": {
+        "posicao": 308,
+        "nome": "Deus Forte / Divisa de Fogo / Jacó Segurou o Anjo / Joquebede (Corinhos de Fogo) (medley)",
+        "artista": "Banda Som e Louvor"
+    },
+    "Tocando Em Frente - Almir Sater": {
+        "posicao": 309,
+        "nome": "Tocando Em Frente",
+        "artista": "Almir Sater"
+    },
+    "Until I Found You - Stephen Sanchez": {
+        "posicao": 310,
+        "nome": "Until I Found You",
+        "artista": "Stephen Sanchez"
+    },
+    "Beautiful Girls - Sean Kingston": {
+        "posicao": 311,
+        "nome": "Beautiful Girls",
+        "artista": "Sean Kingston"
+    },
+    "Breve Verei o Bom Jesus - 442 - Harpa Cristã": {
+        "posicao": 312,
+        "nome": "Breve Verei o Bom Jesus - 442",
+        "artista": "Harpa Cristã"
+    },
+    "Love Me Not - Ravyn Lenae": {
+        "posicao": 313,
+        "nome": "Love Me Not",
+        "artista": "Ravyn Lenae"
+    },
+    "Tua Presença - Paulo Neto (Gospel)": {
+        "posicao": 314,
+        "nome": "Tua Presença",
+        "artista": "Paulo Neto (Gospel)"
+    },
+    "Sailor Song - Gigi Perez": {
+        "posicao": 315,
+        "nome": "Sailor Song",
+        "artista": "Gigi Perez"
+    },
+    "Peão Todo Tatuado (part. Mariana Fagundes) - Jeninho": {
+        "posicao": 316,
+        "nome": "Peão Todo Tatuado (part. Mariana Fagundes)",
+        "artista": "Jeninho"
+    },
+    "Ao Único - Aline Barros": {
+        "posicao": 317,
+        "nome": "Ao Único",
+        "artista": "Aline Barros"
+    },
+    "Estamos de Pé - Marcus Salles": {
+        "posicao": 318,
+        "nome": "Estamos de Pé",
+        "artista": "Marcus Salles"
+    },
+    "Pai Nosso (Our Father) - Pedras Vivas": {
+        "posicao": 319,
+        "nome": "Pai Nosso (Our Father)",
+        "artista": "Pedras Vivas"
+    },
+    "Beat It - Michael Jackson": {
+        "posicao": 320,
+        "nome": "Beat It",
+        "artista": "Michael Jackson"
+    },
+    "You're Still The One - Shania Twain": {
+        "posicao": 321,
+        "nome": "You're Still The One",
+        "artista": "Shania Twain"
+    },
+    "Clocks - Coldplay": {
+        "posicao": 322,
+        "nome": "Clocks",
+        "artista": "Coldplay"
+    },
+    "Let Her Go - Passenger": {
+        "posicao": 323,
+        "nome": "Let Her Go",
+        "artista": "Passenger"
+    },
+    "Eu Cuido de Ti - Canção & Louvor": {
+        "posicao": 324,
+        "nome": "Eu Cuido de Ti",
+        "artista": "Canção & Louvor"
+    },
+    "A Ele a Glória - Diante do Trono": {
+        "posicao": 325,
+        "nome": "A Ele a Glória",
+        "artista": "Diante do Trono"
+    },
+    "Nunca Pare de Lutar - Ludmila Ferber": {
+        "posicao": 326,
+        "nome": "Nunca Pare de Lutar",
+        "artista": "Ludmila Ferber"
+    },
+    "Glória a Deus Nas Alturas - Eliana Ribeiro": {
+        "posicao": 327,
+        "nome": "Glória a Deus Nas Alturas",
+        "artista": "Eliana Ribeiro"
+    },
+    "Dreams - The Cranberries": {
+        "posicao": 328,
+        "nome": "Dreams",
+        "artista": "The Cranberries"
+    },
+    "Esperando Na Janela - Cogumelo Plutão": {
+        "posicao": 329,
+        "nome": "Esperando Na Janela",
+        "artista": "Cogumelo Plutão"
+    },
+    "É Ele - Drops INA": {
+        "posicao": 330,
+        "nome": "É Ele",
+        "artista": "Drops INA"
+    },
+    "One Less Lonely Girl - Justin Bieber": {
+        "posicao": 331,
+        "nome": "One Less Lonely Girl",
+        "artista": "Justin Bieber"
+    },
+    "Alívio - Jessé Aguiar": {
+        "posicao": 332,
+        "nome": "Alívio",
+        "artista": "Jessé Aguiar"
+    },
+    "Como Flecha (part. Carol Braga) - Samuel Dias": {
+        "posicao": 333,
+        "nome": "Como Flecha (part. Carol Braga)",
+        "artista": "Samuel Dias"
+    },
+    "Pau Pra Toda Obra (part. MC Ryan SP, MC Lele JP e MC IG) - MC Jacaré": {
+        "posicao": 334,
+        "nome": "Pau Pra Toda Obra (part. MC Ryan SP, MC Lele JP e MC IG)",
+        "artista": "MC Jacaré"
+    },
+    "Oração Pela Família - Padre Zezinho": {
+        "posicao": 335,
+        "nome": "Oração Pela Família",
+        "artista": "Padre Zezinho"
+    },
+    "Into the Sun - BTS": {
+        "posicao": 336,
+        "nome": "Into the Sun",
+        "artista": "BTS"
+    },
+    "Atos 2 - Gabriela Rocha": {
+        "posicao": 337,
+        "nome": "Atos 2",
+        "artista": "Gabriela Rocha"
+    },
+    "Little Moments - Patrick Watson": {
+        "posicao": 338,
+        "nome": "Little Moments",
+        "artista": "Patrick Watson"
+    },
+    "Kyrie Eleison - JMJ RIO 2013": {
+        "posicao": 339,
+        "nome": "Kyrie Eleison",
+        "artista": "JMJ RIO 2013"
+    },
+    "Teu Reino - Ministério Cristo Vivo": {
+        "posicao": 340,
+        "nome": "Teu Reino",
+        "artista": "Ministério Cristo Vivo"
+    },
+    "Deus, Tu És Santo - Danielle Cristina": {
+        "posicao": 341,
+        "nome": "Deus, Tu És Santo",
+        "artista": "Danielle Cristina"
+    },
+    "Bem-Aventurança do Crente - 126 - Harpa Cristã": {
+        "posicao": 342,
+        "nome": "Bem-Aventurança do Crente - 126",
+        "artista": "Harpa Cristã"
+    },
+    "Stuck On You - Lionel Richie": {
+        "posicao": 343,
+        "nome": "Stuck On You",
+        "artista": "Lionel Richie"
+    },
+    "Seven (feat. Latto) (Explicit Version) - Jung Kook": {
+        "posicao": 344,
+        "nome": "Seven (feat. Latto) (Explicit Version)",
+        "artista": "Jung Kook"
+    },
+    "Tão Sublime Sacramento - Músicas Católicas": {
+        "posicao": 345,
+        "nome": "Tão Sublime Sacramento",
+        "artista": "Músicas Católicas"
+    },
+    "The Only Exception - Paramore": {
+        "posicao": 346,
+        "nome": "The Only Exception",
+        "artista": "Paramore"
+    },
+    "Primeiro Amor - Aline Barros": {
+        "posicao": 347,
+        "nome": "Primeiro Amor",
+        "artista": "Aline Barros"
+    },
+    "Many Men (Wish Death) - 50 Cent": {
+        "posicao": 348,
+        "nome": "Many Men (Wish Death)",
+        "artista": "50 Cent"
+    },
+    "Desapareceu Um Povo - Shirley Carvalhaes": {
+        "posicao": 349,
+        "nome": "Desapareceu Um Povo",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Those Eyes - New West": {
+        "posicao": 350,
+        "nome": "Those Eyes",
+        "artista": "New West"
+    },
+    "Liberta-me de Mim - Luma Elpidio": {
+        "posicao": 351,
+        "nome": "Liberta-me de Mim",
+        "artista": "Luma Elpidio"
+    },
+    "Fix You - Coldplay": {
+        "posicao": 352,
+        "nome": "Fix You",
+        "artista": "Coldplay"
+    },
+    "Sete Trombetas - Lauriete": {
+        "posicao": 353,
+        "nome": "Sete Trombetas",
+        "artista": "Lauriete"
+    },
+    "Hosana Hey, Hosana Ha - Comunidade N. Sra. Aparecida (Paróquia Jesus Operário)": {
+        "posicao": 354,
+        "nome": "Hosana Hey, Hosana Ha",
+        "artista": "Comunidade N. Sra. Aparecida (Paróquia Jesus Operário)"
+    },
+    "Eu vou orar (part. Monteiro Vilas) - Nair Nany": {
+        "posicao": 355,
+        "nome": "Eu vou orar (part. Monteiro Vilas)",
+        "artista": "Nair Nany"
+    },
+    "Licença Para o Milagre (part. Eliã Oliveira) - Samuel Mariano": {
+        "posicao": 356,
+        "nome": "Licença Para o Milagre (part. Eliã Oliveira)",
+        "artista": "Samuel Mariano"
+    },
+    "Still Loving You - Scorpions": {
+        "posicao": 357,
+        "nome": "Still Loving You",
+        "artista": "Scorpions"
+    },
+    "Há Uma Saída - Shirley Carvalhaes": {
+        "posicao": 358,
+        "nome": "Há Uma Saída",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Put Your Records On - Corinne Bailey Rae": {
+        "posicao": 359,
+        "nome": "Put Your Records On",
+        "artista": "Corinne Bailey Rae"
+    },
+    "How Deep Is Your Love - Bee Gees": {
+        "posicao": 360,
+        "nome": "How Deep Is Your Love",
+        "artista": "Bee Gees"
+    },
+    "Human Nature - Michael Jackson": {
+        "posicao": 361,
+        "nome": "Human Nature",
+        "artista": "Michael Jackson"
+    },
+    "505 - Arctic Monkeys": {
+        "posicao": 362,
+        "nome": "505",
+        "artista": "Arctic Monkeys"
+    },
+    "Beautiful Boy (Darling Boy) - John Lennon": {
+        "posicao": 363,
+        "nome": "Beautiful Boy (Darling Boy)",
+        "artista": "John Lennon"
+    },
+    "Ready, Steady, Go! - Harry Styles": {
+        "posicao": 364,
+        "nome": "Ready, Steady, Go!",
+        "artista": "Harry Styles"
+    },
+    "Manchild - Sabrina Carpenter": {
+        "posicao": 365,
+        "nome": "Manchild",
+        "artista": "Sabrina Carpenter"
+    },
+    "Uma Coisa Nova - Maria Marçal": {
+        "posicao": 366,
+        "nome": "Uma Coisa Nova",
+        "artista": "Maria Marçal"
+    },
+    "Jó - Midian Lima": {
+        "posicao": 367,
+        "nome": "Jó",
+        "artista": "Midian Lima"
+    },
+    "Oceanos (Onde Meus Pés Podem Falhar) - Ana Nóbrega": {
+        "posicao": 368,
+        "nome": "Oceanos (Onde Meus Pés Podem Falhar)",
+        "artista": "Ana Nóbrega"
+    },
+    "500 Miles - Peter, Paul & Mary": {
+        "posicao": 369,
+        "nome": "500 Miles",
+        "artista": "Peter, Paul & Mary"
+    },
+    "Girls Just Want To Have Fun - Cyndi Lauper": {
+        "posicao": 370,
+        "nome": "Girls Just Want To Have Fun",
+        "artista": "Cyndi Lauper"
+    },
+    "Leave That Dogg Alone - Snoop Dogg": {
+        "posicao": 371,
+        "nome": "Leave That Dogg Alone",
+        "artista": "Snoop Dogg"
+    },
+    "In The End - Linkin Park": {
+        "posicao": 372,
+        "nome": "In The End",
+        "artista": "Linkin Park"
+    },
+    "Eu Vou Fazer - Kailane Frauches": {
+        "posicao": 373,
+        "nome": "Eu Vou Fazer",
+        "artista": "Kailane Frauches"
+    },
+    "Um Pecador Remido - 171 - Harpa Cristã": {
+        "posicao": 374,
+        "nome": "Um Pecador Remido - 171",
+        "artista": "Harpa Cristã"
+    },
+    "Let It Be - The Beatles": {
+        "posicao": 375,
+        "nome": "Let It Be",
+        "artista": "The Beatles"
+    },
+    "Graça Dou - 597 - Harpa Cristã": {
+        "posicao": 376,
+        "nome": "Graça Dou - 597",
+        "artista": "Harpa Cristã"
+    },
+    "Tempo Perdido - Legião Urbana": {
+        "posicao": 377,
+        "nome": "Tempo Perdido",
+        "artista": "Legião Urbana"
+    },
+    "Flowers - Miley Cyrus": {
+        "posicao": 378,
+        "nome": "Flowers",
+        "artista": "Miley Cyrus"
+    },
+    "Just a Girl - No Doubt": {
+        "posicao": 379,
+        "nome": "Just a Girl",
+        "artista": "No Doubt"
+    },
+    "Era a Mão de Deus - Kailane Frauches": {
+        "posicao": 380,
+        "nome": "Era a Mão de Deus",
+        "artista": "Kailane Frauches"
+    },
+    "Turning Page - Sleeping At Last": {
+        "posicao": 381,
+        "nome": "Turning Page",
+        "artista": "Sleeping At Last"
+    },
+    "Santo, Senhor Deus do Universo - Músicas Católicas": {
+        "posicao": 382,
+        "nome": "Santo, Senhor Deus do Universo",
+        "artista": "Músicas Católicas"
+    },
+    "Revela a Nós Senhor - 88 - Harpa Cristã": {
+        "posicao": 383,
+        "nome": "Revela a Nós Senhor - 88",
+        "artista": "Harpa Cristã"
+    },
+    "Try - P!nk": {
+        "posicao": 384,
+        "nome": "Try",
+        "artista": "P!nk"
+    },
+    "2 Much - Justin Bieber": {
+        "posicao": 385,
+        "nome": "2 Much",
+        "artista": "Justin Bieber"
+    },
+    "In My Life - The Beatles": {
+        "posicao": 386,
+        "nome": "In My Life",
+        "artista": "The Beatles"
+    },
+    "Na Unção de Deus - Elaine de Jesus": {
+        "posicao": 387,
+        "nome": "Na Unção de Deus",
+        "artista": "Elaine de Jesus"
+    },
+    "Arde Outra Vez - Thalles Roberto": {
+        "posicao": 388,
+        "nome": "Arde Outra Vez",
+        "artista": "Thalles Roberto"
+    },
+    "they don't know 'bout us - BTS": {
+        "posicao": 389,
+        "nome": "they don't know 'bout us",
+        "artista": "BTS"
+    },
+    "Renovo - Sarah Farias": {
+        "posicao": 390,
+        "nome": "Renovo",
+        "artista": "Sarah Farias"
+    },
+    "Kiss of Life - Sade": {
+        "posicao": 391,
+        "nome": "Kiss of Life",
+        "artista": "Sade"
+    },
+    "midnight love - girl in red": {
+        "posicao": 392,
+        "nome": "midnight love",
+        "artista": "girl in red"
+    },
+    "Pode Morar Aqui - Theo Rubia": {
+        "posicao": 393,
+        "nome": "Pode Morar Aqui",
+        "artista": "Theo Rubia"
+    },
+    "See You Again (feat. Kali Uchis) - Tyler, The Creator": {
+        "posicao": 394,
+        "nome": "See You Again (feat. Kali Uchis)",
+        "artista": "Tyler, The Creator"
+    },
+    "Fale Com Jesus - Shirley Carvalhaes": {
+        "posicao": 395,
+        "nome": "Fale Com Jesus",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Amigo Espírito Santo - Cassiane": {
+        "posicao": 396,
+        "nome": "Amigo Espírito Santo",
+        "artista": "Cassiane"
+    },
+    "Eu Não Perdi o Controle - Samuel Messias": {
+        "posicao": 397,
+        "nome": "Eu Não Perdi o Controle",
+        "artista": "Samuel Messias"
+    },
+    "All Of Me - John Legend": {
+        "posicao": 398,
+        "nome": "All Of Me",
+        "artista": "John Legend"
+    },
+    "Nada Além do Sangue - Fernandinho": {
+        "posicao": 399,
+        "nome": "Nada Além do Sangue",
+        "artista": "Fernandinho"
+    },
+    "Kiss It Better - Rihanna": {
+        "posicao": 400,
+        "nome": "Kiss It Better",
+        "artista": "Rihanna"
+    },
+    "Estar Em Tuas Mãos - Comunidade Católica Shalom": {
+        "posicao": 401,
+        "nome": "Estar Em Tuas Mãos",
+        "artista": "Comunidade Católica Shalom"
+    },
+    "Lugar Secreto - Gabriela Rocha": {
+        "posicao": 402,
+        "nome": "Lugar Secreto",
+        "artista": "Gabriela Rocha"
+    },
+    "Canção da América - Milton Nascimento": {
+        "posicao": 403,
+        "nome": "Canção da América",
+        "artista": "Milton Nascimento"
+    },
+    "Papaoutai - Stromae": {
+        "posicao": 404,
+        "nome": "Papaoutai",
+        "artista": "Stromae"
+    },
+    "Deus Vai Te Guiar - 28 - Harpa Cristã": {
+        "posicao": 405,
+        "nome": "Deus Vai Te Guiar - 28",
+        "artista": "Harpa Cristã"
+    },
+    "Lonely Day - System Of A Down": {
+        "posicao": 406,
+        "nome": "Lonely Day",
+        "artista": "System Of A Down"
+    },
+    "93 Million Miles - Jason Mraz": {
+        "posicao": 407,
+        "nome": "93 Million Miles",
+        "artista": "Jason Mraz"
+    },
+    "Sossegai! - 578 - Harpa Cristã": {
+        "posicao": 408,
+        "nome": "Sossegai! - 578",
+        "artista": "Harpa Cristã"
+    },
+    "Feminina - Athaliba e a Firma": {
+        "posicao": 409,
+        "nome": "Feminina",
+        "artista": "Athaliba e a Firma"
+    },
+    "Todavia Me Alegrarei - Leandro Soares": {
+        "posicao": 410,
+        "nome": "Todavia Me Alegrarei",
+        "artista": "Leandro Soares"
+    },
+    "Vendavais - Shirley Carvalhaes": {
+        "posicao": 411,
+        "nome": "Vendavais",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Me Atraiu - Gabriela Rocha": {
+        "posicao": 412,
+        "nome": "Me Atraiu",
+        "artista": "Gabriela Rocha"
+    },
+    "Don't tell your dreams (feat. STOSLIV) - LOVIXX": {
+        "posicao": 413,
+        "nome": "Don't tell your dreams (feat. STOSLIV)",
+        "artista": "LOVIXX"
+    },
+    "Love - Keyshia Cole": {
+        "posicao": 414,
+        "nome": "Love",
+        "artista": "Keyshia Cole"
+    },
+    "Somewhere Only We Know - Keane": {
+        "posicao": 415,
+        "nome": "Somewhere Only We Know",
+        "artista": "Keane"
+    },
+    "TQG (part. Shakira) - KAROL G": {
+        "posicao": 416,
+        "nome": "TQG (part. Shakira)",
+        "artista": "KAROL G"
+    },
+    "Vitória no Deserto - Aline Barros": {
+        "posicao": 417,
+        "nome": "Vitória no Deserto",
+        "artista": "Aline Barros"
+    },
+    "Thank You For Sunshine - UMAIS": {
+        "posicao": 418,
+        "nome": "Thank You For Sunshine",
+        "artista": "UMAIS"
+    },
+    "Good Reason - Gracie Abrams": {
+        "posicao": 419,
+        "nome": "Good Reason",
+        "artista": "Gracie Abrams"
+    },
+    "Mi Chico (feat. Melody & DJ Goja) - Jason Derulo": {
+        "posicao": 420,
+        "nome": "Mi Chico (feat. Melody & DJ Goja)",
+        "artista": "Jason Derulo"
+    },
+    "Sparks - Coldplay": {
+        "posicao": 421,
+        "nome": "Sparks",
+        "artista": "Coldplay"
+    },
+    "Aproveita Que Eu Tô Brigado (part. Zé Vaqueiro) - NATTAN": {
+        "posicao": 422,
+        "nome": "Aproveita Que Eu Tô Brigado (part. Zé Vaqueiro)",
+        "artista": "NATTAN"
+    },
+    "Consagração À Nossa Senhora - Músicas Católicas": {
+        "posicao": 423,
+        "nome": "Consagração À Nossa Senhora",
+        "artista": "Músicas Católicas"
+    },
+    "That Should Be Me (feat. Rascal Flatts) - Justin Bieber": {
+        "posicao": 424,
+        "nome": "That Should Be Me (feat. Rascal Flatts)",
+        "artista": "Justin Bieber"
+    },
+    "Canção do Apocalipse - Diante do Trono": {
+        "posicao": 425,
+        "nome": "Canção do Apocalipse",
+        "artista": "Diante do Trono"
+    },
+    "Sobrevivi - Sarah Farias": {
+        "posicao": 426,
+        "nome": "Sobrevivi",
+        "artista": "Sarah Farias"
+    },
+    "Caminho no Deserto - Soraya Moraes": {
+        "posicao": 427,
+        "nome": "Caminho no Deserto",
+        "artista": "Soraya Moraes"
+    },
+    "Careless Whisper - George Michael": {
+        "posicao": 428,
+        "nome": "Careless Whisper",
+        "artista": "George Michael"
+    },
+    "NEW GEN (Blue Lock) (part. MHRAP e Kaito Rapper) - M4rkim": {
+        "posicao": 429,
+        "nome": "NEW GEN (Blue Lock) (part. MHRAP e Kaito Rapper)",
+        "artista": "M4rkim"
+    },
+    "More Than Words - Extreme": {
+        "posicao": 430,
+        "nome": "More Than Words",
+        "artista": "Extreme"
+    },
+    "Chuva de Arroz - Luan Santana": {
+        "posicao": 431,
+        "nome": "Chuva de Arroz",
+        "artista": "Luan Santana"
+    },
+    "Where'd All The Time Go? - Dr. Dog": {
+        "posicao": 432,
+        "nome": "Where'd All The Time Go?",
+        "artista": "Dr. Dog"
+    },
+    "Lose Control - Teddy Swims": {
+        "posicao": 433,
+        "nome": "Lose Control",
+        "artista": "Teddy Swims"
+    },
+    "Ezequiel 47 - Thiago Brito (Gospel)": {
+        "posicao": 434,
+        "nome": "Ezequiel 47",
+        "artista": "Thiago Brito (Gospel)"
+    },
+    "Cadeira Cativa - Zé Neto & Cristiano": {
+        "posicao": 435,
+        "nome": "Cadeira Cativa",
+        "artista": "Zé Neto & Cristiano"
+    },
+    "Esse Adorador - Shirley Carvalhaes": {
+        "posicao": 436,
+        "nome": "Esse Adorador",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Another Day In Paradise - Phil Collins": {
+        "posicao": 437,
+        "nome": "Another Day In Paradise",
+        "artista": "Phil Collins"
+    },
+    "SWIM - BTS": {
+        "posicao": 438,
+        "nome": "SWIM",
+        "artista": "BTS"
+    },
+    "With Or Without You - U2": {
+        "posicao": 439,
+        "nome": "With Or Without You",
+        "artista": "U2"
+    },
+    "Equalize - Pitty": {
+        "posicao": 440,
+        "nome": "Equalize",
+        "artista": "Pitty"
+    },
+    "tell me what you want - Sasha Keable": {
+        "posicao": 441,
+        "nome": "tell me what you want",
+        "artista": "Sasha Keable"
+    },
+    "Existe Vida Aí - Sued Silva": {
+        "posicao": 442,
+        "nome": "Existe Vida Aí",
+        "artista": "Sued Silva"
+    },
+    "Oceano - Djavan": {
+        "posicao": 443,
+        "nome": "Oceano",
+        "artista": "Djavan"
+    },
+    "Adorador Por Excelência - Nani Azevedo": {
+        "posicao": 444,
+        "nome": "Adorador Por Excelência",
+        "artista": "Nani Azevedo"
+    },
+    "Olharei Para o Alto - Midian Lima": {
+        "posicao": 445,
+        "nome": "Olharei Para o Alto",
+        "artista": "Midian Lima"
+    },
+    "If I Ain't Got You - Alicia Keys": {
+        "posicao": 446,
+        "nome": "If I Ain't Got You",
+        "artista": "Alicia Keys"
+    },
+    "Águas Purificadoras - Diante do Trono": {
+        "posicao": 447,
+        "nome": "Águas Purificadoras",
+        "artista": "Diante do Trono"
+    },
+    "Forever Young - Alphaville": {
+        "posicao": 448,
+        "nome": "Forever Young",
+        "artista": "Alphaville"
+    },
+    "Deus É Deus - Delino Marçal": {
+        "posicao": 449,
+        "nome": "Deus É Deus",
+        "artista": "Delino Marçal"
+    },
+    "See You Again (feat. Charlie Puth) - Wiz Khalifa": {
+        "posicao": 450,
+        "nome": "See You Again (feat. Charlie Puth)",
+        "artista": "Wiz Khalifa"
+    },
+    "Se O Mar Não Se Abrir (part. Damares) - Kemilly Santos": {
+        "posicao": 451,
+        "nome": "Se O Mar Não Se Abrir (part. Damares)",
+        "artista": "Kemilly Santos"
+    },
+    "Aleluia - Gabriela Rocha": {
+        "posicao": 452,
+        "nome": "Aleluia",
+        "artista": "Gabriela Rocha"
+    },
+    "Vaso de Alabastro - Mara Lima": {
+        "posicao": 453,
+        "nome": "Vaso de Alabastro",
+        "artista": "Mara Lima"
+    },
+    "One Time - Justin Bieber": {
+        "posicao": 454,
+        "nome": "One Time",
+        "artista": "Justin Bieber"
+    },
+    "O Encontro (part. Jefferson & Suellen) - Valesca Mayssa": {
+        "posicao": 455,
+        "nome": "O Encontro (part. Jefferson & Suellen)",
+        "artista": "Valesca Mayssa"
+    },
+    "Pensando Bem - J Neto": {
+        "posicao": 456,
+        "nome": "Pensando Bem",
+        "artista": "J Neto"
+    },
+    "WILDFLOWER - Billie Eilish": {
+        "posicao": 457,
+        "nome": "WILDFLOWER",
+        "artista": "Billie Eilish"
+    },
+    "Terra Seca - Fraternidade São João Paulo II": {
+        "posicao": 458,
+        "nome": "Terra Seca",
+        "artista": "Fraternidade São João Paulo II"
+    },
+    "Believer - Imagine Dragons": {
+        "posicao": 459,
+        "nome": "Believer",
+        "artista": "Imagine Dragons"
+    },
+    "Rei e Santo - Canção & Louvor": {
+        "posicao": 460,
+        "nome": "Rei e Santo",
+        "artista": "Canção & Louvor"
+    },
+    "Eu Me Rendo - Renascer Praise": {
+        "posicao": 461,
+        "nome": "Eu Me Rendo",
+        "artista": "Renascer Praise"
+    },
+    "Quero Conhecer Jesus - Alessandro Vilas Boas": {
+        "posicao": 462,
+        "nome": "Quero Conhecer Jesus",
+        "artista": "Alessandro Vilas Boas"
+    },
+    "Hallelujah - Leonard Cohen": {
+        "posicao": 463,
+        "nome": "Hallelujah",
+        "artista": "Leonard Cohen"
+    },
+    "Time - Pink Floyd": {
+        "posicao": 464,
+        "nome": "Time",
+        "artista": "Pink Floyd"
+    },
+    "Misunderstood - Bon Jovi": {
+        "posicao": 465,
+        "nome": "Misunderstood",
+        "artista": "Bon Jovi"
+    },
+    "A Tua Palavra - Larissa Pires": {
+        "posicao": 466,
+        "nome": "A Tua Palavra",
+        "artista": "Larissa Pires"
+    },
+    "Estou Contigo - Shirley Carvalhaes": {
+        "posicao": 467,
+        "nome": "Estou Contigo",
+        "artista": "Shirley Carvalhaes"
+    },
+    "Pretty Hurts - Beyoncé": {
+        "posicao": 468,
+        "nome": "Pretty Hurts",
+        "artista": "Beyoncé"
+    },
+    "João 20 + Pra Sempre - Vitor Santana": {
+        "posicao": 469,
+        "nome": "João 20 + Pra Sempre",
+        "artista": "Vitor Santana"
+    },
+    "Stay (feat. Mikky Ekko) - Rihanna": {
+        "posicao": 470,
+        "nome": "Stay (feat. Mikky Ekko)",
+        "artista": "Rihanna"
+    },
+    "Quero Descer (part. Nani Azevedo) - Raquel Mello": {
+        "posicao": 471,
+        "nome": "Quero Descer (part. Nani Azevedo)",
+        "artista": "Raquel Mello"
+    },
+    "Someday We Will Dream About Today - The Sways": {
+        "posicao": 472,
+        "nome": "Someday We Will Dream About Today",
+        "artista": "The Sways"
+    },
+    "Training Season - Dua Lipa": {
+        "posicao": 473,
+        "nome": "Training Season",
+        "artista": "Dua Lipa"
+    },
+    "less - Olivia Rodrigo": {
+        "posicao": 474,
+        "nome": "less",
+        "artista": "Olivia Rodrigo"
+    },
+    "Bohemian Rhapsody - Queen": {
+        "posicao": 475,
+        "nome": "Bohemian Rhapsody",
+        "artista": "Queen"
+    },
+    "Always - Daniel Caesar": {
+        "posicao": 476,
+        "nome": "Always",
+        "artista": "Daniel Caesar"
+    },
+    "Music - Madonna": {
+        "posicao": 477,
+        "nome": "Music",
+        "artista": "Madonna"
+    },
+    "Vagalumes (part. Ivo Mozart) - Pollo": {
+        "posicao": 478,
+        "nome": "Vagalumes (part. Ivo Mozart)",
+        "artista": "Pollo"
+    },
+    "500 Graus - Cassiane": {
+        "posicao": 479,
+        "nome": "500 Graus",
+        "artista": "Cassiane"
+    },
+    "Como Eu Quero - Kid Abelha": {
+        "posicao": 480,
+        "nome": "Como Eu Quero",
+        "artista": "Kid Abelha"
+    },
+    "Amor Dos Outros - Henrique & Juliano": {
+        "posicao": 481,
+        "nome": "Amor Dos Outros",
+        "artista": "Henrique & Juliano"
+    },
+    "Ao Passar o Jordão - 509 - Harpa Cristã": {
+        "posicao": 482,
+        "nome": "Ao Passar o Jordão - 509",
+        "artista": "Harpa Cristã"
+    },
+    "In Memorian - Mara Lima": {
+        "posicao": 483,
+        "nome": "In Memorian",
+        "artista": "Mara Lima"
+    },
+    "Daylight - Taylor Swift": {
+        "posicao": 484,
+        "nome": "Daylight",
+        "artista": "Taylor Swift"
+    },
+    "Pra Sempre - Fernandinho": {
+        "posicao": 485,
+        "nome": "Pra Sempre",
+        "artista": "Fernandinho"
+    },
+    "I Want It That Way - Backstreet Boys": {
+        "posicao": 486,
+        "nome": "I Want It That Way",
+        "artista": "Backstreet Boys"
+    },
+    "With Arms Wide Open - Creed": {
+        "posicao": 487,
+        "nome": "With Arms Wide Open",
+        "artista": "Creed"
+    },
+    "Folded - Kehlani": {
+        "posicao": 488,
+        "nome": "Folded",
+        "artista": "Kehlani"
+    },
+    "Hey Brother - Avicii": {
+        "posicao": 489,
+        "nome": "Hey Brother",
+        "artista": "Avicii"
+    },
+    "Moana - Saber Quem Sou - Disney": {
+        "posicao": 490,
+        "nome": "Moana - Saber Quem Sou",
+        "artista": "Disney"
+    },
+    "Árvore Cortada - Valesca Mayssa": {
+        "posicao": 491,
+        "nome": "Árvore Cortada",
+        "artista": "Valesca Mayssa"
+    },
+    "November Rain - Guns N' Roses": {
+        "posicao": 492,
+        "nome": "November Rain",
+        "artista": "Guns N' Roses"
+    },
+    "Sarà Perché Ti Amo - Ricchi e Poveri": {
+        "posicao": 493,
+        "nome": "Sarà Perché Ti Amo",
+        "artista": "Ricchi e Poveri"
+    },
+    "Without Me - Eminem": {
+        "posicao": 494,
+        "nome": "Without Me",
+        "artista": "Eminem"
+    },
+    "Come As You Are - Nirvana": {
+        "posicao": 495,
+        "nome": "Come As You Are",
+        "artista": "Nirvana"
+    },
+    "Unstoppable - Sia": {
+        "posicao": 496,
+        "nome": "Unstoppable",
+        "artista": "Sia"
+    },
+    "Dependente - Canção & Louvor": {
+        "posicao": 497,
+        "nome": "Dependente",
+        "artista": "Canção & Louvor"
+    },
+    "A Barca (Tu Te Abeiraste da Praia) - Músicas Católicas": {
+        "posicao": 498,
+        "nome": "A Barca (Tu Te Abeiraste da Praia)",
+        "artista": "Músicas Católicas"
+    },
+    "Raridade - Anderson Freire": {
+        "posicao": 499,
+        "nome": "Raridade",
+        "artista": "Anderson Freire"
+    },
+    "Corpo e Família (Recebi Um Novo Coração do Pai) - Marcos Góes": {
+        "posicao": 500,
+        "nome": "Corpo e Família (Recebi Um Novo Coração do Pai)",
+        "artista": "Marcos Góes"
+    },
+    "Yo Voy (part. Zion & Lennox) - Daddy Yankee": {
+        "posicao": 501,
+        "nome": "Yo Voy (part. Zion & Lennox)",
+        "artista": "Daddy Yankee"
+    },
+    "Wind Of Change - Scorpions": {
+        "posicao": 502,
+        "nome": "Wind Of Change",
+        "artista": "Scorpions"
+    },
+    "Daughter from Hell - Gracie Abrams": {
+        "posicao": 503,
+        "nome": "Daughter from Hell",
+        "artista": "Gracie Abrams"
+    },
+    "Já Sei, Já Sei - 235 - Harpa Cristã": {
+        "posicao": 504,
+        "nome": "Já Sei, Já Sei - 235",
+        "artista": "Harpa Cristã"
+    },
+    "Steal My Girl - One Direction": {
+        "posicao": 505,
+        "nome": "Steal My Girl",
+        "artista": "One Direction"
+    },
+    "Be My Baby - The Ronettes": {
+        "posicao": 506,
+        "nome": "Be My Baby",
+        "artista": "The Ronettes"
+    },
+    "Home - Edith Whiskers": {
+        "posicao": 507,
+        "nome": "Home",
+        "artista": "Edith Whiskers"
+    },
+    "Avante Eu Vou - 310 - Harpa Cristã": {
+        "posicao": 508,
+        "nome": "Avante Eu Vou - 310",
+        "artista": "Harpa Cristã"
+    },
+    "Ressuscita-me - Aline Barros": {
+        "posicao": 509,
+        "nome": "Ressuscita-me",
+        "artista": "Aline Barros"
+    },
+    "The Reason - Hoobastank": {
+        "posicao": 510,
+        "nome": "The Reason",
+        "artista": "Hoobastank"
+    },
+    "I'm Just A Girl - FLO (UK)": {
+        "posicao": 511,
+        "nome": "I'm Just A Girl",
+        "artista": "FLO (UK)"
+    },
+    "A Sky Full Of Stars - Coldplay": {
+        "posicao": 512,
+        "nome": "A Sky Full Of Stars",
+        "artista": "Coldplay"
+    },
+    "Se Hoje Me Toca - José Jr.": {
+        "posicao": 513,
+        "nome": "Se Hoje Me Toca",
+        "artista": "José Jr."
+    },
+    "Gnarly - KATSEYE": {
+        "posicao": 514,
+        "nome": "Gnarly",
+        "artista": "KATSEYE"
+    },
+    "Ruja o Leão - Talita Catanzaro": {
+        "posicao": 515,
+        "nome": "Ruja o Leão",
+        "artista": "Talita Catanzaro"
+    },
+    "Baile do VJ - Eduardinho dos Teclados": {
+        "posicao": 516,
+        "nome": "Baile do VJ",
+        "artista": "Eduardinho dos Teclados"
+    },
+    "Like a Stone - Audioslave": {
+        "posicao": 517,
+        "nome": "Like a Stone",
+        "artista": "Audioslave"
+    },
+    "Soldado Ferido - Junior (Gospel)": {
+        "posicao": 518,
+        "nome": "Soldado Ferido",
+        "artista": "Junior (Gospel)"
+    },
+    "Vitorioso És - Gabriel Guedes": {
+        "posicao": 519,
+        "nome": "Vitorioso És",
+        "artista": "Gabriel Guedes"
+    },
+    "You'll Be In My Heart - Phil Collins": {
+        "posicao": 520,
+        "nome": "You'll Be In My Heart",
+        "artista": "Phil Collins"
+    },
+    "Nenhuma Condenação Há - Armando Filho": {
+        "posicao": 521,
+        "nome": "Nenhuma Condenação Há",
+        "artista": "Armando Filho"
+    },
+    "Não Há Deus Maior - Comunidade de Nilópolis": {
+        "posicao": 522,
+        "nome": "Não Há Deus Maior",
+        "artista": "Comunidade de Nilópolis"
+    },
+    "No Jardim - 296 - Harpa Cristã": {
+        "posicao": 523,
+        "nome": "No Jardim - 296",
+        "artista": "Harpa Cristã"
+    },
+    "Na Linha do Tempo - Victor & Leo": {
+        "posicao": 524,
+        "nome": "Na Linha do Tempo",
+        "artista": "Victor & Leo"
+    },
+    "Get You (feat. Kali Uchis) - Daniel Caesar": {
+        "posicao": 525,
+        "nome": "Get You (feat. Kali Uchis)",
+        "artista": "Daniel Caesar"
+    },
+    "Dernière Danse - Indila": {
+        "posicao": 526,
+        "nome": "Dernière Danse",
+        "artista": "Indila"
+    },
+    "Thriller - Michael Jackson": {
+        "posicao": 527,
+        "nome": "Thriller",
+        "artista": "Michael Jackson"
+    },
+    "Os Sonhos de Deus - Ludmila Ferber": {
+        "posicao": 528,
+        "nome": "Os Sonhos de Deus",
+        "artista": "Ludmila Ferber"
+    },
+    "Chuva de Graça - Eliana Ribeiro": {
+        "posicao": 529,
+        "nome": "Chuva de Graça",
+        "artista": "Eliana Ribeiro"
+    },
+    "A Melhor Coisa Que Já Fiz - Ozeias de Paula": {
+        "posicao": 530,
+        "nome": "A Melhor Coisa Que Já Fiz",
+        "artista": "Ozeias de Paula"
+    },
+    "Sorriso Resplandecente (Abertura Dragon Ball GT) - Dragon Ball": {
+        "posicao": 531,
+        "nome": "Sorriso Resplandecente (Abertura Dragon Ball GT)",
+        "artista": "Dragon Ball"
+    },
+    "Eu Tenho Você - Marcelo Markes": {
+        "posicao": 532,
+        "nome": "Eu Tenho Você",
+        "artista": "Marcelo Markes"
+    },
+    "Eu Te Amo Tanto - Irmão Lázaro": {
+        "posicao": 533,
+        "nome": "Eu Te Amo Tanto",
+        "artista": "Irmão Lázaro"
+    },
+    "Lokita Por Mí (part. Prince Royce) - Romeo Santos": {
+        "posicao": 534,
+        "nome": "Lokita Por Mí (part. Prince Royce)",
+        "artista": "Romeo Santos"
+    },
+    "Noites Traiçoeiras - Padre Marcelo Rossi": {
+        "posicao": 535,
+        "nome": "Noites Traiçoeiras",
+        "artista": "Padre Marcelo Rossi"
+    },
+    "O Valor de Uma Alma - Mara Lima": {
+        "posicao": 536,
+        "nome": "O Valor de Uma Alma",
+        "artista": "Mara Lima"
+    },
+    "Deixa Eu Te Usar - Sarah Farias": {
+        "posicao": 537,
+        "nome": "Deixa Eu Te Usar",
+        "artista": "Sarah Farias"
+    },
+    "Nothing Else Matters - Metallica": {
+        "posicao": 538,
+        "nome": "Nothing Else Matters",
+        "artista": "Metallica"
+    },
+    "Hooligan - BTS": {
+        "posicao": 539,
+        "nome": "Hooligan",
+        "artista": "BTS"
+    },
+    "Like a Prayer - Madonna": {
+        "posicao": 540,
+        "nome": "Like a Prayer",
+        "artista": "Madonna"
+    },
+    "O Lugar - Pr. Lucas": {
+        "posicao": 541,
+        "nome": "O Lugar",
+        "artista": "Pr. Lucas"
+    },
+    "Garota de Ipanema - Tom Jobim": {
+        "posicao": 542,
+        "nome": "Garota de Ipanema",
+        "artista": "Tom Jobim"
+    },
+    "Dream On - Aerosmith": {
+        "posicao": 543,
+        "nome": "Dream On",
+        "artista": "Aerosmith"
+    },
+    "Sou Peregrino - Silvan Santos": {
+        "posicao": 544,
+        "nome": "Sou Peregrino",
+        "artista": "Silvan Santos"
+    },
+    "La Cuarta Estrella (Versión Hinchada) - PALMITO": {
+        "posicao": 545,
+        "nome": "La Cuarta Estrella (Versión Hinchada)",
+        "artista": "PALMITO"
+    },
+    "Brasil com S - M4IA": {
+        "posicao": 546,
+        "nome": "Brasil com S",
+        "artista": "M4IA"
+    },
+    "Me & U - Tems": {
+        "posicao": 547,
+        "nome": "Me & U",
+        "artista": "Tems"
+    },
+    "Just The Way You Are - Bruno Mars": {
+        "posicao": 548,
+        "nome": "Just The Way You Are",
+        "artista": "Bruno Mars"
+    },
+    "Divino Companheiro - Mara Lima": {
+        "posicao": 549,
+        "nome": "Divino Companheiro",
+        "artista": "Mara Lima"
+    },
+    "Born To Die - Lana Del Rey": {
+        "posicao": 550,
+        "nome": "Born To Die",
+        "artista": "Lana Del Rey"
+    },
+    "Solta o Cabo da Nau - Corinhos Evangélicos": {
+        "posicao": 551,
+        "nome": "Solta o Cabo da Nau",
+        "artista": "Corinhos Evangélicos"
+    },
+    "Felices Los 4 - Maluma": {
+        "posicao": 552,
+        "nome": "Felices Los 4",
+        "artista": "Maluma"
+    },
+    "Vejam Eu Andei Pelas Vilas - Músicas Católicas": {
+        "posicao": 553,
+        "nome": "Vejam Eu Andei Pelas Vilas",
+        "artista": "Músicas Católicas"
+    },
+    "Taste Back - Harry Styles": {
+        "posicao": 554,
+        "nome": "Taste Back",
+        "artista": "Harry Styles"
+    },
+    "Exultação do Crente - 60 - Harpa Cristã": {
+        "posicao": 555,
+        "nome": "Exultação do Crente - 60",
+        "artista": "Harpa Cristã"
+    },
+    "Vida aos Sepulcros (part. Elevation Worship) - Gabriela Rocha": {
+        "posicao": 556,
+        "nome": "Vida aos Sepulcros (part. Elevation Worship)",
+        "artista": "Gabriela Rocha"
+    },
+    "Take On Me - a-ha": {
+        "posicao": 557,
+        "nome": "Take On Me",
+        "artista": "a-ha"
+    },
+    "O Amigo - Sérgio Lopes": {
+        "posicao": 558,
+        "nome": "O Amigo",
+        "artista": "Sérgio Lopes"
+    },
+    "Paradise - Coldplay": {
+        "posicao": 559,
+        "nome": "Paradise",
+        "artista": "Coldplay"
+    },
+    "Você É Especial - Daniel & Samuel": {
+        "posicao": 560,
+        "nome": "Você É Especial",
+        "artista": "Daniel & Samuel"
+    },
+    "Watermelon Sugar - Harry Styles": {
+        "posicao": 561,
+        "nome": "Watermelon Sugar",
+        "artista": "Harry Styles"
+    },
+    "The Fate of Ophelia - Taylor Swift": {
+        "posicao": 562,
+        "nome": "The Fate of Ophelia",
+        "artista": "Taylor Swift"
+    },
+    "Your Love - The Outfield": {
+        "posicao": 563,
+        "nome": "Your Love",
+        "artista": "The Outfield"
+    },
+    "Por Causa Dele (part. Jessé Aguiar) - Kellen Byanca": {
+        "posicao": 564,
+        "nome": "Por Causa Dele (part. Jessé Aguiar)",
+        "artista": "Kellen Byanca"
+    },
+    "The First Time - Damiano David": {
+        "posicao": 565,
+        "nome": "The First Time",
+        "artista": "Damiano David"
+    },
+    "The Hard Way - Cameron Whitcomb": {
+        "posicao": 566,
+        "nome": "The Hard Way",
+        "artista": "Cameron Whitcomb"
+    },
+    "O Maior Vilão Sou Eu - Sarah Beatriz": {
+        "posicao": 567,
+        "nome": "O Maior Vilão Sou Eu",
+        "artista": "Sarah Beatriz"
+    },
+    "Sinceridade - Alisson e Neide": {
+        "posicao": 568,
+        "nome": "Sinceridade",
+        "artista": "Alisson e Neide"
+    },
+    "Smells Like Teen Spirit - Nirvana": {
+        "posicao": 569,
+        "nome": "Smells Like Teen Spirit",
+        "artista": "Nirvana"
+    },
+    "Isn't She Lovely - Stevie Wonder": {
+        "posicao": 570,
+        "nome": "Isn't She Lovely",
+        "artista": "Stevie Wonder"
+    },
+    "Love On The Brain - Rihanna": {
+        "posicao": 571,
+        "nome": "Love On The Brain",
+        "artista": "Rihanna"
+    },
+    "Simple Man - Lynyrd Skynyrd": {
+        "posicao": 572,
+        "nome": "Simple Man",
+        "artista": "Lynyrd Skynyrd"
+    },
+    "Wuthering Heights - Kate Bush": {
+        "posicao": 573,
+        "nome": "Wuthering Heights",
+        "artista": "Kate Bush"
+    },
+    "João Viu - Andréa Fontes": {
+        "posicao": 574,
+        "nome": "João Viu",
+        "artista": "Andréa Fontes"
+    },
+    "lovely (feat. Khalid) - Billie Eilish": {
+        "posicao": 575,
+        "nome": "lovely (feat. Khalid)",
+        "artista": "Billie Eilish"
+    },
+    "Quiero Volver a Robarle Un Gol Al Ladrón - Selección Argentina": {
+        "posicao": 576,
+        "nome": "Quiero Volver a Robarle Un Gol Al Ladrón",
+        "artista": "Selección Argentina"
+    },
+    "Boys Don't Cry - The Cure": {
+        "posicao": 577,
+        "nome": "Boys Don't Cry",
+        "artista": "The Cure"
+    },
+    "Ainda Bem - Marisa Monte": {
+        "posicao": 578,
+        "nome": "Ainda Bem",
+        "artista": "Marisa Monte"
+    },
+    "Eu Sou Dizimista - Músicas Católicas": {
+        "posicao": 579,
+        "nome": "Eu Sou Dizimista",
+        "artista": "Músicas Católicas"
+    },
+    "Corpo e Família - Daniel Souza": {
+        "posicao": 580,
+        "nome": "Corpo e Família",
+        "artista": "Daniel Souza"
+    },
+    "u + me = <3 - Olivia Rodrigo": {
+        "posicao": 581,
+        "nome": "u + me = <3",
+        "artista": "Olivia Rodrigo"
+    },
+    "Базовый минимум (bazovyj minimum) (feat. SABI) - Mia Boyka": {
+        "posicao": 582,
+        "nome": "Базовый минимум (bazovyj minimum) (feat. SABI)",
+        "artista": "Mia Boyka"
+    },
+    "I Say a Little Prayer - Aretha Franklin": {
+        "posicao": 583,
+        "nome": "I Say a Little Prayer",
+        "artista": "Aretha Franklin"
+    },
+    "Sem Palavras - Vanilda Bordieri": {
+        "posicao": 584,
+        "nome": "Sem Palavras",
+        "artista": "Vanilda Bordieri"
+    },
+    "Don't Stop Believin' - Journey": {
+        "posicao": 585,
+        "nome": "Don't Stop Believin'",
+        "artista": "Journey"
+    },
+    "A Glória da Segunda Casa - Beatriz Andrade": {
+        "posicao": 586,
+        "nome": "A Glória da Segunda Casa",
+        "artista": "Beatriz Andrade"
+    },
+    "Eis-Me Aqui - Colo de Deus": {
+        "posicao": 587,
+        "nome": "Eis-Me Aqui",
+        "artista": "Colo de Deus"
+    },
+    "Graça, Graça - 205 - Harpa Cristã": {
+        "posicao": 588,
+        "nome": "Graça, Graça - 205",
+        "artista": "Harpa Cristã"
+    },
+    "Efésios 6 - Anderson Freire": {
+        "posicao": 589,
+        "nome": "Efésios 6",
+        "artista": "Anderson Freire"
+    },
+    "Aos Pés Da Cruz - Kleber Lucas": {
+        "posicao": 590,
+        "nome": "Aos Pés Da Cruz",
+        "artista": "Kleber Lucas"
+    },
+    "Te Amarei, Senhor - Padre Zezinho": {
+        "posicao": 591,
+        "nome": "Te Amarei, Senhor",
+        "artista": "Padre Zezinho"
+    },
+    "Dia de Sol - Gerson Rufino": {
+        "posicao": 592,
+        "nome": "Dia de Sol",
+        "artista": "Gerson Rufino"
+    },
+    "Who Knows - Daniel Caesar": {
+        "posicao": 593,
+        "nome": "Who Knows",
+        "artista": "Daniel Caesar"
+    },
+    "The Scientist - Coldplay": {
+        "posicao": 594,
+        "nome": "The Scientist",
+        "artista": "Coldplay"
+    },
+    "Vamos Celebrar - Ministério Amor e Adoração": {
+        "posicao": 595,
+        "nome": "Vamos Celebrar",
+        "artista": "Ministério Amor e Adoração"
+    },
+    "A Última Hora - 570 - Harpa Cristã": {
+        "posicao": 596,
+        "nome": "A Última Hora - 570",
+        "artista": "Harpa Cristã"
+    },
+    "Galileu - Fernandinho": {
+        "posicao": 597,
+        "nome": "Galileu",
+        "artista": "Fernandinho"
+    },
+    "Enquanto Eu Te Adoro - Flávio Vitor Jr.": {
+        "posicao": 598,
+        "nome": "Enquanto Eu Te Adoro",
+        "artista": "Flávio Vitor Jr."
+    },
+    "They Don't Care About Us - Michael Jackson": {
+        "posicao": 599,
+        "nome": "They Don't Care About Us",
+        "artista": "Michael Jackson"
+    },
+    "Highway To Hell - AC/DC": {
+        "posicao": 600,
+        "nome": "Highway To Hell",
+        "artista": "AC/DC"
+    },
+    "Minha Geração - Thiago Brito": {
+        "posicao": 601,
+        "nome": "Minha Geração",
+        "artista": "Thiago Brito"
+    },
+    "Medley Corinhos de Fogo (Deus Forte Como Jeová / Divisa de Fogo / Vem Cá Vem Ver / Carros de Fogo / Jacó Segurou o Anjo / Desemborca o Vaso) - Midian Lima": {
+        "posicao": 602,
+        "nome": "Medley Corinhos de Fogo (Deus Forte Como Jeová / Divisa de Fogo / Vem Cá Vem Ver / Carros de Fogo / Jacó Segurou o Anjo / Desemborca o Vaso)",
+        "artista": "Midian Lima"
+    },
+    "Foi Na Cruz - Denise": {
+        "posicao": 603,
+        "nome": "Foi Na Cruz",
+        "artista": "Denise"
+    },
+    "Dance No More - Harry Styles": {
+        "posicao": 604,
+        "nome": "Dance No More",
+        "artista": "Harry Styles"
+    },
+    "Another Love - Tom Odell": {
+        "posicao": 605,
+        "nome": "Another Love",
+        "artista": "Tom Odell"
+    },
+    "Tá Escrito - Grupo Revelação": {
+        "posicao": 606,
+        "nome": "Tá Escrito",
+        "artista": "Grupo Revelação"
+    },
+    "Set do Rincon 2 (part. US Agroboy, Edy Lemond, Country Boy, MC Will.G, The Roça, Jho Jho Barreiro e FARIAS) - Na Base do Agro": {
+        "posicao": 607,
+        "nome": "Set do Rincon 2 (part. US Agroboy, Edy Lemond, Country Boy, MC Will.G, The Roça, Jho Jho Barreiro e FARIAS)",
+        "artista": "Na Base do Agro"
+    },
+    "Renova-me - Aline Barros": {
+        "posicao": 608,
+        "nome": "Renova-me",
+        "artista": "Aline Barros"
+    },
+    "Are You Listening Yet? - Harry Styles": {
+        "posicao": 609,
+        "nome": "Are You Listening Yet?",
+        "artista": "Harry Styles"
+    },
+    "It's My Life - Bon Jovi": {
+        "posicao": 610,
+        "nome": "It's My Life",
+        "artista": "Bon Jovi"
+    },
+    "Casa de Bênção - Eyshila": {
+        "posicao": 611,
+        "nome": "Casa de Bênção",
+        "artista": "Eyshila"
+    },
+    "Golden - HUNTR/X": {
+        "posicao": 612,
+        "nome": "Golden",
+        "artista": "HUNTR/X"
+    },
+    "Give It Up to Me - Sean Paul": {
+        "posicao": 613,
+        "nome": "Give It Up to Me",
+        "artista": "Sean Paul"
+    },
+    "Dancing On My Own - Robyn": {
+        "posicao": 614,
+        "nome": "Dancing On My Own",
+        "artista": "Robyn"
+    },
+    "P do Pecado (part. Simone Mendes) - Grupo Menos É Mais": {
+        "posicao": 615,
+        "nome": "P do Pecado (part. Simone Mendes)",
+        "artista": "Grupo Menos É Mais"
+    },
+    "The Greatest Love Of All - Whitney Houston": {
+        "posicao": 616,
+        "nome": "The Greatest Love Of All",
+        "artista": "Whitney Houston"
+    },
+    "Pop - Harry Styles": {
+        "posicao": 617,
+        "nome": "Pop",
+        "artista": "Harry Styles"
+    },
+    "Aperture - Harry Styles": {
+        "posicao": 618,
+        "nome": "Aperture",
+        "artista": "Harry Styles"
+    },
+    "Umbrella (feat. Jay-Z) - Rihanna": {
+        "posicao": 619,
+        "nome": "Umbrella (feat. Jay-Z)",
+        "artista": "Rihanna"
+    },
+    "Vida Loka, Pt. 1 - Racionais MC's": {
+        "posicao": 620,
+        "nome": "Vida Loka, Pt. 1",
+        "artista": "Racionais MC's"
+    },
+    "American Girls - Harry Styles": {
+        "posicao": 621,
+        "nome": "American Girls",
+        "artista": "Harry Styles"
+    },
+    "Someone You Loved - Lewis Capaldi": {
+        "posicao": 622,
+        "nome": "Someone You Loved",
+        "artista": "Lewis Capaldi"
+    },
+    "Riptide - Vance Joy": {
+        "posicao": 623,
+        "nome": "Riptide",
+        "artista": "Vance Joy"
+    },
+    "Deus Forte Como Jeová - Corinhos Evangélicos": {
+        "posicao": 624,
+        "nome": "Deus Forte Como Jeová",
+        "artista": "Corinhos Evangélicos"
+    },
+    "A Riqueza Divinal - 510 - Harpa Cristã": {
+        "posicao": 625,
+        "nome": "A Riqueza Divinal - 510",
+        "artista": "Harpa Cristã"
+    },
+    "Autoridade e Poder (Os Que Confiam No Senhor) - Marcos Góes": {
+        "posicao": 626,
+        "nome": "Autoridade e Poder (Os Que Confiam No Senhor)",
+        "artista": "Marcos Góes"
+    },
+    "Nosso Sonho - Claudinho e Buchecha": {
+        "posicao": 627,
+        "nome": "Nosso Sonho",
+        "artista": "Claudinho e Buchecha"
+    },
+    "Como És Lindo - Vida Reluz": {
+        "posicao": 628,
+        "nome": "Como És Lindo",
+        "artista": "Vida Reluz"
+    },
+    "Summertime Sadness - Lana Del Rey": {
+        "posicao": 629,
+        "nome": "Summertime Sadness",
+        "artista": "Lana Del Rey"
+    },
+    "Runaway - AURORA": {
+        "posicao": 630,
+        "nome": "Runaway",
+        "artista": "AURORA"
+    },
+    "Heal the World - Michael Jackson": {
+        "posicao": 631,
+        "nome": "Heal the World",
+        "artista": "Michael Jackson"
+    },
+    "Lugar Santo - Bruna Karla": {
+        "posicao": 632,
+        "nome": "Lugar Santo",
+        "artista": "Bruna Karla"
+    },
+    "Knockin' On Heaven's Door - Guns N' Roses": {
+        "posicao": 633,
+        "nome": "Knockin' On Heaven's Door",
+        "artista": "Guns N' Roses"
+    },
+    "Enjoy The Silence - Depeche Mode": {
+        "posicao": 634,
+        "nome": "Enjoy The Silence",
+        "artista": "Depeche Mode"
+    },
+    "WHERE IS MY HUSBAND! - RAYE": {
+        "posicao": 635,
+        "nome": "WHERE IS MY HUSBAND!",
+        "artista": "RAYE"
+    },
+    "Bom Estarmos Aqui - Corinhos Evangélicos": {
+        "posicao": 636,
+        "nome": "Bom Estarmos Aqui",
+        "artista": "Corinhos Evangélicos"
+    },
+    "Golden - Harry Styles": {
+        "posicao": 637,
+        "nome": "Golden",
+        "artista": "Harry Styles"
+    },
+    "Mas Eu Te Amo - Eliane Fernandes": {
+        "posicao": 638,
+        "nome": "Mas Eu Te Amo",
+        "artista": "Eliane Fernandes"
+    },
+    "A Thousand Miles - Vanessa Carlton": {
+        "posicao": 639,
+        "nome": "A Thousand Miles",
+        "artista": "Vanessa Carlton"
+    },
+    "Set Fire To The Rain - Adele": {
+        "posicao": 640,
+        "nome": "Set Fire To The Rain",
+        "artista": "Adele"
+    },
+    "New York, New York - Frank Sinatra": {
+        "posicao": 641,
+        "nome": "New York, New York",
+        "artista": "Frank Sinatra"
+    },
+    "Xote da Alegria - Falamansa": {
+        "posicao": 642,
+        "nome": "Xote da Alegria",
+        "artista": "Falamansa"
+    },
+    "Que Sorte A Nossa - Matheus & Kauan": {
+        "posicao": 643,
+        "nome": "Que Sorte A Nossa",
+        "artista": "Matheus & Kauan"
+    },
+    "Nascer de Novo - Rayssa e Ravel": {
+        "posicao": 644,
+        "nome": "Nascer de Novo",
+        "artista": "Rayssa e Ravel"
+    },
+    "The Knife - Gracie Abrams": {
+        "posicao": 645,
+        "nome": "The Knife",
+        "artista": "Gracie Abrams"
+    },
+    "Ninguém Explica Deus (part. Gabriela Rocha) - Preto No Branco": {
+        "posicao": 646,
+        "nome": "Ninguém Explica Deus (part. Gabriela Rocha)",
+        "artista": "Preto No Branco"
+    },
+    "You've Got a Friend in Me - Toy Story": {
+        "posicao": 647,
+        "nome": "You've Got a Friend in Me",
+        "artista": "Toy Story"
+    },
+    "Aclame ao Senhor - Diante do Trono": {
+        "posicao": 648,
+        "nome": "Aclame ao Senhor",
+        "artista": "Diante do Trono"
+    },
+    "Mystery Of Love - Sufjan Stevens": {
+        "posicao": 649,
+        "nome": "Mystery Of Love",
+        "artista": "Sufjan Stevens"
+    },
+    "Gata Only (part. Cris Mj) - FloyyMenor": {
+        "posicao": 650,
+        "nome": "Gata Only (part. Cris Mj)",
+        "artista": "FloyyMenor"
+    },
+    "Um Povo Forte - 340 - Harpa Cristã": {
+        "posicao": 651,
+        "nome": "Um Povo Forte - 340",
+        "artista": "Harpa Cristã"
+    },
+    "Season 2 Weight Loss - Harry Styles": {
+        "posicao": 652,
+        "nome": "Season 2 Weight Loss",
+        "artista": "Harry Styles"
+    },
+    "Brazino (Brazino777) - Jingles": {
+        "posicao": 653,
+        "nome": "Brazino (Brazino777)",
+        "artista": "Jingles"
+    },
+    "West Coast - Lana Del Rey": {
+        "posicao": 654,
+        "nome": "West Coast",
+        "artista": "Lana Del Rey"
+    },
+    "Qual o Preço do Perdão - 292 - Harpa Cristã": {
+        "posicao": 655,
+        "nome": "Qual o Preço do Perdão - 292",
+        "artista": "Harpa Cristã"
+    },
+    "Drão - Gilberto Gil": {
+        "posicao": 656,
+        "nome": "Drão",
+        "artista": "Gilberto Gil"
+    },
+    "Dandelions - Ruth B.": {
+        "posicao": 657,
+        "nome": "Dandelions",
+        "artista": "Ruth B."
+    },
+    "Pra Melhorar (part. Seu Jorge e Flor) - Marisa Monte": {
+        "posicao": 658,
+        "nome": "Pra Melhorar (part. Seu Jorge e Flor)",
+        "artista": "Marisa Monte"
+    },
+    "I Don't Want To Talk About It - Rod Stewart": {
+        "posicao": 659,
+        "nome": "I Don't Want To Talk About It",
+        "artista": "Rod Stewart"
+    },
+    "GIRLS - The Kid LAROI": {
+        "posicao": 660,
+        "nome": "GIRLS",
+        "artista": "The Kid LAROI"
+    },
+    "TU ÉS DEUS (A ELE) (part. Paulo César Baruk, Lucas e Evelyn Cortazio) - O Canto das Igrejas": {
+        "posicao": 661,
+        "nome": "TU ÉS DEUS (A ELE) (part. Paulo César Baruk, Lucas e Evelyn Cortazio)",
+        "artista": "O Canto das Igrejas"
+    },
+    "Coração Partido (Corazón Partío) - Grupo Menos É Mais": {
+        "posicao": 662,
+        "nome": "Coração Partido (Corazón Partío)",
+        "artista": "Grupo Menos É Mais"
+    },
+    "Ditosa Cidade - Shirley Carvalhaes": {
+        "posicao": 663,
+        "nome": "Ditosa Cidade",
+        "artista": "Shirley Carvalhaes"
+    },
+    "7 Years - Lukas Graham": {
+        "posicao": 664,
+        "nome": "7 Years",
+        "artista": "Lukas Graham"
+    },
+    "Sad Girl - Lana Del Rey": {
+        "posicao": 665,
+        "nome": "Sad Girl",
+        "artista": "Lana Del Rey"
+    },
+    "Vou Seguir - Cassiane": {
+        "posicao": 666,
+        "nome": "Vou Seguir",
+        "artista": "Cassiane"
+    },
+    "Sinônimos - Zé Ramalho": {
+        "posicao": 667,
+        "nome": "Sinônimos",
+        "artista": "Zé Ramalho"
+    },
+    "Pink Matter (feat. André 3000) - Frank Ocean": {
+        "posicao": 668,
+        "nome": "Pink Matter (feat. André 3000)",
+        "artista": "Frank Ocean"
+    },
+    "Cristo, a Fonte Escondida - 523 - Harpa Cristã": {
+        "posicao": 669,
+        "nome": "Cristo, a Fonte Escondida - 523",
+        "artista": "Harpa Cristã"
+    },
+    "Vem Pra Minha Vida - Henrique & Juliano": {
+        "posicao": 670,
+        "nome": "Vem Pra Minha Vida",
+        "artista": "Henrique & Juliano"
+    },
+    "Jesus, o Plano Perfeito - Renascer Praise": {
+        "posicao": 671,
+        "nome": "Jesus, o Plano Perfeito",
+        "artista": "Renascer Praise"
+    },
+    "Eyes Without a Face - Billy Idol": {
+        "posicao": 672,
+        "nome": "Eyes Without a Face",
+        "artista": "Billy Idol"
+    },
+    "Meu Barquinho - Giselli Cristina": {
+        "posicao": 673,
+        "nome": "Meu Barquinho",
+        "artista": "Giselli Cristina"
+    },
+    "Permission To Dance - BTS": {
+        "posicao": 674,
+        "nome": "Permission To Dance",
+        "artista": "BTS"
+    },
+    "God's Plan - Drake": {
+        "posicao": 675,
+        "nome": "God's Plan",
+        "artista": "Drake"
+    },
+    "Salmo 102 - O Senhor É Bondoso, Compassivo e Carinhoso - Canal Salmodiai (Salmodiai Ao Nosso Deus)": {
+        "posicao": 676,
+        "nome": "Salmo 102 - O Senhor É Bondoso, Compassivo e Carinhoso",
+        "artista": "Canal Salmodiai (Salmodiai Ao Nosso Deus)"
+    },
+    "Se Isto Não For Amor - Mara Lima": {
+        "posicao": 677,
+        "nome": "Se Isto Não For Amor",
+        "artista": "Mara Lima"
+    },
+    "Angels Like You - Miley Cyrus": {
+        "posicao": 678,
+        "nome": "Angels Like You",
+        "artista": "Miley Cyrus"
+    },
+    "Bênçãos Que Não Têm Fim (Counting My Blessings) - Isadora Pompeo": {
+        "posicao": 679,
+        "nome": "Bênçãos Que Não Têm Fim (Counting My Blessings)",
+        "artista": "Isadora Pompeo"
+    },
+    "Não Mais Escravos - Fernandinho": {
+        "posicao": 680,
+        "nome": "Não Mais Escravos",
+        "artista": "Fernandinho"
+    },
+    "Hotel California - Eagles": {
+        "posicao": 681,
+        "nome": "Hotel California",
+        "artista": "Eagles"
+    },
+    "Evergreen - Richy Mitch & The Coal Miners": {
+        "posicao": 682,
+        "nome": "Evergreen",
+        "artista": "Richy Mitch & The Coal Miners"
+    },
+    "Silver Springs - Fleetwood Mac": {
+        "posicao": 683,
+        "nome": "Silver Springs",
+        "artista": "Fleetwood Mac"
+    },
+    "Titanium (feat. Sia) - David Guetta": {
+        "posicao": 684,
+        "nome": "Titanium (feat. Sia)",
+        "artista": "David Guetta"
+    },
+    "Cuida Bem Dela - Henrique & Juliano": {
+        "posicao": 685,
+        "nome": "Cuida Bem Dela",
+        "artista": "Henrique & Juliano"
+    },
+    "Obsessed - Mariah Carey": {
+        "posicao": 686,
+        "nome": "Obsessed",
+        "artista": "Mariah Carey"
+    },
+    "Love In The Dark - Adele": {
+        "posicao": 687,
+        "nome": "Love In The Dark",
+        "artista": "Adele"
+    },
+    "Memories - Maroon 5": {
+        "posicao": 688,
+        "nome": "Memories",
+        "artista": "Maroon 5"
+    },
+    "Com Cristo é Vencer - Cassiane": {
+        "posicao": 689,
+        "nome": "Com Cristo é Vencer",
+        "artista": "Cassiane"
+    },
+    "Onde Jesus Mora - Cassiane": {
+        "posicao": 690,
+        "nome": "Onde Jesus Mora",
+        "artista": "Cassiane"
+    },
+    "Chop Suey! - System Of A Down": {
+        "posicao": 691,
+        "nome": "Chop Suey!",
+        "artista": "System Of A Down"
+    },
+    "Three Little Birds - Bob Marley": {
+        "posicao": 692,
+        "nome": "Three Little Birds",
+        "artista": "Bob Marley"
+    },
+    "Confident (feat. Chance The Rapper) - Justin Bieber": {
+        "posicao": 693,
+        "nome": "Confident (feat. Chance The Rapper)",
+        "artista": "Justin Bieber"
+    },
+    "My Love Mine All Mine - Mitski": {
+        "posicao": 694,
+        "nome": "My Love Mine All Mine",
+        "artista": "Mitski"
+    },
+    "A Alegria Está No Coração - Corinhos Evangélicos": {
+        "posicao": 695,
+        "nome": "A Alegria Está No Coração",
+        "artista": "Corinhos Evangélicos"
+    },
+    "No Tempo Dele - Eliã Oliveira": {
+        "posicao": 696,
+        "nome": "No Tempo Dele",
+        "artista": "Eliã Oliveira"
+    },
+    "Messy - Lola Young": {
+        "posicao": 697,
+        "nome": "Messy",
+        "artista": "Lola Young"
+    },
+    "Better Now - Post Malone": {
+        "posicao": 698,
+        "nome": "Better Now",
+        "artista": "Post Malone"
+    },
+    "Rolling In The Deep - Adele": {
+        "posicao": 699,
+        "nome": "Rolling In The Deep",
+        "artista": "Adele"
+    },
+    "Me Gustas Tu - Manu Chao": {
+        "posicao": 700,
+        "nome": "Me Gustas Tu",
+        "artista": "Manu Chao"
+    },
+    "Time After Time - Cyndi Lauper": {
+        "posicao": 701,
+        "nome": "Time After Time",
+        "artista": "Cyndi Lauper"
+    },
+    "Numb - Linkin Park": {
+        "posicao": 702,
+        "nome": "Numb",
+        "artista": "Linkin Park"
+    },
+    "Rap da Akatsuki - Os Ninjas Mais Procurados do Mundo - 7 Minutoz": {
+        "posicao": 703,
+        "nome": "Rap da Akatsuki - Os Ninjas Mais Procurados do Mundo",
+        "artista": "7 Minutoz"
+    },
+    "Irmãos Amados - 175 - Harpa Cristã": {
+        "posicao": 704,
+        "nome": "Irmãos Amados - 175",
+        "artista": "Harpa Cristã"
+    },
+    "Pão e Vinho - Ministério Amor e Adoração": {
+        "posicao": 705,
+        "nome": "Pão e Vinho",
+        "artista": "Ministério Amor e Adoração"
+    },
+    "Believe - Justin Bieber": {
+        "posicao": 706,
+        "nome": "Believe",
+        "artista": "Justin Bieber"
+    },
+    "Pilé - Mauvais djo": {
+        "posicao": 707,
+        "nome": "Pilé",
+        "artista": "Mauvais djo"
+    },
+    "Halo - Beyoncé": {
+        "posicao": 708,
+        "nome": "Halo",
+        "artista": "Beyoncé"
+    },
+    "One More Light - Linkin Park": {
+        "posicao": 709,
+        "nome": "One More Light",
+        "artista": "Linkin Park"
+    },
+    "Scar Tissue - Red Hot Chili Peppers": {
+        "posicao": 710,
+        "nome": "Scar Tissue",
+        "artista": "Red Hot Chili Peppers"
+    },
+    "Manchete dos Jornais - Calcinha Preta": {
+        "posicao": 711,
+        "nome": "Manchete dos Jornais",
+        "artista": "Calcinha Preta"
+    },
+    "Beatriz - 2ZDinizz": {
+        "posicao": 712,
+        "nome": "Beatriz",
+        "artista": "2ZDinizz"
+    },
+    "O Rosto de Cristo - Sarah Farias": {
+        "posicao": 713,
+        "nome": "O Rosto de Cristo",
+        "artista": "Sarah Farias"
+    },
+    "Corazón Partío - Alejandro Sanz": {
+        "posicao": 714,
+        "nome": "Corazón Partío",
+        "artista": "Alejandro Sanz"
+    },
+    "Side To Side (feat. Nicki Minaj) - Ariana Grande": {
+        "posicao": 715,
+        "nome": "Side To Side (feat. Nicki Minaj)",
+        "artista": "Ariana Grande"
+    },
+    "Evergreen (You Didn't Deserve Me At All) - Omar Apollo": {
+        "posicao": 716,
+        "nome": "Evergreen (You Didn't Deserve Me At All)",
+        "artista": "Omar Apollo"
+    },
+    "Digno de Tudo - Fernanda Ferro": {
+        "posicao": 717,
+        "nome": "Digno de Tudo",
+        "artista": "Fernanda Ferro"
+    },
+    "Story Of My Life - One Direction": {
+        "posicao": 718,
+        "nome": "Story Of My Life",
+        "artista": "One Direction"
+    },
+    "Hino do Reino Unido (God Save The King) - Hinos de Países": {
+        "posicao": 719,
+        "nome": "Hino do Reino Unido (God Save The King)",
+        "artista": "Hinos de Países"
+    },
+    "Alfa e Ômega - Marine Friesen": {
+        "posicao": 720,
+        "nome": "Alfa e Ômega",
+        "artista": "Marine Friesen"
+    },
+    "Dias de Elias - Lauriete": {
+        "posicao": 721,
+        "nome": "Dias de Elias",
+        "artista": "Lauriete"
+    },
+    "Seguirei - Rose Nascimento": {
+        "posicao": 722,
+        "nome": "Seguirei",
+        "artista": "Rose Nascimento"
+    },
+    "Flor E O Beija-Flor (part. Marília Mendonça) - Henrique & Juliano": {
+        "posicao": 723,
+        "nome": "Flor E O Beija-Flor (part. Marília Mendonça)",
+        "artista": "Henrique & Juliano"
+    },
+    "Body to Body - BTS": {
+        "posicao": 724,
+        "nome": "Body to Body",
+        "artista": "BTS"
+    },
+    "Ao Único Que É Digno - Jelb": {
+        "posicao": 725,
+        "nome": "Ao Único Que É Digno",
+        "artista": "Jelb"
+    },
+    "Complicated - Avril Lavigne": {
+        "posicao": 726,
+        "nome": "Complicated",
+        "artista": "Avril Lavigne"
+    },
+    "Copines - Aya Nakamura": {
+        "posicao": 727,
+        "nome": "Copines",
+        "artista": "Aya Nakamura"
+    },
+    "expectations - Olivia Rodrigo": {
+        "posicao": 728,
+        "nome": "expectations",
+        "artista": "Olivia Rodrigo"
+    },
+    "Making Love Out of Nothing at All - Air Supply": {
+        "posicao": 729,
+        "nome": "Making Love Out of Nothing at All",
+        "artista": "Air Supply"
+    },
+    "Gideão e Os Trezentos - Eliã Oliveira": {
+        "posicao": 730,
+        "nome": "Gideão e Os Trezentos",
+        "artista": "Eliã Oliveira"
+    },
+    "Yeshua - José Jr.": {
+        "posicao": 731,
+        "nome": "Yeshua",
+        "artista": "José Jr."
+    },
+    "Passa Lá Em Casa Jesus - Kailane Frauches": {
+        "posicao": 732,
+        "nome": "Passa Lá Em Casa Jesus",
+        "artista": "Kailane Frauches"
+    },
+    "misery. - pupsies": {
+        "posicao": 733,
+        "nome": "misery.",
+        "artista": "pupsies"
+    },
+    "Ainda Que a Figueira - Fernandinho": {
+        "posicao": 734,
+        "nome": "Ainda Que a Figueira",
+        "artista": "Fernandinho"
+    },
+    "Autor da Vida - Aline Barros": {
+        "posicao": 735,
+        "nome": "Autor da Vida",
+        "artista": "Aline Barros"
+    },
+    "Mary On A Cross - Ghost": {
+        "posicao": 736,
+        "nome": "Mary On A Cross",
+        "artista": "Ghost"
+    },
+    "Lança Sobre Mim - Dalete Hungria": {
+        "posicao": 737,
+        "nome": "Lança Sobre Mim",
+        "artista": "Dalete Hungria"
+    },
+    "Adore You - Harry Styles": {
+        "posicao": 738,
+        "nome": "Adore You",
+        "artista": "Harry Styles"
+    },
+    "Quando Teu Pai Revelou o Segredo a Maria - Músicas Católicas": {
+        "posicao": 739,
+        "nome": "Quando Teu Pai Revelou o Segredo a Maria",
+        "artista": "Músicas Católicas"
+    },
+    "Sultans Of Swing - Dire Straits": {
+        "posicao": 740,
+        "nome": "Sultans Of Swing",
+        "artista": "Dire Straits"
+    },
+    "Talking To The Moon - Bruno Mars": {
+        "posicao": 741,
+        "nome": "Talking To The Moon",
+        "artista": "Bruno Mars"
+    },
+    "UNETHICAL - Faouzia": {
+        "posicao": 742,
+        "nome": "UNETHICAL",
+        "artista": "Faouzia"
+    },
+    "Vivo - Canção & Louvor": {
+        "posicao": 743,
+        "nome": "Vivo",
+        "artista": "Canção & Louvor"
+    },
+    "BAILE INoLVIDABLE - Bad Bunny": {
+        "posicao": 744,
+        "nome": "BAILE INoLVIDABLE",
+        "artista": "Bad Bunny"
+    },
+    "Filho da Fé - Samuel Batista Filho": {
+        "posicao": 745,
+        "nome": "Filho da Fé",
+        "artista": "Samuel Batista Filho"
+    },
+    "One Of Us - Joan Osborne": {
+        "posicao": 746,
+        "nome": "One Of Us",
+        "artista": "Joan Osborne"
+    },
+    "Pumped Up Kicks - Foster The People": {
+        "posicao": 747,
+        "nome": "Pumped Up Kicks",
+        "artista": "Foster The People"
+    },
+    "Te Vivo - Luan Santana": {
+        "posicao": 748,
+        "nome": "Te Vivo",
+        "artista": "Luan Santana"
+    },
+    "Era Deus e Eu - Sara Evelyn": {
+        "posicao": 749,
+        "nome": "Era Deus e Eu",
+        "artista": "Sara Evelyn"
+    },
+    "7 rings - Ariana Grande": {
+        "posicao": 750,
+        "nome": "7 rings",
+        "artista": "Ariana Grande"
+    },
+    "Death Wish - Gracie Abrams": {
+        "posicao": 751,
+        "nome": "Death Wish",
+        "artista": "Gracie Abrams"
+    },
+    "Era Uma Vez (Poesia Acústica #6) - Pineapple": {
+        "posicao": 752,
+        "nome": "Era Uma Vez (Poesia Acústica #6)",
+        "artista": "Pineapple"
+    },
+    "Diamonds - Rihanna": {
+        "posicao": 753,
+        "nome": "Diamonds",
+        "artista": "Rihanna"
+    },
+    "Pelos Prados e Campinas - Padre Zezinho": {
+        "posicao": 754,
+        "nome": "Pelos Prados e Campinas",
+        "artista": "Padre Zezinho"
+    },
+    "Legendary Lovers - Katy Perry": {
+        "posicao": 755,
+        "nome": "Legendary Lovers",
+        "artista": "Katy Perry"
+    },
+    "O Segundo Sol - Cássia Eller": {
+        "posicao": 756,
+        "nome": "O Segundo Sol",
+        "artista": "Cássia Eller"
+    },
+    "Deus Está Contigo - Rose Nascimento": {
+        "posicao": 757,
+        "nome": "Deus Está Contigo",
+        "artista": "Rose Nascimento"
+    },
+    "Night Changes - One Direction": {
+        "posicao": 758,
+        "nome": "Night Changes",
+        "artista": "One Direction"
+    },
+    "Infiel - Marília Mendonça": {
+        "posicao": 759,
+        "nome": "Infiel",
+        "artista": "Marília Mendonça"
+    },
+    "Louvai a Jesus - 244 - Harpa Cristã": {
+        "posicao": 760,
+        "nome": "Louvai a Jesus - 244",
+        "artista": "Harpa Cristã"
+    },
+    "Company - Justin Bieber": {
+        "posicao": 761,
+        "nome": "Company",
+        "artista": "Justin Bieber"
+    },
+    "Nova York - Chrystian & Ralf": {
+        "posicao": 762,
+        "nome": "Nova York",
+        "artista": "Chrystian & Ralf"
+    },
+    "Dog Days Are Over - Florence + The Machine": {
+        "posicao": 763,
+        "nome": "Dog Days Are Over",
+        "artista": "Florence + The Machine"
+    },
+    "Maria de Nazaré - Padre Zezinho": {
+        "posicao": 764,
+        "nome": "Maria de Nazaré",
+        "artista": "Padre Zezinho"
+    },
+    "Descansa - Stella Laura": {
+        "posicao": 765,
+        "nome": "Descansa",
+        "artista": "Stella Laura"
+    },
+    "One Of The Girls (feat. JENNIE & Lily-Rose Depp) - The Weeknd": {
+        "posicao": 766,
+        "nome": "One Of The Girls (feat. JENNIE & Lily-Rose Depp)",
+        "artista": "The Weeknd"
+    },
+    "Acalma o Meu Coração - Anderson Freire": {
+        "posicao": 767,
+        "nome": "Acalma o Meu Coração",
+        "artista": "Anderson Freire"
+    },
+    "Easy On Me - Adele": {
+        "posicao": 768,
+        "nome": "Easy On Me",
+        "artista": "Adele"
+    },
+    "Inflama - Valesca Mayssa": {
+        "posicao": 769,
+        "nome": "Inflama",
+        "artista": "Valesca Mayssa"
+    },
+    "Dracula - Tame Impala": {
+        "posicao": 770,
+        "nome": "Dracula",
+        "artista": "Tame Impala"
+    },
+    "begged - Olivia Rodrigo": {
+        "posicao": 771,
+        "nome": "begged",
+        "artista": "Olivia Rodrigo"
+    },
+    "her - JVKE": {
+        "posicao": 772,
+        "nome": "her",
+        "artista": "JVKE"
+    },
+    "Agnus Dei - David Quinlan": {
+        "posicao": 773,
+        "nome": "Agnus Dei",
+        "artista": "David Quinlan"
+    },
+    "Cherry Pie - Warrant": {
+        "posicao": 774,
+        "nome": "Cherry Pie",
+        "artista": "Warrant"
+    },
+    "Licença Para o Milagre (part. Rebeka Mariano) - Samuel Mariano": {
+        "posicao": 775,
+        "nome": "Licença Para o Milagre (part. Rebeka Mariano)",
+        "artista": "Samuel Mariano"
+    },
+    "Better Together - Jack Johnson": {
+        "posicao": 776,
+        "nome": "Better Together",
+        "artista": "Jack Johnson"
+    },
+    "Him & I (feat. Halsey) - G-Eazy": {
+        "posicao": 777,
+        "nome": "Him & I (feat. Halsey)",
+        "artista": "G-Eazy"
+    },
+    "A Começar por Mim - Sued Silva": {
+        "posicao": 778,
+        "nome": "A Começar por Mim",
+        "artista": "Sued Silva"
+    },
+    "Meu Erro - Os Paralamas do Sucesso": {
+        "posicao": 779,
+        "nome": "Meu Erro",
+        "artista": "Os Paralamas do Sucesso"
+    },
+    "Pyramids - Frank Ocean": {
+        "posicao": 780,
+        "nome": "Pyramids",
+        "artista": "Frank Ocean"
+    },
+    "Espírito, Enche a Minha Vida - Quatro Por Um": {
+        "posicao": 781,
+        "nome": "Espírito, Enche a Minha Vida",
+        "artista": "Quatro Por Um"
+    },
+    "Somebody That I Used To Know (feat. Kimbra) - Gotye": {
+        "posicao": 782,
+        "nome": "Somebody That I Used To Know (feat. Kimbra)",
+        "artista": "Gotye"
+    },
+    "Bendito Serei - Nani Azevedo": {
+        "posicao": 783,
+        "nome": "Bendito Serei",
+        "artista": "Nani Azevedo"
+    },
+    "Canção do Céu - Anderson Freire": {
+        "posicao": 784,
+        "nome": "Canção do Céu",
+        "artista": "Anderson Freire"
+    },
+    "A Banda - Chico Buarque": {
+        "posicao": 785,
+        "nome": "A Banda",
+        "artista": "Chico Buarque"
+    },
+    "Fim de Noite - Adryana e a Rapaziada": {
+        "posicao": 786,
+        "nome": "Fim de Noite",
+        "artista": "Adryana e a Rapaziada"
+    },
+    "Vem Com Josué Lutar Em Jericó - Corinhos Evangélicos": {
+        "posicao": 787,
+        "nome": "Vem Com Josué Lutar Em Jericó",
+        "artista": "Corinhos Evangélicos"
+    },
+    "I Knew It, I Knew You - Taylor Swift": {
+        "posicao": 788,
+        "nome": "I Knew It, I Knew You",
+        "artista": "Taylor Swift"
+    },
+    "Chandelier - Sia": {
+        "posicao": 789,
+        "nome": "Chandelier",
+        "artista": "Sia"
+    },
+    "Um Pouco Mais - Sara Evelyn": {
+        "posicao": 790,
+        "nome": "Um Pouco Mais",
+        "artista": "Sara Evelyn"
+    },
+    "drop dead - Olivia Rodrigo": {
+        "posicao": 791,
+        "nome": "drop dead",
+        "artista": "Olivia Rodrigo"
+    },
+    "Medo Bobo - Maiara & Maraisa": {
+        "posicao": 792,
+        "nome": "Medo Bobo",
+        "artista": "Maiara & Maraisa"
+    },
+    "Desire (feat. Laura Pausini) - Robbie Williams": {
+        "posicao": 793,
+        "nome": "Desire (feat. Laura Pausini)",
+        "artista": "Robbie Williams"
+    },
+    "Demons - Imagine Dragons": {
+        "posicao": 794,
+        "nome": "Demons",
+        "artista": "Imagine Dragons"
+    },
+    "Bad - Michael Jackson": {
+        "posicao": 795,
+        "nome": "Bad",
+        "artista": "Michael Jackson"
+    },
+    "Identidade (part. Bruna Karla) - Anderson Freire": {
+        "posicao": 796,
+        "nome": "Identidade (part. Bruna Karla)",
+        "artista": "Anderson Freire"
+    },
+    "Senhor Que Vieste Salvar - Padre Zeca": {
+        "posicao": 797,
+        "nome": "Senhor Que Vieste Salvar",
+        "artista": "Padre Zeca"
+    },
+    "Mentes Tão Bem - Zezé Di Camargo & Luciano": {
+        "posicao": 798,
+        "nome": "Mentes Tão Bem",
+        "artista": "Zezé Di Camargo & Luciano"
+    },
+    "Calmaria - Canção & Louvor": {
+        "posicao": 799,
+        "nome": "Calmaria",
+        "artista": "Canção & Louvor"
+    },
+    "Aerials - System Of A Down": {
+        "posicao": 800,
+        "nome": "Aerials",
+        "artista": "System Of A Down"
+    },
+    "O Mover do Espírito - Armando Filho": {
+        "posicao": 801,
+        "nome": "O Mover do Espírito",
+        "artista": "Armando Filho"
+    },
+    "Um Beijo por Minuto (25 Milhões) - Natanzinho Lima": {
+        "posicao": 802,
+        "nome": "Um Beijo por Minuto (25 Milhões)",
+        "artista": "Natanzinho Lima"
+    },
+    "Começo, Meio e Fim / Mais Perto Quero Estar - Julia Vitória": {
+        "posicao": 803,
+        "nome": "Começo, Meio e Fim / Mais Perto Quero Estar",
+        "artista": "Julia Vitória"
+    },
+    "Espresso - Sabrina Carpenter": {
+        "posicao": 804,
+        "nome": "Espresso",
+        "artista": "Sabrina Carpenter"
+    },
+    "Lover, You Should've Come Over - Jeff Buckley": {
+        "posicao": 805,
+        "nome": "Lover, You Should've Come Over",
+        "artista": "Jeff Buckley"
+    },
+    "A Mesa Santa - Músicas Católicas": {
+        "posicao": 806,
+        "nome": "A Mesa Santa",
+        "artista": "Músicas Católicas"
+    },
+    "What a Wonderful World - Louis Armstrong": {
+        "posicao": 807,
+        "nome": "What a Wonderful World",
+        "artista": "Louis Armstrong"
+    },
+    "Meu Deus É Grande - Talyta Rosy": {
+        "posicao": 808,
+        "nome": "Meu Deus É Grande",
+        "artista": "Talyta Rosy"
+    },
+    "Deus Proverá - Gabriela Gomes": {
+        "posicao": 809,
+        "nome": "Deus Proverá",
+        "artista": "Gabriela Gomes"
+    },
+    "The Best - Tina Turner": {
+        "posicao": 810,
+        "nome": "The Best",
+        "artista": "Tina Turner"
+    },
+    "Golden Days - Panic! At The Disco": {
+        "posicao": 811,
+        "nome": "Golden Days",
+        "artista": "Panic! At The Disco"
+    },
+    "maggots for brains - Olivia Rodrigo": {
+        "posicao": 812,
+        "nome": "maggots for brains",
+        "artista": "Olivia Rodrigo"
+    },
+    "purple - Olivia Rodrigo": {
+        "posicao": 813,
+        "nome": "purple",
+        "artista": "Olivia Rodrigo"
+    },
+    "Imagine - John Lennon": {
+        "posicao": 814,
+        "nome": "Imagine",
+        "artista": "John Lennon"
+    },
+    "O Lamento de Israel - Sérgio Lopes": {
+        "posicao": 815,
+        "nome": "O Lamento de Israel",
+        "artista": "Sérgio Lopes"
+    },
+    "Toxic - Britney Spears": {
+        "posicao": 816,
+        "nome": "Toxic",
+        "artista": "Britney Spears"
+    },
+    "Deus do Impossível - Ministério Apascentar de Louvor (Toque No Altar)": {
+        "posicao": 817,
+        "nome": "Deus do Impossível",
+        "artista": "Ministério Apascentar de Louvor (Toque No Altar)"
+    },
+    "Pra Que? - Voz da Verdade": {
+        "posicao": 818,
+        "nome": "Pra Que?",
+        "artista": "Voz da Verdade"
+    },
+    "Yesterday - The Beatles": {
+        "posicao": 819,
+        "nome": "Yesterday",
+        "artista": "The Beatles"
+    },
+    "Kylian Mbappé Dictador Anthem - SurNervis": {
+        "posicao": 820,
+        "nome": "Kylian Mbappé Dictador Anthem",
+        "artista": "SurNervis"
+    },
+    "Saudade - Felipe Rodrigues": {
+        "posicao": 821,
+        "nome": "Saudade",
+        "artista": "Felipe Rodrigues"
+    },
+    "Die For You - The Weeknd": {
+        "posicao": 822,
+        "nome": "Die For You",
+        "artista": "The Weeknd"
+    },
+    "Sorry - Justin Bieber": {
+        "posicao": 823,
+        "nome": "Sorry",
+        "artista": "Justin Bieber"
+    },
+    "Teu Espírito Vem Derramar - 290 - Harpa Cristã": {
+        "posicao": 824,
+        "nome": "Teu Espírito Vem Derramar - 290",
+        "artista": "Harpa Cristã"
+    },
+    "All That Matters - Justin Bieber": {
+        "posicao": 825,
+        "nome": "All That Matters",
+        "artista": "Justin Bieber"
+    },
+    "The Real Slim Shady - Eminem": {
+        "posicao": 826,
+        "nome": "The Real Slim Shady",
+        "artista": "Eminem"
+    },
+    "Aviva-nos / A Terra Clama (medley) - Davi Fernandes": {
+        "posicao": 827,
+        "nome": "Aviva-nos / A Terra Clama (medley)",
+        "artista": "Davi Fernandes"
+    },
+    "Only Girl (In The World) - Rihanna": {
+        "posicao": 828,
+        "nome": "Only Girl (In The World)",
+        "artista": "Rihanna"
+    },
+    "Ela É Demais - Rick & Renner": {
+        "posicao": 829,
+        "nome": "Ela É Demais",
+        "artista": "Rick & Renner"
+    },
+    "Te Amarei, Senhor - Músicas Católicas": {
+        "posicao": 830,
+        "nome": "Te Amarei, Senhor",
+        "artista": "Músicas Católicas"
+    },
+    "Eu Te Devoro - Djavan": {
+        "posicao": 831,
+        "nome": "Eu Te Devoro",
+        "artista": "Djavan"
+    },
+    "Não Posso Explicar - 83 - Harpa Cristã": {
+        "posicao": 832,
+        "nome": "Não Posso Explicar - 83",
+        "artista": "Harpa Cristã"
+    },
+    "Deus Está Aqui - Corinhos Evangélicos": {
+        "posicao": 833,
+        "nome": "Deus Está Aqui",
+        "artista": "Corinhos Evangélicos"
+    },
+    "Salvatore - Lana Del Rey": {
+        "posicao": 834,
+        "nome": "Salvatore",
+        "artista": "Lana Del Rey"
+    },
+    "Abraça-me - David Quinlan": {
+        "posicao": 835,
+        "nome": "Abraça-me",
+        "artista": "David Quinlan"
+    },
+    "Innerbloom - RÜFÜS DU SOL": {
+        "posicao": 836,
+        "nome": "Innerbloom",
+        "artista": "RÜFÜS DU SOL"
+    },
+    "Buscar-Me-Eis e Me Achareis - Alexsander Lúcio": {
+        "posicao": 837,
+        "nome": "Buscar-Me-Eis e Me Achareis",
+        "artista": "Alexsander Lúcio"
+    },
+    "PINKY UP - KATSEYE": {
+        "posicao": 838,
+        "nome": "PINKY UP",
+        "artista": "KATSEYE"
+    },
+    "How You Remind Me - Nickelback": {
+        "posicao": 839,
+        "nome": "How You Remind Me",
+        "artista": "Nickelback"
+    },
+    "Fala, fala, Senhor - 210 - Harpa Cristã": {
+        "posicao": 840,
+        "nome": "Fala, fala, Senhor - 210",
+        "artista": "Harpa Cristã"
+    },
+    "Superman (feat. Dina Rae) - Eminem": {
+        "posicao": 841,
+        "nome": "Superman (feat. Dina Rae)",
+        "artista": "Eminem"
+    },
+    "Tua Presença - Canção & Louvor": {
+        "posicao": 842,
+        "nome": "Tua Presença",
+        "artista": "Canção & Louvor"
+    },
+    "Jardim - Fraternidade São João Paulo II": {
+        "posicao": 843,
+        "nome": "Jardim",
+        "artista": "Fraternidade São João Paulo II"
+    },
+    "Que Ele Cresça (Humildade) - Deigma Marques": {
+        "posicao": 844,
+        "nome": "Que Ele Cresça (Humildade)",
+        "artista": "Deigma Marques"
+    },
+    "Azul da Cor do Mar - Tim Maia": {
+        "posicao": 845,
+        "nome": "Azul da Cor do Mar",
+        "artista": "Tim Maia"
+    },
+    "I Was Made For Lovin' You - KISS": {
+        "posicao": 846,
+        "nome": "I Was Made For Lovin' You",
+        "artista": "KISS"
+    },
+    "Video Games - Lana Del Rey": {
+        "posicao": 847,
+        "nome": "Video Games",
+        "artista": "Lana Del Rey"
+    },
+    "Teu Amor Não Falha - Nívea Soares": {
+        "posicao": 848,
+        "nome": "Teu Amor Não Falha",
+        "artista": "Nívea Soares"
+    },
+    "Famoso Ímã - O Poderoso Chatão (part. MC Poze do Rodo e MC Leozinho ZS) - Mc Lele JP": {
+        "posicao": 849,
+        "nome": "Famoso Ímã - O Poderoso Chatão (part. MC Poze do Rodo e MC Leozinho ZS)",
+        "artista": "Mc Lele JP"
+    },
+    "Diva - Beyoncé": {
+        "posicao": 850,
+        "nome": "Diva",
+        "artista": "Beyoncé"
+    },
+    "Don't Dream It's Over - Crowded House": {
+        "posicao": 851,
+        "nome": "Don't Dream It's Over",
+        "artista": "Crowded House"
+    },
+    "what's wrong with me (feat. Robert Smith) - Olivia Rodrigo": {
+        "posicao": 852,
+        "nome": "what's wrong with me (feat. Robert Smith)",
+        "artista": "Olivia Rodrigo"
+    },
+    "DEVOTION (feat. Dijon) - Justin Bieber": {
+        "posicao": 853,
+        "nome": "DEVOTION (feat. Dijon)",
+        "artista": "Justin Bieber"
+    },
+    "Shape Of You - Ed Sheeran": {
+        "posicao": 854,
+        "nome": "Shape Of You",
+        "artista": "Ed Sheeran"
+    },
+    "Patience - Guns N' Roses": {
+        "posicao": 855,
+        "nome": "Patience",
+        "artista": "Guns N' Roses"
+    },
+    "The Nights - Avicii": {
+        "posicao": 856,
+        "nome": "The Nights",
+        "artista": "Avicii"
+    },
+    "Man I Need - Olivia Dean": {
+        "posicao": 857,
+        "nome": "Man I Need",
+        "artista": "Olivia Dean"
+    },
+    "La Vie En Rose - Édith Piaf": {
+        "posicao": 858,
+        "nome": "La Vie En Rose",
+        "artista": "Édith Piaf"
+    },
+    "Unção Divina - Mara Lima": {
+        "posicao": 859,
+        "nome": "Unção Divina",
+        "artista": "Mara Lima"
+    },
+    "Instinto - Gamadinho": {
+        "posicao": 860,
+        "nome": "Instinto",
+        "artista": "Gamadinho"
+    },
+    "Torn - Natalie Imbruglia": {
+        "posicao": 861,
+        "nome": "Torn",
+        "artista": "Natalie Imbruglia"
+    },
+    "À Espera De Jesus - Ozeias de Paula": {
+        "posicao": 862,
+        "nome": "À Espera De Jesus",
+        "artista": "Ozeias de Paula"
+    },
+    "Creio Que Tu És a Cura - Gabriela Rocha": {
+        "posicao": 863,
+        "nome": "Creio Que Tu És a Cura",
+        "artista": "Gabriela Rocha"
+    },
+    "Love Songs - Kaash Paige": {
+        "posicao": 864,
+        "nome": "Love Songs",
+        "artista": "Kaash Paige"
+    },
+    "Ramenez La Coupe À La Maison - Vegedream": {
+        "posicao": 865,
+        "nome": "Ramenez La Coupe À La Maison",
+        "artista": "Vegedream"
+    },
+    "Friends - Ella Henderson": {
+        "posicao": 866,
+        "nome": "Friends",
+        "artista": "Ella Henderson"
+    },
+    "Santificação - Elaine Martins": {
+        "posicao": 867,
+        "nome": "Santificação",
+        "artista": "Elaine Martins"
+    },
+    "Gol Anulado - João Bosco": {
+        "posicao": 868,
+        "nome": "Gol Anulado",
+        "artista": "João Bosco"
+    },
+    "Let Down - Radiohead": {
+        "posicao": 869,
+        "nome": "Let Down",
+        "artista": "Radiohead"
+    },
+    "I Gotta Feeling - Black Eyed Peas": {
+        "posicao": 870,
+        "nome": "I Gotta Feeling",
+        "artista": "Black Eyed Peas"
+    },
+    "What Makes You Beautiful - One Direction": {
+        "posicao": 871,
+        "nome": "What Makes You Beautiful",
+        "artista": "One Direction"
+    },
+    "Thunder - Imagine Dragons": {
+        "posicao": 872,
+        "nome": "Thunder",
+        "artista": "Imagine Dragons"
+    },
+    "cigarette smoke - Olivia Rodrigo": {
+        "posicao": 873,
+        "nome": "cigarette smoke",
+        "artista": "Olivia Rodrigo"
+    },
+    "Em Tua Presença - Fernanda Brum": {
+        "posicao": 874,
+        "nome": "Em Tua Presença",
+        "artista": "Fernanda Brum"
+    },
+    "You'll Always Find Your Way Back Home - Miley Cyrus": {
+        "posicao": 875,
+        "nome": "You'll Always Find Your Way Back Home",
+        "artista": "Miley Cyrus"
+    },
+    "Uma Vez - Florianópolis House Of Prayer (fhop music)": {
+        "posicao": 876,
+        "nome": "Uma Vez",
+        "artista": "Florianópolis House Of Prayer (fhop music)"
+    },
+    "Danceteria - Madonna": {
+        "posicao": 877,
+        "nome": "Danceteria",
+        "artista": "Madonna"
+    },
+    "Paixão Pela Presença - Daniel & Samuel": {
+        "posicao": 878,
+        "nome": "Paixão Pela Presença",
+        "artista": "Daniel & Samuel"
+    },
+    "Único - Fernandinho": {
+        "posicao": 879,
+        "nome": "Único",
+        "artista": "Fernandinho"
+    },
+    "Carry On Wayward Son - Kansas": {
+        "posicao": 880,
+        "nome": "Carry On Wayward Son",
+        "artista": "Kansas"
+    },
+    "Tô Fazendo Amor Com a Favela Toda (part. MC Fabinho da OSK) [explícita] - MC Jessica do Escadão": {
+        "posicao": 881,
+        "nome": "Tô Fazendo Amor Com a Favela Toda (part. MC Fabinho da OSK) [explícita]",
+        "artista": "MC Jessica do Escadão"
+    },
+    "João 20 (medley) - Luigi Natalino": {
+        "posicao": 882,
+        "nome": "João 20 (medley)",
+        "artista": "Luigi Natalino"
+    },
+    "Comum e Imperfeito (part. Canção & Louvor) - Anna Clara Rocha": {
+        "posicao": 883,
+        "nome": "Comum e Imperfeito (part. Canção & Louvor)",
+        "artista": "Anna Clara Rocha"
+    },
+    "O Maior Troféu - Damares": {
+        "posicao": 884,
+        "nome": "O Maior Troféu",
+        "artista": "Damares"
+    },
+    "Cálice (part. Milton Nascimento) - Chico Buarque": {
+        "posicao": 885,
+        "nome": "Cálice (part. Milton Nascimento)",
+        "artista": "Chico Buarque"
+    },
+    "Maladie - Mauvais djo": {
+        "posicao": 886,
+        "nome": "Maladie",
+        "artista": "Mauvais djo"
+    },
+    "Yahweh Se Manifestará (part. Julliany Souza e Léo Brandão) - Marcos Freire": {
+        "posicao": 887,
+        "nome": "Yahweh Se Manifestará (part. Julliany Souza e Léo Brandão)",
+        "artista": "Marcos Freire"
+    },
+    "Nuts - RM": {
+        "posicao": 888,
+        "nome": "Nuts",
+        "artista": "RM"
+    },
+    "Nos Braços do Pai - Diante do Trono": {
+        "posicao": 889,
+        "nome": "Nos Braços do Pai",
+        "artista": "Diante do Trono"
+    },
+    "Ele é Exaltado - Adhemar de Campos": {
+        "posicao": 890,
+        "nome": "Ele é Exaltado",
+        "artista": "Adhemar de Campos"
+    },
+    "Love Hurts - Nazareth": {
+        "posicao": 891,
+        "nome": "Love Hurts",
+        "artista": "Nazareth"
+    },
+    "Deixar a Lágrima Rolar - Bruna Karla": {
+        "posicao": 892,
+        "nome": "Deixar a Lágrima Rolar",
+        "artista": "Bruna Karla"
+    },
+    "Wherever You Will Go - The Calling": {
+        "posicao": 893,
+        "nome": "Wherever You Will Go",
+        "artista": "The Calling"
+    },
+    "Baby Can I Hold You? - Tracy Chapman": {
+        "posicao": 894,
+        "nome": "Baby Can I Hold You?",
+        "artista": "Tracy Chapman"
+    },
+    "Nights - Frank Ocean": {
+        "posicao": 895,
+        "nome": "Nights",
+        "artista": "Frank Ocean"
+    },
+    "Grato Sou (I Thank God) - Drops INA": {
+        "posicao": 896,
+        "nome": "Grato Sou (I Thank God)",
+        "artista": "Drops INA"
+    },
+    "Tanto Faz - Luan Santana": {
+        "posicao": 897,
+        "nome": "Tanto Faz",
+        "artista": "Luan Santana"
+    },
+    "Te Agradeço - Kleber Lucas": {
+        "posicao": 898,
+        "nome": "Te Agradeço",
+        "artista": "Kleber Lucas"
+    },
+    "Dreams - Fleetwood Mac": {
+        "posicao": 899,
+        "nome": "Dreams",
+        "artista": "Fleetwood Mac"
+    },
+    "Sois Benvindos - 433 - Harpa Cristã": {
+        "posicao": 900,
+        "nome": "Sois Benvindos - 433",
+        "artista": "Harpa Cristã"
+    },
+    "Santo Pra Sempre - Fernandinho": {
+        "posicao": 901,
+        "nome": "Santo Pra Sempre",
+        "artista": "Fernandinho"
+    },
+    "Shallow (feat. Bradley Cooper) - Lady Gaga": {
+        "posicao": 902,
+        "nome": "Shallow (feat. Bradley Cooper)",
+        "artista": "Lady Gaga"
+    },
+    "Fogo Em Teus Olhos - Louvor IIR": {
+        "posicao": 903,
+        "nome": "Fogo Em Teus Olhos",
+        "artista": "Louvor IIR"
+    },
+    "Voyage Voyage - Desireless": {
+        "posicao": 904,
+        "nome": "Voyage Voyage",
+        "artista": "Desireless"
+    },
+    "Sublime renúncia - Leandro & Leonardo": {
+        "posicao": 905,
+        "nome": "Sublime renúncia",
+        "artista": "Leandro & Leonardo"
+    },
+    "Boate Azul - Bruno & Marrone": {
+        "posicao": 906,
+        "nome": "Boate Azul",
+        "artista": "Bruno & Marrone"
+    },
+    "Dono de Tudo - Shirley Carvalhaes": {
+        "posicao": 907,
+        "nome": "Dono de Tudo",
+        "artista": "Shirley Carvalhaes"
+    },
+    "I Want To Know What Love Is - Foreigner": {
+        "posicao": 908,
+        "nome": "I Want To Know What Love Is",
+        "artista": "Foreigner"
+    },
+    "Work (feat. Drake) - Rihanna": {
+        "posicao": 909,
+        "nome": "Work (feat. Drake)",
+        "artista": "Rihanna"
+    },
+    "Escreve Aí - Luan Santana": {
+        "posicao": 910,
+        "nome": "Escreve Aí",
+        "artista": "Luan Santana"
+    },
+    "Restitui - Davi Sacer": {
+        "posicao": 911,
+        "nome": "Restitui",
+        "artista": "Davi Sacer"
+    },
+    "Californication - Red Hot Chili Peppers": {
+        "posicao": 912,
+        "nome": "Californication",
+        "artista": "Red Hot Chili Peppers"
+    },
+    "Semente do Sangue - Mara Lima": {
+        "posicao": 913,
+        "nome": "Semente do Sangue",
+        "artista": "Mara Lima"
+    },
+    "Está Tudo Bem - Kellen Byanca": {
+        "posicao": 914,
+        "nome": "Está Tudo Bem",
+        "artista": "Kellen Byanca"
+    },
+    "Apocalypse - Cigarettes After Sex": {
+        "posicao": 915,
+        "nome": "Apocalypse",
+        "artista": "Cigarettes After Sex"
+    },
+    "Me Derramar - Vineyard": {
+        "posicao": 916,
+        "nome": "Me Derramar",
+        "artista": "Vineyard"
+    },
+    "Salvo Estás? Limpo Estás? - 277 - Harpa Cristã": {
+        "posicao": 917,
+        "nome": "Salvo Estás? Limpo Estás? - 277",
+        "artista": "Harpa Cristã"
+    },
+    "Um Pendão Real - 46 - Harpa Cristã": {
+        "posicao": 918,
+        "nome": "Um Pendão Real - 46",
+        "artista": "Harpa Cristã"
+    },
+    "Fico Assim Sem Você - Claudinho e Buchecha": {
+        "posicao": 919,
+        "nome": "Fico Assim Sem Você",
+        "artista": "Claudinho e Buchecha"
+    },
+    "That's Life - Frank Sinatra": {
+        "posicao": 920,
+        "nome": "That's Life",
+        "artista": "Frank Sinatra"
+    },
+    "Deixa - Maria Marçal": {
+        "posicao": 921,
+        "nome": "Deixa",
+        "artista": "Maria Marçal"
+    },
+    "Aliança - Tribalistas": {
+        "posicao": 922,
+        "nome": "Aliança",
+        "artista": "Tribalistas"
+    },
+    "Tome Posse da Vitória (part. Cassiane) - Jozyanne": {
+        "posicao": 923,
+        "nome": "Tome Posse da Vitória (part. Cassiane)",
+        "artista": "Jozyanne"
+    },
+    "...Baby One More Time - Britney Spears": {
+        "posicao": 924,
+        "nome": "...Baby One More Time",
+        "artista": "Britney Spears"
+    },
+    "End of Beginning - Djo": {
+        "posicao": 925,
+        "nome": "End of Beginning",
+        "artista": "Djo"
+    },
+    "La Solitudine - Laura Pausini": {
+        "posicao": 926,
+        "nome": "La Solitudine",
+        "artista": "Laura Pausini"
+    },
+    "Meia Noite - Florianópolis House Of Prayer (fhop music)": {
+        "posicao": 927,
+        "nome": "Meia Noite",
+        "artista": "Florianópolis House Of Prayer (fhop music)"
+    },
+    "Back For Good - Take That": {
+        "posicao": 928,
+        "nome": "Back For Good",
+        "artista": "Take That"
+    },
+    "Eu Seguirei - Frei Gilson": {
+        "posicao": 929,
+        "nome": "Eu Seguirei",
+        "artista": "Frei Gilson"
+    },
+    "Eu Falo Jesus - Resgate Music": {
+        "posicao": 930,
+        "nome": "Eu Falo Jesus",
+        "artista": "Resgate Music"
+    },
+    "Too Sweet - Hozier": {
+        "posicao": 931,
+        "nome": "Too Sweet",
+        "artista": "Hozier"
+    },
+    "QUE LOUCURA (part. CACAU CHUU) [explícita] - DJ EXE": {
+        "posicao": 932,
+        "nome": "QUE LOUCURA (part. CACAU CHUU) [explícita]",
+        "artista": "DJ EXE"
+    },
+    "Stairway To Heaven - Led Zeppelin": {
+        "posicao": 933,
+        "nome": "Stairway To Heaven",
+        "artista": "Led Zeppelin"
+    },
+    "Meu Novo Mundo - Charlie Brown Jr.": {
+        "posicao": 934,
+        "nome": "Meu Novo Mundo",
+        "artista": "Charlie Brown Jr."
+    },
+    "Boa Sorte / Good Luck (feat. Ben Harper) - Vanessa da Mata": {
+        "posicao": 935,
+        "nome": "Boa Sorte / Good Luck (feat. Ben Harper)",
+        "artista": "Vanessa da Mata"
+    },
+    "Para Ti Eu Vou (part. Gabriela Maganete e Rapha Gonçalves) - Central 3": {
+        "posicao": 936,
+        "nome": "Para Ti Eu Vou (part. Gabriela Maganete e Rapha Gonçalves)",
+        "artista": "Central 3"
+    },
+    "Hall Of Fame (feat. Will.I.Am) - The Script": {
+        "posicao": 937,
+        "nome": "Hall Of Fame (feat. Will.I.Am)",
+        "artista": "The Script"
+    },
+    "Frio da Madrugada - Rionegro & Solimões": {
+        "posicao": 938,
+        "nome": "Frio da Madrugada",
+        "artista": "Rionegro & Solimões"
+    },
+    "Please - BTS": {
+        "posicao": 939,
+        "nome": "Please",
+        "artista": "BTS"
+    },
+    "Life Goes On - BTS": {
+        "posicao": 940,
+        "nome": "Life Goes On",
+        "artista": "BTS"
+    },
+    "The Climb - Miley Cyrus": {
+        "posicao": 941,
+        "nome": "The Climb",
+        "artista": "Miley Cyrus"
+    },
+    "Teu Santo Nome - Gabriela Rocha": {
+        "posicao": 942,
+        "nome": "Teu Santo Nome",
+        "artista": "Gabriela Rocha"
+    },
+    "Starboy (feat. Daft Punk) - The Weeknd": {
+        "posicao": 943,
+        "nome": "Starboy (feat. Daft Punk)",
+        "artista": "The Weeknd"
+    },
+    "10 MINUTOS FALANDO DE AMOR FREESTYLE - Oruam": {
+        "posicao": 944,
+        "nome": "10 MINUTOS FALANDO DE AMOR FREESTYLE",
+        "artista": "Oruam"
+    },
+    "The Hills - The Weeknd": {
+        "posicao": 945,
+        "nome": "The Hills",
+        "artista": "The Weeknd"
+    },
+    "Poesia Acústica #2 - Sobre Nós - Pineapple": {
+        "posicao": 946,
+        "nome": "Poesia Acústica #2 - Sobre Nós",
+        "artista": "Pineapple"
+    },
+    "Don't Matter - Akon": {
+        "posicao": 947,
+        "nome": "Don't Matter",
+        "artista": "Akon"
+    },
+    "I Have Nothing - Whitney Houston": {
+        "posicao": 948,
+        "nome": "I Have Nothing",
+        "artista": "Whitney Houston"
+    },
+    "Alors On Danse - Stromae": {
+        "posicao": 949,
+        "nome": "Alors On Danse",
+        "artista": "Stromae"
+    },
+    "Realidade Ou Fantasia - Henrique & Juliano": {
+        "posicao": 950,
+        "nome": "Realidade Ou Fantasia",
+        "artista": "Henrique & Juliano"
+    },
+    "Hino Nacional Brasileiro - Hinos de Países": {
+        "posicao": 951,
+        "nome": "Hino Nacional Brasileiro",
+        "artista": "Hinos de Países"
+    },
+    "Flatline - Justin Bieber": {
+        "posicao": 952,
+        "nome": "Flatline",
+        "artista": "Justin Bieber"
+    },
+    "Disfruto - Carla Morrison": {
+        "posicao": 953,
+        "nome": "Disfruto",
+        "artista": "Carla Morrison"
+    },
+    "Jane! - The Long Faces": {
+        "posicao": 954,
+        "nome": "Jane!",
+        "artista": "The Long Faces"
+    },
+    "Só Quem Tem Raiz - Sarah Farias": {
+        "posicao": 955,
+        "nome": "Só Quem Tem Raiz",
+        "artista": "Sarah Farias"
+    },
+    "Meu Lugar no Mundo (part. Novo Tom) - Ministério Jovem": {
+        "posicao": 956,
+        "nome": "Meu Lugar no Mundo (part. Novo Tom)",
+        "artista": "Ministério Jovem"
+    },
+    "Cordeiro e Leão - Jefferson & Suellen": {
+        "posicao": 957,
+        "nome": "Cordeiro e Leão",
+        "artista": "Jefferson & Suellen"
+    },
+    "Tu És Fiel, Senhor - 535 - Harpa Cristã": {
+        "posicao": 958,
+        "nome": "Tu És Fiel, Senhor - 535",
+        "artista": "Harpa Cristã"
+    },
+    "Ele Vem - David Quinlan": {
+        "posicao": 959,
+        "nome": "Ele Vem",
+        "artista": "David Quinlan"
+    },
+    "Vou Curar Você (part. Larissa Pires) - Sandra Pires": {
+        "posicao": 960,
+        "nome": "Vou Curar Você (part. Larissa Pires)",
+        "artista": "Sandra Pires"
+    },
+    "Digno É o Senhor - Felipe Rodrigues": {
+        "posicao": 961,
+        "nome": "Digno É o Senhor",
+        "artista": "Felipe Rodrigues"
+    },
+    "Quebrantado - Vineyard": {
+        "posicao": 962,
+        "nome": "Quebrantado",
+        "artista": "Vineyard"
+    },
+    "golden hour - JVKE": {
+        "posicao": 963,
+        "nome": "golden hour",
+        "artista": "JVKE"
+    },
+    "Estás Entre Nós - Eliana Ribeiro": {
+        "posicao": 964,
+        "nome": "Estás Entre Nós",
+        "artista": "Eliana Ribeiro"
+    },
+    "DESPECHÁ - ROSALÍA": {
+        "posicao": 965,
+        "nome": "DESPECHÁ",
+        "artista": "ROSALÍA"
+    },
+    "Os Sonhos de Deus - Nani Azevedo": {
+        "posicao": 966,
+        "nome": "Os Sonhos de Deus",
+        "artista": "Nani Azevedo"
+    },
+    "Cicatrizes - Bruna Karla": {
+        "posicao": 967,
+        "nome": "Cicatrizes",
+        "artista": "Bruna Karla"
+    },
+    "Freakin' Out - Dexter And The Moonrocks": {
+        "posicao": 968,
+        "nome": "Freakin' Out",
+        "artista": "Dexter And The Moonrocks"
+    },
+    "Say You Won't Let Go - James Arthur": {
+        "posicao": 969,
+        "nome": "Say You Won't Let Go",
+        "artista": "James Arthur"
+    },
+    "LEMONADE - aespa": {
+        "posicao": 970,
+        "nome": "LEMONADE",
+        "artista": "aespa"
+    },
+    "I'm Yours - Jason Mraz": {
+        "posicao": 971,
+        "nome": "I'm Yours",
+        "artista": "Jason Mraz"
+    },
+    "Além da Medicina - Mara Lima": {
+        "posicao": 972,
+        "nome": "Além da Medicina",
+        "artista": "Mara Lima"
+    },
+    "Days Like This - Van Morrison": {
+        "posicao": 973,
+        "nome": "Days Like This",
+        "artista": "Van Morrison"
+    },
+    "Shake It Off - Taylor Swift": {
+        "posicao": 974,
+        "nome": "Shake It Off",
+        "artista": "Taylor Swift"
+    },
+    "Brasil Decime Que Se Siente - El Retutu": {
+        "posicao": 975,
+        "nome": "Brasil Decime Que Se Siente",
+        "artista": "El Retutu"
+    },
+    "Melhor Lugar - Felipe Rodrigues": {
+        "posicao": 976,
+        "nome": "Melhor Lugar",
+        "artista": "Felipe Rodrigues"
+    },
+    "Only Love Can Hurt Like This - Paloma Faith": {
+        "posicao": 977,
+        "nome": "Only Love Can Hurt Like This",
+        "artista": "Paloma Faith"
+    },
+    "The Final Countdown - Europe": {
+        "posicao": 978,
+        "nome": "The Final Countdown",
+        "artista": "Europe"
+    },
+    "Animals - Maroon 5": {
+        "posicao": 979,
+        "nome": "Animals",
+        "artista": "Maroon 5"
+    },
+    "Love Me Like You Do - Ellie Goulding": {
+        "posicao": 980,
+        "nome": "Love Me Like You Do",
+        "artista": "Ellie Goulding"
+    },
+    "Young, Wild & Free (feat. Bruno Mars & Wiz Khalifa) - Snoop Dogg": {
+        "posicao": 981,
+        "nome": "Young, Wild & Free (feat. Bruno Mars & Wiz Khalifa)",
+        "artista": "Snoop Dogg"
+    },
+    "Bailando (Spanish Version) (part. Descemer Bueno y Gente de Zona) - Enrique Iglesias": {
+        "posicao": 982,
+        "nome": "Bailando (Spanish Version) (part. Descemer Bueno y Gente de Zona)",
+        "artista": "Enrique Iglesias"
+    },
+    "One Last Breath - Creed": {
+        "posicao": 983,
+        "nome": "One Last Breath",
+        "artista": "Creed"
+    },
+    "Thinking Out Loud - Ed Sheeran": {
+        "posicao": 984,
+        "nome": "Thinking Out Loud",
+        "artista": "Ed Sheeran"
+    },
+    "Asas Feridas - Hinos Avulsos CCB": {
+        "posicao": 985,
+        "nome": "Asas Feridas",
+        "artista": "Hinos Avulsos CCB"
+    },
+    "Temporal de Amor - Leandro & Leonardo": {
+        "posicao": 986,
+        "nome": "Temporal de Amor",
+        "artista": "Leandro & Leonardo"
+    },
+    "Never Say Never (feat. Jaden) - Justin Bieber": {
+        "posicao": 987,
+        "nome": "Never Say Never (feat. Jaden)",
+        "artista": "Justin Bieber"
+    },
+    "Moranguete, Abacatudo, 67, 42 - Brutusmano": {
+        "posicao": 988,
+        "nome": "Moranguete, Abacatudo, 67, 42",
+        "artista": "Brutusmano"
+    },
+    "Que Se Abram Os Céus - Nívea Soares": {
+        "posicao": 989,
+        "nome": "Que Se Abram Os Céus",
+        "artista": "Nívea Soares"
+    },
+    "Eu Marquei Um Encontro Com Deus (Nesta Noite Feliz) - Corinhos Evangélicos": {
+        "posicao": 990,
+        "nome": "Eu Marquei Um Encontro Com Deus (Nesta Noite Feliz)",
+        "artista": "Corinhos Evangélicos"
+    },
+    "Vem, Esta É a Hora - Vineyard": {
+        "posicao": 991,
+        "nome": "Vem, Esta É a Hora",
+        "artista": "Vineyard"
+    },
+    "Ultraviolence - Lana Del Rey": {
+        "posicao": 992,
+        "nome": "Ultraviolence",
+        "artista": "Lana Del Rey"
+    },
+    "Proibida Pra Mim (Grazon) - Charlie Brown Jr.": {
+        "posicao": 993,
+        "nome": "Proibida Pra Mim (Grazon)",
+        "artista": "Charlie Brown Jr."
+    },
+    "Brooklyn Baby - Lana Del Rey": {
+        "posicao": 994,
+        "nome": "Brooklyn Baby",
+        "artista": "Lana Del Rey"
+    },
+    "Beautiful Day - U2": {
+        "posicao": 995,
+        "nome": "Beautiful Day",
+        "artista": "U2"
+    },
+    "Mr. Brightside - The Killers": {
+        "posicao": 996,
+        "nome": "Mr. Brightside",
+        "artista": "The Killers"
+    },
+    "deja vu - Olivia Rodrigo": {
+        "posicao": 997,
+        "nome": "deja vu",
+        "artista": "Olivia Rodrigo"
+    },
+    "Don't Cry - Guns N' Roses": {
+        "posicao": 998,
+        "nome": "Don't Cry",
+        "artista": "Guns N' Roses"
+    },
+    "Sonho de Amor - Zezé Di Camargo & Luciano": {
+        "posicao": 999,
+        "nome": "Sonho de Amor",
+        "artista": "Zezé Di Camargo & Luciano"
+    },
+    "Reliquia do 2T (part. MC Joãozinho VT, MC Vine7, MC FR da Norte e MC Dkziin) - MC Tuto": {
+        "posicao": 1000,
+        "nome": "Reliquia do 2T (part. MC Joãozinho VT, MC Vine7, MC FR da Norte e MC Dkziin)",
+        "artista": "MC Tuto"
+    }
+}
